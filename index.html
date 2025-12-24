@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Nurse Grade–II Exam</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Start Screen -->
+    <div id="startScreen" class="start-screen active">
+        <div class="start-container">
+            <div class="start-header">
+                <div class="exam-icon">👩‍⚕️</div>
+                <h1>MOCK EXAM STAFF NURSE</h1>
+                <p class="exam-subtitle">Grade–II | Online MCQ Examination</p>
+            </div>
+            
+            <div class="exam-details">
+                <div class="detail-box">
+                    <span class="detail-number">100</span>
+                    <span class="detail-label">Total Marks</span>
+                </div>
+                <div class="detail-box">
+                    <span class="detail-number">100</span>
+                    <span class="detail-label">Questions</span>
+                </div>
+                <div class="detail-box">
+                    <span class="detail-number">4</span>
+                    <span class="detail-label">Sections</span>
+                </div>
+                <div class="detail-box">
+                    <span class="detail-number">60</span>
+                    <span class="detail-label">Minutes</span>
+                </div>
+            </div>
+
+            <div class="syllabus-section">
+                <h3>Syllabus Coverage</h3>
+                <div class="syllabus-grid">
+                    <span>Anatomy & Physiology</span>
+                    <span>Medical–Surgical Nursing</span>
+                    <span>Child Health Nursing</span>
+                    <span>Mental Health Nursing</span>
+                    <span>Pharmacology</span>
+                    <span>Community Health Nursing</span>
+                    <span>Midwifery</span>
+                    <span>General Knowledge</span>
+                    <span>English</span>
+                    <span>Aptitude</span>
+                </div>
+            </div>
+
+            <div class="name-section">
+                <label for="candidateName">Enter Your Name</label>
+                <input type="text" id="candidateName" placeholder="Your Full Name" required>
+                
+                <label for="candidateDOB">Date of Birth</label>
+                <input type="date" id="candidateDOB" required>
+                
+                <button id="startBtn" class="start-btn">Start Exam →</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Exam Screen -->
+    <div id="examScreen" class="exam-screen">
+        <!-- Top Header Bar -->
+        <header class="top-header">
+            <div class="header-left">
+                <div class="logo-section">
+                    <span class="logo-icon">👩‍⚕️</span>
+                    <span class="logo-text">Staff Nurse Exam</span>
+                </div>
+            </div>
+            <div class="header-stats">
+                <div class="stat-box visited">
+                    <span class="stat-label">Visited</span>
+                    <span class="stat-value" id="visitedCount">0</span>
+                </div>
+                <div class="stat-box not-visited">
+                    <span class="stat-label">Not Visited</span>
+                    <span class="stat-value" id="notVisitedCount">100</span>
+                </div>
+                <div class="stat-box answered">
+                    <span class="stat-label">Answered</span>
+                    <span class="stat-value" id="answeredCount">0</span>
+                </div>
+                <div class="stat-box review">
+                    <span class="stat-label">Review</span>
+                    <span class="stat-value" id="reviewCount">0</span>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="timer-section">
+                    <span class="timer-label">Time Left</span>
+                    <span class="timer-value" id="timerDisplay">60:00</span>
+                </div>
+                <button class="submit-btn" id="submitExamBtn">Submit Exam</button>
+            </div>
+        </header>
+
+        <div class="exam-body">
+            <!-- Left Sidebar -->
+            <aside class="sidebar">
+                <div class="sidebar-header">
+                    <div class="user-avatar">👤</div>
+                    <div class="user-info">
+                        <span class="user-name" id="displayName">Candidate</span>
+                        <span class="exam-title">MOCK EXAM STAFF NURSE</span>
+                    </div>
+                </div>
+
+                <div class="question-palette">
+                    <div class="palette-section active" id="paletteSection1">
+                        <div class="palette-title">Section 1: Core Nursing (Q1-25)</div>
+                        <div class="palette-grid" id="questionPalette1">
+                            <!-- Section 1 questions -->
+                        </div>
+                        <button class="section-nav-btn" id="goToSection2">Go to Section 2 →</button>
+                    </div>
+                    <div class="palette-section" id="paletteSection2">
+                        <div class="palette-title">Section 2: General Knowledge (Q26-50)</div>
+                        <div class="palette-grid" id="questionPalette2">
+                            <!-- Section 2 questions -->
+                        </div>
+                        <div class="section-nav-buttons">
+                            <button class="section-nav-btn prev" id="backToSection1">← Section 1</button>
+                            <button class="section-nav-btn" id="goToSection3">Section 3 →</button>
+                        </div>
+                    </div>
+                    <div class="palette-section" id="paletteSection3">
+                        <div class="palette-title">Section 3: English, Pharma, Community, Midwifery (Q51-75)</div>
+                        <div class="palette-grid" id="questionPalette3">
+                            <!-- Section 3 questions -->
+                        </div>
+                        <div class="section-nav-buttons">
+                            <button class="section-nav-btn prev" id="backToSection2">← Section 2</button>
+                            <button class="section-nav-btn" id="goToSection4">Section 4 →</button>
+                        </div>
+                    </div>
+                    <div class="palette-section" id="paletteSection4">
+                        <div class="palette-title">Section 4: Aptitude (Q76-100)</div>
+                        <div class="palette-grid" id="questionPalette4">
+                            <!-- Section 4 questions -->
+                        </div>
+                        <div class="section-nav-buttons">
+                            <button class="section-nav-btn prev" id="backToSection3">← Section 3</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="palette-legend">
+                    <div class="legend-item">
+                        <span class="legend-box not-visited"></span>
+                        <span>Not Visited</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-box visited"></span>
+                        <span>Visited</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-box answered"></span>
+                        <span>Answered</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-box correct"></span>
+                        <span>Correct</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-box incorrect"></span>
+                        <span>Incorrect</span>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Main Question Area -->
+            <main class="question-area">
+                <div class="section-header">
+                    <span class="section-title">Screen: <span id="currentSection">1</span></span>
+                    <span class="section-info" id="sectionInfo"></span>
+                </div>
+
+                <div class="question-container">
+                    <div class="question-box">
+                        <div class="question-title" id="questionTitle">Question Title</div>
+                        <div class="question-text" id="questionText">Question text will appear here</div>
+                        
+                        <div class="options-container" id="optionsContainer">
+                            <!-- Options will be generated here -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="navigation-bar">
+                    <div class="nav-left">
+                        <button class="nav-btn" id="markReviewBtn">📌 Mark for Review</button>
+                        <button class="nav-btn" id="clearResponseBtn">Clear Response</button>
+                    </div>
+                    <div class="nav-right">
+                        <button class="nav-btn prev-btn" id="prevBtn">← Previous</button>
+                        <button class="nav-btn next-btn" id="nextBtn">Next →</button>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Result Screen -->
+    <div id="resultScreen" class="result-screen">
+        <div class="result-container">
+            <div class="result-header">
+                <div class="result-icon">🏆</div>
+                <h1>Exam Completed!</h1>
+                <p class="result-name" id="resultName"></p>
+            </div>
+
+            <div class="score-section">
+                <div class="main-score">
+                    <div class="score-circle">
+                        <span class="score-number" id="finalScore">0</span>
+                        <span class="score-total">/100</span>
+                    </div>
+                    <span class="score-label">Total Score</span>
+                </div>
+
+                <div class="score-breakdown">
+                    <div class="breakdown-item correct">
+                        <span class="breakdown-number" id="correctCount">0</span>
+                        <span class="breakdown-label">Correct</span>
+                    </div>
+                    <div class="breakdown-item incorrect">
+                        <span class="breakdown-number" id="incorrectCount">0</span>
+                        <span class="breakdown-label">Incorrect</span>
+                    </div>
+                    <div class="breakdown-item unanswered">
+                        <span class="breakdown-number" id="unansweredCount">0</span>
+                        <span class="breakdown-label">Unanswered</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="result-message" id="resultMessage"></div>
+
+            <div class="section-scores">
+                <h3>Section-wise Performance</h3>
+                <div class="section-grid">
+                    <div class="section-item">
+                        <span class="section-name">Section 1 (Q1-25)</span>
+                        <span class="section-score" id="section1Score">0/25</span>
+                    </div>
+                    <div class="section-item">
+                        <span class="section-name">Section 2 (Q26-50)</span>
+                        <span class="section-score" id="section2Score">0/25</span>
+                    </div>
+                    <div class="section-item">
+                        <span class="section-name">Section 3 (Q51-75)</span>
+                        <span class="section-score" id="section3Score">0/25</span>
+                    </div>
+                    <div class="section-item">
+                        <span class="section-name">Section 4 (Q76-100)</span>
+                        <span class="section-score" id="section4Score">0/25</span>
+                    </div>
+                </div>
+            </div>
+
+            <button class="restart-btn" id="restartBtn">🔄 Restart Exam</button>
+        </div>
+    </div>
+
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
