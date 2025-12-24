@@ -13,13 +13,15 @@ class ExamApp {
         this.markedForReview = new Set();
         this.timer = null;
         this.timeLeft = 60 * 60; // 60 minutes in seconds
-        this.loadQuestions();
+        this.language = 'en'; // Default language
+        
         this.initializeElements();
         this.bindEvents();
     }
 
     loadQuestions() {
-        // Flatten all questions from pages
+        // Flatten all questions from pages based on language
+        const langKey = this.language === 'bn' ? 'bn' : 'en';
         this.questions = [
             ...examQuestions.page1,
             ...examQuestions.page2,
@@ -29,6 +31,11 @@ class ExamApp {
     }
 
     initializeElements() {
+        // Language screen
+        this.languageScreen = document.getElementById('languageScreen');
+        this.selectEnglishBtn = document.getElementById('selectEnglish');
+        this.selectBengaliBtn = document.getElementById('selectBengali');
+        
         // Screens
         this.startScreen = document.getElementById('startScreen');
         this.examScreen = document.getElementById('examScreen');
@@ -72,6 +79,10 @@ class ExamApp {
     }
 
     bindEvents() {
+        // Language selection
+        this.selectEnglishBtn.addEventListener('click', () => this.selectLanguage('en'));
+        this.selectBengaliBtn.addEventListener('click', () => this.selectLanguage('bn'));
+        
         this.startBtn.addEventListener('click', () => this.startExam());
         this.candidateNameInput.addEventListener('keypress', (e) => {
             if (e.key === 'Enter') this.startExam();
@@ -91,6 +102,85 @@ class ExamApp {
         document.getElementById('backToSection1').addEventListener('click', () => this.goToSection(1));
         document.getElementById('backToSection2').addEventListener('click', () => this.goToSection(2));
         document.getElementById('backToSection3').addEventListener('click', () => this.goToSection(3));
+    }
+
+    selectLanguage(lang) {
+        this.language = lang;
+        this.loadQuestions();
+        this.applyLanguage();
+        this.showScreen('start');
+    }
+
+    applyLanguage() {
+        const lang = this.language;
+        const dataAttr = lang === 'bn' ? 'data-bn' : 'data-en';
+        
+        // Update all elements with data-en and data-bn attributes
+        document.querySelectorAll('[data-en][data-bn]').forEach(el => {
+            const text = el.getAttribute(dataAttr);
+            if (text) {
+                el.textContent = text;
+            }
+        });
+        
+        // Update specific elements
+        const translations = {
+            en: {
+                examTitle: 'MOCK EXAM STAFF NURSE',
+                examSubtitle: 'Grade–II | Online MCQ Examination',
+                syllabusTitle: 'Syllabus Coverage',
+                nameLabel: 'Enter Your Name',
+                namePlaceholder: 'Your Full Name',
+                dobLabel: 'Date of Birth',
+                logoText: 'Staff Nurse Exam',
+                resultTitle: 'Exam Completed!',
+                questionPrefix: 'Question',
+                of: 'of',
+                syllabus: ['Anatomy & Physiology', 'Medical–Surgical Nursing', 'Child Health Nursing', 'Mental Health Nursing', 'Pharmacology', 'Community Health Nursing', 'Midwifery', 'General Knowledge', 'English', 'Aptitude'],
+                section1Title: 'Section 1: Core Nursing (Q1-25)',
+                section2Title: 'Section 2: General Knowledge (Q26-50)',
+                section3Title: 'Section 3: English, Pharma, Community, Midwifery (Q51-75)',
+                section4Title: 'Section 4: Aptitude (Q76-100)'
+            },
+            bn: {
+                examTitle: 'মক পরীক্ষা স্টাফ নার্স',
+                examSubtitle: 'গ্রেড-২ | অনলাইন MCQ পরীক্ষা',
+                syllabusTitle: 'সিলেবাস কভারেজ',
+                nameLabel: 'আপনার নাম লিখুন',
+                namePlaceholder: 'আপনার পুরো নাম',
+                dobLabel: 'জন্ম তারিখ',
+                logoText: 'স্টাফ নার্স পরীক্ষা',
+                resultTitle: 'পরীক্ষা সম্পন্ন!',
+                questionPrefix: 'প্রশ্ন',
+                of: 'এর মধ্যে',
+                syllabus: ['শারীরস্থান ও শরীরবিদ্যা', 'মেডিকেল-সার্জিক্যাল নার্সিং', 'শিশু স্বাস্থ্য নার্সিং', 'মানসিক স্বাস্থ্য নার্সিং', 'ফার্মাকোলজি', 'কমিউনিটি হেলথ নার্সিং', 'মিডওয়াইফারি', 'সাধারণ জ্ঞান', 'ইংরেজি', 'অ্যাপটিটিউড'],
+                section1Title: 'বিভাগ ১: কোর নার্সিং (প্র ১-২৫)',
+                section2Title: 'বিভাগ ২: সাধারণ জ্ঞান (প্র ২৬-৫০)',
+                section3Title: 'বিভাগ ৩: ইংরেজি, ফার্মা, কমিউনিটি, মিডওয়াইফারি (প্র ৫১-৭৫)',
+                section4Title: 'বিভাগ ৪: অ্যাপটিটিউড (প্র ৭৬-১০০)'
+            }
+        };
+        
+        const t = translations[lang];
+        
+        document.getElementById('examTitle').textContent = t.examTitle;
+        document.getElementById('examSubtitle').textContent = t.examSubtitle;
+        document.getElementById('syllabusTitle').textContent = t.syllabusTitle;
+        document.getElementById('nameLabel').textContent = t.nameLabel;
+        document.getElementById('candidateName').placeholder = t.namePlaceholder;
+        document.getElementById('dobLabel').textContent = t.dobLabel;
+        document.getElementById('logoText').textContent = t.logoText;
+        document.getElementById('resultTitle').textContent = t.resultTitle;
+        
+        // Update syllabus grid
+        const syllabusGrid = document.getElementById('syllabusGrid');
+        syllabusGrid.innerHTML = t.syllabus.map(item => `<span>${item}</span>`).join('');
+        
+        // Update palette section titles
+        document.querySelector('#paletteSection1 .palette-title').textContent = t.section1Title;
+        document.querySelector('#paletteSection2 .palette-title').textContent = t.section2Title;
+        document.querySelector('#paletteSection3 .palette-title').textContent = t.section3Title;
+        document.querySelector('#paletteSection4 .palette-title').textContent = t.section4Title;
     }
 
     startExam() {
@@ -119,11 +209,15 @@ class ExamApp {
     }
 
     showScreen(screen) {
+        this.languageScreen.classList.remove('active');
         this.startScreen.classList.remove('active');
         this.examScreen.classList.remove('active');
         this.resultScreen.classList.remove('active');
 
         switch(screen) {
+            case 'language':
+                this.languageScreen.classList.add('active');
+                break;
             case 'start':
                 this.startScreen.classList.add('active');
                 break;
@@ -221,14 +315,26 @@ class ExamApp {
         const question = this.questions[index];
         const section = Math.floor(index / 25) + 1;
         
+        // Get question text based on language
+        const questionText = this.language === 'bn' && question.question_bn 
+            ? question.question_bn 
+            : question.question;
+        const options = this.language === 'bn' && question.options_bn 
+            ? question.options_bn 
+            : question.options;
+        
         this.currentSectionDisplay.textContent = section;
         this.sectionInfo.textContent = sectionNames[section] || '';
-        this.questionTitle.textContent = `Question ${index + 1} of ${this.totalQuestions}`;
-        this.questionText.textContent = question.question;
+        
+        // Question title in selected language
+        const questionPrefix = this.language === 'bn' ? 'প্রশ্ন' : 'Question';
+        const ofText = this.language === 'bn' ? 'এর মধ্যে' : 'of';
+        this.questionTitle.textContent = `${questionPrefix} ${index + 1} ${ofText} ${this.totalQuestions}`;
+        this.questionText.textContent = questionText;
         
         // Render options
         this.optionsContainer.innerHTML = '';
-        question.options.forEach((opt, i) => {
+        options.forEach((opt, i) => {
             const optionDiv = document.createElement('div');
             optionDiv.className = 'option-item';
             optionDiv.dataset.index = i;
@@ -255,14 +361,19 @@ class ExamApp {
         
         this.prevBtn.disabled = index === sectionStart && this.currentSection === 1;
         
+        // Navigation button text based on language
+        const nextText = this.language === 'bn' ? 'পরবর্তী →' : 'Next →';
+        const nextSectionText = this.language === 'bn' ? 'পরবর্তী বিভাগ →' : 'Next Section →';
+        const submitText = this.language === 'bn' ? 'পরীক্ষা জমা দিন' : 'Submit Exam';
+        
         if (index === sectionEnd) {
             if (this.currentSection === 4) {
-                this.nextBtn.textContent = 'Submit Exam';
+                this.nextBtn.textContent = submitText;
             } else {
-                this.nextBtn.textContent = 'Next Section →';
+                this.nextBtn.textContent = nextSectionText;
             }
         } else {
-            this.nextBtn.textContent = 'Next →';
+            this.nextBtn.textContent = nextText;
         }
         
         // Update review button
@@ -418,21 +529,30 @@ class ExamApp {
         document.getElementById('section3Score').textContent = `${sectionScores[2]}/25`;
         document.getElementById('section4Score').textContent = `${sectionScores[3]}/25`;
         
-        // Result message
+        // Result message based on language
         let message = '';
-        if (correct >= 80) {
-            message = '🌟 Excellent! Outstanding performance!';
-            this.resultMessage.className = 'result-message';
-        } else if (correct >= 60) {
-            message = '👍 Good job! Keep it up!';
-            this.resultMessage.className = 'result-message';
-        } else if (correct >= 40) {
-            message = '📚 Average performance. Room for improvement.';
-            this.resultMessage.className = 'result-message';
+        if (this.language === 'bn') {
+            if (correct >= 80) {
+                message = '🌟 চমৎকার! অসাধারণ পারফরম্যান্স!';
+            } else if (correct >= 60) {
+                message = '👍 ভালো করেছেন! চালিয়ে যান!';
+            } else if (correct >= 40) {
+                message = '📚 গড় পারফরম্যান্স। উন্নতির সুযোগ আছে।';
+            } else {
+                message = '💪 উন্নতি প্রয়োজন। আরও পড়াশোনা করুন!';
+            }
         } else {
-            message = '💪 Needs improvement. Study harder!';
-            this.resultMessage.className = 'result-message poor';
+            if (correct >= 80) {
+                message = '🌟 Excellent! Outstanding performance!';
+            } else if (correct >= 60) {
+                message = '👍 Good job! Keep it up!';
+            } else if (correct >= 40) {
+                message = '📚 Average performance. Room for improvement.';
+            } else {
+                message = '💪 Needs improvement. Study harder!';
+            }
         }
+        this.resultMessage.className = correct < 40 ? 'result-message poor' : 'result-message';
         this.resultMessage.textContent = message;
     }
 
@@ -446,6 +566,7 @@ class ExamApp {
         this.visited = new Set();
         this.markedForReview = new Set();
         this.timeLeft = 60 * 60;
+        this.language = 'en';
         
         if (this.timer) {
             clearInterval(this.timer);
@@ -465,7 +586,7 @@ class ExamApp {
             if (btn) btn.style.display = 'none';
         }
         
-        this.showScreen('start');
+        this.showScreen('language');
     }
 }
 

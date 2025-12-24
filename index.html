@@ -7,37 +7,62 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Language Selection Screen -->
+    <div id="languageScreen" class="language-screen active">
+        <div class="language-container">
+            <div class="language-header">
+                <div class="exam-icon">👩‍⚕️</div>
+                <h1>Select Your Language</h1>
+                <h2>আপনার ভাষা নির্বাচন করুন</h2>
+            </div>
+            
+            <div class="language-options">
+                <button class="language-btn" id="selectEnglish">
+                    <span class="lang-icon">🇬🇧</span>
+                    <span class="lang-name">English</span>
+                    <span class="lang-desc">Continue in English</span>
+                </button>
+                
+                <button class="language-btn" id="selectBengali">
+                    <span class="lang-icon">🇮🇳</span>
+                    <span class="lang-name">বাংলা</span>
+                    <span class="lang-desc">বাংলায় চালিয়ে যান</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
     <!-- Start Screen -->
-    <div id="startScreen" class="start-screen active">
+    <div id="startScreen" class="start-screen">
         <div class="start-container">
             <div class="start-header">
                 <div class="exam-icon">👩‍⚕️</div>
-                <h1>MOCK EXAM STAFF NURSE</h1>
-                <p class="exam-subtitle">Grade–II | Online MCQ Examination</p>
+                <h1 id="examTitle">MOCK EXAM STAFF NURSE</h1>
+                <p class="exam-subtitle" id="examSubtitle">Grade–II | Online MCQ Examination</p>
             </div>
             
             <div class="exam-details">
                 <div class="detail-box">
                     <span class="detail-number">100</span>
-                    <span class="detail-label">Total Marks</span>
+                    <span class="detail-label" data-en="Total Marks" data-bn="মোট নম্বর">Total Marks</span>
                 </div>
                 <div class="detail-box">
                     <span class="detail-number">100</span>
-                    <span class="detail-label">Questions</span>
+                    <span class="detail-label" data-en="Questions" data-bn="প্রশ্ন">Questions</span>
                 </div>
                 <div class="detail-box">
                     <span class="detail-number">4</span>
-                    <span class="detail-label">Sections</span>
+                    <span class="detail-label" data-en="Sections" data-bn="বিভাগ">Sections</span>
                 </div>
                 <div class="detail-box">
                     <span class="detail-number">60</span>
-                    <span class="detail-label">Minutes</span>
+                    <span class="detail-label" data-en="Minutes" data-bn="মিনিট">Minutes</span>
                 </div>
             </div>
 
             <div class="syllabus-section">
-                <h3>Syllabus Coverage</h3>
-                <div class="syllabus-grid">
+                <h3 id="syllabusTitle">Syllabus Coverage</h3>
+                <div class="syllabus-grid" id="syllabusGrid">
                     <span>Anatomy & Physiology</span>
                     <span>Medical–Surgical Nursing</span>
                     <span>Child Health Nursing</span>
@@ -52,13 +77,13 @@
             </div>
 
             <div class="name-section">
-                <label for="candidateName">Enter Your Name</label>
+                <label for="candidateName" id="nameLabel">Enter Your Name</label>
                 <input type="text" id="candidateName" placeholder="Your Full Name" required>
                 
-                <label for="candidateDOB">Date of Birth</label>
+                <label for="candidateDOB" id="dobLabel">Date of Birth</label>
                 <input type="date" id="candidateDOB" required>
                 
-                <button id="startBtn" class="start-btn">Start Exam →</button>
+                <button id="startBtn" class="start-btn" data-en="Start Exam →" data-bn="পরীক্ষা শুরু করুন →">Start Exam →</button>
             </div>
         </div>
     </div>
@@ -70,33 +95,33 @@
             <div class="header-left">
                 <div class="logo-section">
                     <span class="logo-icon">👩‍⚕️</span>
-                    <span class="logo-text">Staff Nurse Exam</span>
+                    <span class="logo-text" id="logoText">Staff Nurse Exam</span>
                 </div>
             </div>
             <div class="header-stats">
                 <div class="stat-box visited">
-                    <span class="stat-label">Visited</span>
+                    <span class="stat-label" data-en="Visited" data-bn="পরিদর্শিত">Visited</span>
                     <span class="stat-value" id="visitedCount">0</span>
                 </div>
                 <div class="stat-box not-visited">
-                    <span class="stat-label">Not Visited</span>
+                    <span class="stat-label" data-en="Not Visited" data-bn="অপরিদর্শিত">Not Visited</span>
                     <span class="stat-value" id="notVisitedCount">100</span>
                 </div>
                 <div class="stat-box answered">
-                    <span class="stat-label">Answered</span>
+                    <span class="stat-label" data-en="Answered" data-bn="উত্তর দেওয়া">Answered</span>
                     <span class="stat-value" id="answeredCount">0</span>
                 </div>
                 <div class="stat-box review">
-                    <span class="stat-label">Review</span>
+                    <span class="stat-label" data-en="Review" data-bn="পর্যালোচনা">Review</span>
                     <span class="stat-value" id="reviewCount">0</span>
                 </div>
             </div>
             <div class="header-right">
                 <div class="timer-section">
-                    <span class="timer-label">Time Left</span>
+                    <span class="timer-label" data-en="Time Left" data-bn="বাকি সময়">Time Left</span>
                     <span class="timer-value" id="timerDisplay">60:00</span>
                 </div>
-                <button class="submit-btn" id="submitExamBtn">Submit Exam</button>
+                <button class="submit-btn" id="submitExamBtn" data-en="Submit Exam" data-bn="পরীক্ষা জমা দিন">Submit Exam</button>
             </div>
         </header>
 
@@ -194,12 +219,12 @@
 
                 <div class="navigation-bar">
                     <div class="nav-left">
-                        <button class="nav-btn" id="markReviewBtn">📌 Mark for Review</button>
-                        <button class="nav-btn" id="clearResponseBtn">Clear Response</button>
+                        <button class="nav-btn" id="markReviewBtn" data-en="📌 Mark for Review" data-bn="📌 পর্যালোচনার জন্য চিহ্নিত করুন">📌 Mark for Review</button>
+                        <button class="nav-btn" id="clearResponseBtn" data-en="Clear Response" data-bn="উত্তর মুছুন">Clear Response</button>
                     </div>
                     <div class="nav-right">
-                        <button class="nav-btn prev-btn" id="prevBtn">← Previous</button>
-                        <button class="nav-btn next-btn" id="nextBtn">Next →</button>
+                        <button class="nav-btn prev-btn" id="prevBtn" data-en="← Previous" data-bn="← পূর্ববর্তী">← Previous</button>
+                        <button class="nav-btn next-btn" id="nextBtn" data-en="Next →" data-bn="পরবর্তী →">Next →</button>
                     </div>
                 </div>
             </main>
@@ -211,7 +236,7 @@
         <div class="result-container">
             <div class="result-header">
                 <div class="result-icon">🏆</div>
-                <h1>Exam Completed!</h1>
+                <h1 id="resultTitle">Exam Completed!</h1>
                 <p class="result-name" id="resultName"></p>
             </div>
 
@@ -221,21 +246,21 @@
                         <span class="score-number" id="finalScore">0</span>
                         <span class="score-total">/100</span>
                     </div>
-                    <span class="score-label">Total Score</span>
+                    <span class="score-label" id="scoreLabelText" data-en="Total Score" data-bn="মোট স্কোর">Total Score</span>
                 </div>
 
                 <div class="score-breakdown">
                     <div class="breakdown-item correct">
                         <span class="breakdown-number" id="correctCount">0</span>
-                        <span class="breakdown-label">Correct</span>
+                        <span class="breakdown-label" data-en="Correct" data-bn="সঠিক">Correct</span>
                     </div>
                     <div class="breakdown-item incorrect">
                         <span class="breakdown-number" id="incorrectCount">0</span>
-                        <span class="breakdown-label">Incorrect</span>
+                        <span class="breakdown-label" data-en="Incorrect" data-bn="ভুল">Incorrect</span>
                     </div>
                     <div class="breakdown-item unanswered">
                         <span class="breakdown-number" id="unansweredCount">0</span>
-                        <span class="breakdown-label">Unanswered</span>
+                        <span class="breakdown-label" data-en="Unanswered" data-bn="অনুত্তরিত">Unanswered</span>
                     </div>
                 </div>
             </div>
@@ -243,28 +268,28 @@
             <div class="result-message" id="resultMessage"></div>
 
             <div class="section-scores">
-                <h3>Section-wise Performance</h3>
+                <h3 id="sectionPerformanceTitle" data-en="Section-wise Performance" data-bn="বিভাগ অনুযায়ী পারফরম্যান্স">Section-wise Performance</h3>
                 <div class="section-grid">
                     <div class="section-item">
-                        <span class="section-name">Section 1 (Q1-25)</span>
+                        <span class="section-name" data-en="Section 1 (Q1-25)" data-bn="বিভাগ ১ (প্র ১-২৫)">Section 1 (Q1-25)</span>
                         <span class="section-score" id="section1Score">0/25</span>
                     </div>
                     <div class="section-item">
-                        <span class="section-name">Section 2 (Q26-50)</span>
+                        <span class="section-name" data-en="Section 2 (Q26-50)" data-bn="বিভাগ ২ (প্র ২৬-৫০)">Section 2 (Q26-50)</span>
                         <span class="section-score" id="section2Score">0/25</span>
                     </div>
                     <div class="section-item">
-                        <span class="section-name">Section 3 (Q51-75)</span>
+                        <span class="section-name" data-en="Section 3 (Q51-75)" data-bn="বিভাগ ৩ (প্র ৫১-৭৫)">Section 3 (Q51-75)</span>
                         <span class="section-score" id="section3Score">0/25</span>
                     </div>
                     <div class="section-item">
-                        <span class="section-name">Section 4 (Q76-100)</span>
+                        <span class="section-name" data-en="Section 4 (Q76-100)" data-bn="বিভাগ ৪ (প্র ৭৬-১০০)">Section 4 (Q76-100)</span>
                         <span class="section-score" id="section4Score">0/25</span>
                     </div>
                 </div>
             </div>
 
-            <button class="restart-btn" id="restartBtn">🔄 Restart Exam</button>
+            <button class="restart-btn" id="restartBtn" data-en="🔄 Restart Exam" data-bn="🔄 পুনরায় পরীক্ষা দিন">🔄 Restart Exam</button>
         </div>
     </div>
 
