@@ -161,6 +161,13 @@ class ExamApp {
         this.language = lang;
         this.homeLangEn.classList.toggle('active', lang === 'en');
         this.homeLangBn.classList.toggle('active', lang === 'bn');
+        
+        // Update all translatable elements on home screen
+        const homeScreen = document.getElementById('homeScreen');
+        const translatableElements = homeScreen.querySelectorAll('[data-en][data-bn]');
+        translatableElements.forEach(el => {
+            el.textContent = lang === 'en' ? el.dataset.en : el.dataset.bn;
+        });
     }
 
     setQBLanguage(lang) {
