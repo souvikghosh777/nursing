@@ -7,8 +7,105 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Home Screen - Choose Mode -->
+    <div id="homeScreen" class="home-screen active">
+        <div class="exam-center-header">Souvik Exam Center</div>
+        <div class="home-container">
+            <div class="home-header">
+                <div class="exam-icon">👩‍⚕️</div>
+                <h1>Staff Nurse Grade-II</h1>
+                <p class="home-subtitle">Online MCQ Platform</p>
+            </div>
+            
+            <div class="mode-selection">
+                <div class="mode-card" id="questionBankMode">
+                    <div class="mode-icon">📚</div>
+                    <h2>Question Bank</h2>
+                    <p class="mode-desc">Practice with 500+ MCQs</p>
+                    <ul class="mode-features">
+                        <li>✓ Browse all questions</li>
+                        <li>✓ Section-wise practice</li>
+                        <li>✓ See answers instantly</li>
+                        <li>✓ No time limit</li>
+                    </ul>
+                    <button class="mode-btn">Start Practice →</button>
+                </div>
+                
+                <div class="mode-card" id="examMode">
+                    <div class="mode-icon">📝</div>
+                    <h2>Mock Exam</h2>
+                    <p class="mode-desc">Test with 100 random MCQs</p>
+                    <ul class="mode-features">
+                        <li>✓ Random 100 questions</li>
+                        <li>✓ 60 minutes timer</li>
+                        <li>✓ Real exam experience</li>
+                        <li>✓ Detailed results</li>
+                    </ul>
+                    <button class="mode-btn exam-btn">Start Exam →</button>
+                </div>
+            </div>
+            
+            <div class="language-toggle">
+                <span>Language:</span>
+                <button class="lang-toggle-btn active" id="homeLangEn">English</button>
+                <button class="lang-toggle-btn" id="homeLangBn">বাংলা</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Question Bank Screen -->
+    <div id="questionBankScreen" class="question-bank-screen">
+        <header class="qb-header">
+            <div class="qb-header-left">
+                <button class="back-home-btn" id="backFromQB">← Back</button>
+                <span class="qb-title">📚 Question Bank</span>
+            </div>
+            <div class="qb-header-right">
+                <div class="qb-lang-toggle">
+                    <button class="qb-lang-btn active" id="qbLangEn">English</button>
+                    <button class="qb-lang-btn" id="qbLangBn">বাংলা</button>
+                </div>
+                <span class="qb-count" id="qbTotalCount">500+ Questions</span>
+            </div>
+        </header>
+        
+        <div class="qb-content">
+            <aside class="qb-sidebar">
+                <h3>Sections</h3>
+                <div class="qb-section-tabs">
+                    <button class="qb-tab active" data-section="1">
+                        <span class="tab-icon">🏥</span>
+                        <span class="tab-name">Core Nursing</span>
+                        <span class="tab-count" id="section1Count">125</span>
+                    </button>
+                    <button class="qb-tab" data-section="2">
+                        <span class="tab-icon">🌍</span>
+                        <span class="tab-name">General Knowledge</span>
+                        <span class="tab-count" id="section2Count">125</span>
+                    </button>
+                    <button class="qb-tab" data-section="3">
+                        <span class="tab-icon">💊</span>
+                        <span class="tab-name">English/Pharma/Community</span>
+                        <span class="tab-count" id="section3Count">125</span>
+                    </button>
+                    <button class="qb-tab" data-section="4">
+                        <span class="tab-icon">🧮</span>
+                        <span class="tab-name">Aptitude</span>
+                        <span class="tab-count" id="section4Count">125</span>
+                    </button>
+                </div>
+            </aside>
+            
+            <main class="qb-main">
+                <div class="qb-question-list" id="qbQuestionList">
+                    <!-- Questions will be loaded here -->
+                </div>
+            </main>
+        </div>
+    </div>
+
     <!-- Language Selection Screen -->
-    <div id="languageScreen" class="language-screen active">
+    <div id="languageScreen" class="language-screen">
         <div class="exam-center-header">Souvik Exam Center</div>
         <div class="language-container">
             <div class="language-header">

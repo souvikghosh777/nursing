@@ -14,6 +14,9 @@ class ExamApp {
         this.timer = null;
         this.timeLeft = 60 * 60; // 60 minutes in seconds
         this.language = 'en'; // Default language
+        this.mode = 'home'; // 'home', 'questionBank', 'exam'
+        this.qbCurrentSection = 1;
+        this.qbAnswers = {}; // Track answers in question bank mode
         
         this.initializeElements();
         this.bindEvents();
@@ -37,10 +40,10 @@ class ExamApp {
         const shuffledPage4 = this.shuffleArray([...examQuestions.page4]);
         
         this.questions = [
-            ...shuffledPage1,
-            ...shuffledPage2,
-            ...shuffledPage3,
-            ...shuffledPage4
+            ...shuffledPage1.slice(0, 25),
+            ...shuffledPage2.slice(0, 25),
+            ...shuffledPage3.slice(0, 25),
+            ...shuffledPage4.slice(0, 25)
         ];
         
         // Update question IDs to reflect new order (1-100)
@@ -50,6 +53,20 @@ class ExamApp {
     }
 
     initializeElements() {
+        // Home screen
+        this.homeScreen = document.getElementById('homeScreen');
+        this.questionBankMode = document.getElementById('questionBankMode');
+        this.examModeBtn = document.getElementById('examMode');
+        this.homeLangEn = document.getElementById('homeLangEn');
+        this.homeLangBn = document.getElementById('homeLangBn');
+        
+        // Question Bank screen
+        this.questionBankScreen = document.getElementById('questionBankScreen');
+        this.backFromQB = document.getElementById('backFromQB');
+        this.qbQuestionList = document.getElementById('qbQuestionList');
+        this.qbLangEn = document.getElementById('qbLangEn');
+        this.qbLangBn = document.getElementById('qbLangBn');
+        
         // Language screen
         this.languageScreen = document.getElementById('languageScreen');
         this.selectEnglishBtn = document.getElementById('selectEnglish');
@@ -98,6 +115,23 @@ class ExamApp {
     }
 
     bindEvents() {
+        // Home screen events
+        this.questionBankMode.addEventListener('click', () => this.openQuestionBank());
+        this.examModeBtn.addEventListener('click', () => this.openExamMode());
+        this.homeLangEn.addEventListener('click', () => this.setHomeLanguage('en'));
+        this.homeLangBn.addEventListener('click', () => this.setHomeLanguage('bn'));
+        
+        // Question Bank events
+        this.backFromQB.addEventListener('click', () => this.showScreen('home'));
+        this.qbLangEn.addEventListener('click', () => this.setQBLanguage('en'));
+        this.qbLangBn.addEventListener('click', () => this.setQBLanguage('bn'));
+        document.querySelectorAll('.qb-tab').forEach(tab => {
+            tab.addEventListener('click', (e) => {
+                const section = parseInt(e.currentTarget.dataset.section);
+                this.loadQBSection(section);
+            });
+        });
+        
         // Language selection
         this.selectEnglishBtn.addEventListener('click', () => this.selectLanguage('en'));
         this.selectBengaliBtn.addEventListener('click', () => this.selectLanguage('bn'));
@@ -121,6 +155,120 @@ class ExamApp {
         document.getElementById('backToSection1').addEventListener('click', () => this.goToSection(1));
         document.getElementById('backToSection2').addEventListener('click', () => this.goToSection(2));
         document.getElementById('backToSection3').addEventListener('click', () => this.goToSection(3));
+    }
+
+    setHomeLanguage(lang) {
+        this.language = lang;
+        this.homeLangEn.classList.toggle('active', lang === 'en');
+        this.homeLangBn.classList.toggle('active', lang === 'bn');
+    }
+
+    setQBLanguage(lang) {
+        this.language = lang;
+        this.qbLangEn.classList.toggle('active', lang === 'en');
+        this.qbLangBn.classList.toggle('active', lang === 'bn');
+        // Reload current section with new language
+        this.qbAnswers = {}; // Reset answers when changing language
+        this.loadQBSection(this.qbCurrentSection);
+    }
+
+    openQuestionBank() {
+        this.mode = 'questionBank';
+        this.qbAnswers = {};
+        // Sync language toggle buttons
+        this.qbLangEn.classList.toggle('active', this.language === 'en');
+        this.qbLangBn.classList.toggle('active', this.language === 'bn');
+        this.showScreen('questionBank');
+        this.loadQBSection(1);
+        this.updateQBCounts();
+    }
+
+    updateQBCounts() {
+        // Update section counts
+        document.getElementById('section1Count').textContent = examQuestions.page1.length;
+        document.getElementById('section2Count').textContent = examQuestions.page2.length;
+        document.getElementById('section3Count').textContent = examQuestions.page3.length;
+        document.getElementById('section4Count').textContent = examQuestions.page4.length;
+        
+        const total = examQuestions.page1.length + examQuestions.page2.length + 
+                      examQuestions.page3.length + examQuestions.page4.length;
+        document.getElementById('qbTotalCount').textContent = `${total} Questions`;
+    }
+
+    loadQBSection(sectionNum) {
+        this.qbCurrentSection = sectionNum;
+        
+        // Update active tab
+        document.querySelectorAll('.qb-tab').forEach(tab => {
+            tab.classList.toggle('active', parseInt(tab.dataset.section) === sectionNum);
+        });
+        
+        // Get questions for this section
+        const sectionKey = `page${sectionNum}`;
+        const questions = examQuestions[sectionKey] || [];
+        
+        // Render questions
+        this.qbQuestionList.innerHTML = '';
+        
+        questions.forEach((q, index) => {
+            const questionText = this.language === 'bn' && q.question_bn ? q.question_bn : q.question;
+            const options = this.language === 'bn' && q.options_bn ? q.options_bn : q.options;
+            const qKey = `${sectionNum}-${index}`;
+            
+            const card = document.createElement('div');
+            card.className = 'qb-question-card';
+            card.innerHTML = `
+                <span class="qb-question-number">Q${index + 1}</span>
+                <p class="qb-question-text">${questionText}</p>
+                <div class="qb-options" data-qkey="${qKey}" data-correct="${q.correct}">
+                    ${options.map((opt, i) => `
+                        <div class="qb-option" data-index="${i}">
+                            <span class="qb-option-letter">${String.fromCharCode(65 + i)}</span>
+                            <span class="qb-option-text">${opt}</span>
+                        </div>
+                    `).join('')}
+                </div>
+                <div class="qb-answer-reveal" id="answer-${qKey}">
+                    ✓ Correct Answer: ${String.fromCharCode(65 + q.correct)}
+                </div>
+            `;
+            
+            this.qbQuestionList.appendChild(card);
+            
+            // Add click events for options
+            card.querySelectorAll('.qb-option').forEach(option => {
+                option.addEventListener('click', (e) => {
+                    this.selectQBOption(qKey, parseInt(option.dataset.index), q.correct);
+                });
+            });
+        });
+    }
+
+    selectQBOption(qKey, selectedIndex, correctIndex) {
+        const optionsContainer = document.querySelector(`.qb-options[data-qkey="${qKey}"]`);
+        const options = optionsContainer.querySelectorAll('.qb-option');
+        const answerReveal = document.getElementById(`answer-${qKey}`);
+        
+        // If already answered, don't allow changes
+        if (this.qbAnswers[qKey] !== undefined) return;
+        
+        this.qbAnswers[qKey] = selectedIndex;
+        
+        // Show result
+        options.forEach((opt, i) => {
+            if (i === correctIndex) {
+                opt.classList.add('correct');
+            } else if (i === selectedIndex && selectedIndex !== correctIndex) {
+                opt.classList.add('incorrect');
+            }
+        });
+        
+        answerReveal.classList.add('show');
+    }
+
+    openExamMode() {
+        this.mode = 'exam';
+        this.showScreen('language');
     }
 
     selectLanguage(lang) {
@@ -228,12 +376,20 @@ class ExamApp {
     }
 
     showScreen(screen) {
+        this.homeScreen.classList.remove('active');
+        this.questionBankScreen.classList.remove('active');
         this.languageScreen.classList.remove('active');
         this.startScreen.classList.remove('active');
         this.examScreen.classList.remove('active');
         this.resultScreen.classList.remove('active');
 
         switch(screen) {
+            case 'home':
+                this.homeScreen.classList.add('active');
+                break;
+            case 'questionBank':
+                this.questionBankScreen.classList.add('active');
+                break;
             case 'language':
                 this.languageScreen.classList.add('active');
                 break;
@@ -585,7 +741,7 @@ class ExamApp {
         this.visited = new Set();
         this.markedForReview = new Set();
         this.timeLeft = 60 * 60;
-        this.language = 'en';
+        this.mode = 'home';
         
         if (this.timer) {
             clearInterval(this.timer);
@@ -605,7 +761,7 @@ class ExamApp {
             if (btn) btn.style.display = 'none';
         }
         
-        this.showScreen('language');
+        this.showScreen('home');
     }
 }
 
