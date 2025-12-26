@@ -193,12 +193,16 @@ class ExamApp {
     }
 
     updateQBCounts() {
-        // Update section counts
-        document.getElementById('section1Count').textContent = examQuestions.page1.length;
-        document.getElementById('section2Count').textContent = examQuestions.page2.length;
-        document.getElementById('section3Count').textContent = examQuestions.page3.length;
-        document.getElementById('section4Count').textContent = examQuestions.page4.length;
+        // Update section counts dynamically
+        for (let i = 1; i <= 12; i++) {
+            const sectionKey = `section${i}`;
+            const countEl = document.getElementById(`section${i}Count`);
+            if (countEl && examQuestions[sectionKey]) {
+                countEl.textContent = examQuestions[sectionKey].length;
+            }
+        }
         
+        // Calculate and display total count
         const total = Object.keys(examQuestions).reduce((sum, key) => {
             return sum + (examQuestions[key]?.length || 0);
         }, 0);
