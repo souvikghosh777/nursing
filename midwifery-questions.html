@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midwifery & Gynecological Nursing - Practice Questions</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        .header h1 {
+            color: #667eea;
+            font-size: 2.2em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            color: #666;
+            font-size: 1.1em;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-item .label {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 5px;
+        }
+
+        .stat-item .value {
+            color: #667eea;
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+
+        .question-card {
+            background: white;
+            border: 2px solid #e0e0e0;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .question-card:hover {
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .question-number {
+            color: #667eea;
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+
+        .question-text {
+            color: #333;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .option {
+            padding: 15px 20px;
+            background: #f8f9fa;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+        }
+
+        .option:hover {
+            background: #e9ecef;
+            border-color: #667eea;
+        }
+
+        .option.selected {
+            background: #667eea;
+            color: white;
+            border-color: #667eea;
+        }
+
+        .option.correct {
+            background: #28a745;
+            color: white;
+            border-color: #28a745;
+        }
+
+        .option.incorrect {
+            background: #dc3545;
+            color: white;
+            border-color: #dc3545;
+        }
+
+        .option-label {
+            font-weight: bold;
+            margin-right: 10px;
+            min-width: 25px;
+        }
+
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            gap: 15px;
+        }
+
+        .btn {
+            padding: 12px 30px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background: #667eea;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-secondary {
+            background: #6c757d;
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background: #5a6268;
+        }
+
+        .btn-success {
+            background: #28a745;
+            color: white;
+        }
+
+        .btn-success:hover {
+            background: #218838;
+        }
+
+        .result {
+            margin-top: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+
+        .result.correct {
+            background: #d4edda;
+            color: #155724;
+            border: 2px solid #28a745;
+        }
+
+        .result.incorrect {
+            background: #f8d7da;
+            color: #721c24;
+            border: 2px solid #dc3545;
+        }
+
+        .explanation {
+            margin-top: 15px;
+            padding: 15px;
+            background: #e7f3ff;
+            border-left: 4px solid #667eea;
+            border-radius: 5px;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .nav-btn {
+            padding: 8px 12px;
+            border: 2px solid #667eea;
+            background: white;
+            color: #667eea;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .nav-btn:hover {
+            background: #667eea;
+            color: white;
+        }
+
+        .nav-btn.active {
+            background: #667eea;
+            color: white;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #667eea;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            .header h1 {
+                font-size: 1.6em;
+            }
+
+            .stats {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .controls {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">← Back to Main Exam</a>
+        
+        <div class="header">
+            <h1>🏥 Midwifery & Gynecological Nursing</h1>
+            <p>Practice Questions for Staff Nurse Grade-II Exam</p>
+        </div>
+
+        <div class="stats">
+            <div class="stat-item">
+                <div class="label">Total Questions</div>
+                <div class="value" id="totalQuestions">338</div>
+            </div>
+            <div class="stat-item">
+                <div class="label">Current Question</div>
+                <div class="value" id="currentQuestion">1</div>
+            </div>
+            <div class="stat-item">
+                <div class="label">Answered</div>
+                <div class="value" id="answeredCount">0</div>
+            </div>
+        </div>
+
+        <div id="questionContainer"></div>
+
+        <div class="controls">
+            <button class="btn btn-secondary" id="prevBtn" onclick="previousQuestion()">← Previous</button>
+            <button class="btn btn-primary" id="checkBtn" onclick="checkAnswer()">Check Answer</button>
+            <button class="btn btn-primary" id="nextBtn" onclick="nextQuestion()">Next →</button>
+            <button class="btn btn-success" id="randomBtn" onclick="randomQuestion()">🎲 Random</button>
+        </div>
+
+        <div id="resultContainer"></div>
+    </div>
+
+    <script src="midwifery-questions.js"></script>
+    <script>
+        // Check if questions loaded
+        if (typeof midwiferyQuestions === 'undefined') {
+            console.error('Failed to load midwifery-questions.js');
+            document.getElementById('questionContainer').innerHTML = 
+                '<div style="color: red; padding: 20px; text-align: center;">' +
+                '<h2>Error: Questions file not loaded!</h2>' +
+                '<p>Please make sure midwifery-questions.js is in the same folder.</p>' +
+                '</div>';
+        } else {
+            console.log('Questions loaded successfully:', midwiferyQuestions.length);
+        }
+
+        let currentQuestionIndex = 0;
+        let userAnswers = {};
+        let selectedOption = null;
+
+        function displayQuestion(index) {
+            const question = midwiferyQuestions[index];
+            const container = document.getElementById('questionContainer');
+            
+            const optionLabels = ['A', 'B', 'C', 'D'];
+            
+            let optionsHtml = '';
+            question.options.forEach((option, i) => {
+                const isSelected = userAnswers[question.id] === i;
+                optionsHtml += `
+                    <div class="option ${isSelected ? 'selected' : ''}" onclick="selectOption(${i})">
+                        <span class="option-label">${optionLabels[i]}.</span>
+                        <span>${option}</span>
+                    </div>
+                `;
+            });
+
+            container.innerHTML = `
+                <div class="question-card">
+                    <div class="question-number">Question ${index + 1} of ${midwiferyQuestions.length}</div>
+                    <div class="question-text">${question.question}</div>
+                    <div class="options">
+                        ${optionsHtml}
+                    </div>
+                </div>
+            `;
+
+            document.getElementById('currentQuestion').textContent = index + 1;
+            document.getElementById('answeredCount').textContent = Object.keys(userAnswers).length;
+            
+            selectedOption = userAnswers[question.id] !== undefined ? userAnswers[question.id] : null;
+            
+            // Update button states
+            document.getElementById('prevBtn').disabled = index === 0;
+            document.getElementById('checkBtn').style.display = userAnswers[question.id] === undefined ? 'block' : 'none';
+            
+            // Clear result
+            document.getElementById('resultContainer').innerHTML = '';
+        }
+
+        function selectOption(optionIndex) {
+            const question = midwiferyQuestions[currentQuestionIndex];
+            
+            // Don't allow selection if already answered
+            if (userAnswers[question.id] !== undefined) {
+                return;
+            }
+            
+            selectedOption = optionIndex;
+            
+            // Update UI
+            const options = document.querySelectorAll('.option');
+            options.forEach((opt, i) => {
+                opt.classList.remove('selected');
+                if (i === optionIndex) {
+                    opt.classList.add('selected');
+                }
+            });
+        }
+
+        function checkAnswer() {
+            const question = midwiferyQuestions[currentQuestionIndex];
+            
+            if (selectedOption === null) {
+                alert('Please select an answer first!');
+                return;
+            }
+            
+            userAnswers[question.id] = selectedOption;
+            
+            const isCorrect = selectedOption === question.correct;
+            const options = document.querySelectorAll('.option');
+            
+            options.forEach((opt, i) => {
+                opt.style.pointerEvents = 'none';
+                if (i === question.correct) {
+                    opt.classList.add('correct');
+                } else if (i === selectedOption && !isCorrect) {
+                    opt.classList.add('incorrect');
+                }
+            });
+            
+            const resultContainer = document.getElementById('resultContainer');
+            const optionLabels = ['A', 'B', 'C', 'D'];
+            
+            resultContainer.innerHTML = `
+                <div class="result ${isCorrect ? 'correct' : 'incorrect'}">
+                    ${isCorrect ? '✅ Correct!' : '❌ Incorrect!'}
+                </div>
+                <div class="explanation">
+                    <strong>Correct Answer:</strong> ${optionLabels[question.correct]}. ${question.options[question.correct]}
+                </div>
+            `;
+            
+            document.getElementById('checkBtn').style.display = 'none';
+            document.getElementById('answeredCount').textContent = Object.keys(userAnswers).length;
+        }
+
+        function nextQuestion() {
+            if (currentQuestionIndex < midwiferyQuestions.length - 1) {
+                currentQuestionIndex++;
+                displayQuestion(currentQuestionIndex);
+            }
+        }
+
+        function previousQuestion() {
+            if (currentQuestionIndex > 0) {
+                currentQuestionIndex--;
+                displayQuestion(currentQuestionIndex);
+            }
+        }
+
+        function randomQuestion() {
+            currentQuestionIndex = Math.floor(Math.random() * midwiferyQuestions.length);
+            displayQuestion(currentQuestionIndex);
+        }
+
+        // Initialize
+        if (typeof midwiferyQuestions !== 'undefined' && midwiferyQuestions.length > 0) {
+            displayQuestion(0);
+        } else {
+            console.error('Cannot initialize: Questions not loaded');
+        }
+    </script>
+</body>
+</html>

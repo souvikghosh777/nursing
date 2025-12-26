@@ -11,8 +11,72 @@
     <div id="homeScreen" class="home-screen active">
         <div class="exam-center-header">
             <span data-en="Souvik Exam Center" data-bn="সৌভিক পরীক্ষা কেন্দ্র">Souvik Exam Center</span>
-            <button class="performance-home-btn" id="performanceHomeBtn">📊 Performance</button>
+            <div class="header-buttons">
+                <button class="performance-home-btn" id="performanceHomeBtn">📊 Performance</button>
+                <button class="menu-btn" id="menuBtn" onclick="document.getElementById('menuSidebar').classList.add('show'); document.getElementById('sidebarOverlay').classList.add('show');">☰ Menu</button>
+            </div>
         </div>
+        
+        <!-- Menu Sidebar -->
+        <div class="menu-sidebar" id="menuSidebar">
+            <div class="menu-sidebar-header">
+                <h3>📚 Topics</h3>
+                <button class="close-sidebar" id="closeSidebar" onclick="document.getElementById('menuSidebar').classList.remove('show'); document.getElementById('sidebarOverlay').classList.remove('show');">✕</button>
+            </div>
+            <div class="menu-sidebar-content">
+                <div class="menu-topic" id="menuTopic1">
+                    <span class="topic-icon">🫀</span>
+                    <span class="topic-name">Anatomy and Physiology</span>
+                </div>
+                <div class="menu-topic" id="menuTopic2">
+                    <span class="topic-icon">🦠</span>
+                    <span class="topic-name">Microbiology</span>
+                </div>
+                <div class="menu-topic" id="menuTopic3">
+                    <span class="topic-icon">💊</span>
+                    <span class="topic-name">Pharmacology</span>
+                </div>
+                <div class="menu-topic" id="menuTopic4">
+                    <span class="topic-icon">🏫</span>
+                    <span class="topic-name">Nursing Foundation</span>
+                </div>
+                <div class="menu-topic" id="menuTopic5">
+                    <span class="topic-icon">🏥</span>
+                    <span class="topic-name">Medical Surgical Nursing I</span>
+                </div>
+                <div class="menu-topic" id="menuTopic6">
+                    <span class="topic-icon">🤱</span>
+                    <span class="topic-name">Obstetric Nursing</span>
+                </div>
+                <div class="menu-topic" id="menuTopic7">
+                    <span class="topic-icon">👩‍⚕️</span>
+                    <span class="topic-name">Medical Surgical Nursing II</span>
+                </div>
+                <div class="menu-topic" id="menuTopic8">
+                    <span class="topic-icon">👶</span>
+                    <span class="topic-name">Child Health Nursing</span>
+                </div>
+                <div class="menu-topic" id="menuTopic9">
+                    <span class="topic-icon">🧠</span>
+                    <span class="topic-name">Mental Health Nursing</span>
+                </div>
+                <div class="menu-topic" id="menuTopic10">
+                    <span class="topic-icon">🏘️</span>
+                    <span class="topic-name">Community Health Nursing</span>
+                </div>
+                <div class="menu-topic" id="menuTopic11" onclick="window.open('midwifery-questions.html', '_blank'); document.querySelector('.menu-sidebar').classList.remove('show');">
+                    <span class="topic-icon">🤰</span>
+                    <span class="topic-name">Midwifery & Gynecological</span>
+                </div>
+                <div class="menu-topic" id="menuTopic12">
+                    <span class="topic-icon">💼</span>
+                    <span class="topic-name">Professional Trends</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Sidebar Overlay -->
+        <div class="sidebar-overlay" id="sidebarOverlay" onclick="document.getElementById('menuSidebar').classList.remove('show'); this.classList.remove('show');"></div>
         <div class="home-container">
             <div class="home-header">
                 <div class="exam-icon">👩‍⚕️</div>
