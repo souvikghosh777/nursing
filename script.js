@@ -884,7 +884,7 @@ class ExamApp {
         // Reset password section when switching to others tab
         if (tabName === 'othersPerformance') {
             document.getElementById('passwordSection').style.display = 'block';
-            document.getElementById('othersPerfContent').style.display = 'none';
+            document.getElementById('othersPerfContent').classList.remove('show');
             document.getElementById('perfPassword').value = '';
             document.getElementById('passwordError').textContent = '';
         }
@@ -933,7 +933,7 @@ class ExamApp {
 
         if (password === '12345') {
             document.getElementById('passwordSection').style.display = 'none';
-            document.getElementById('othersPerfContent').style.display = 'block';
+            document.getElementById('othersPerfContent').classList.add('show');
             this.loadOthersPerformance();
         } else {
             errorMsg.textContent = '❌ Incorrect password!';
@@ -942,6 +942,15 @@ class ExamApp {
 
     loadOthersPerformance() {
         const performanceData = this.getPerformanceData();
+        
+        const leaderboardList = document.getElementById('leaderboardList');
+        const allUsersList = document.getElementById('allUsersPerformance');
+        
+        if (!performanceData || performanceData.length === 0) {
+            leaderboardList.innerHTML = '<p style="text-align:center;color:#999;padding:20px;">No exam data available yet.</p>';
+            allUsersList.innerHTML = '<p style="text-align:center;color:#999;padding:20px;">No exam data available yet.</p>';
+            return;
+        }
         
         // Calculate best performance for each user
         const userStats = {};
@@ -973,46 +982,52 @@ class ExamApp {
         const leaderboard = Object.values(userStats).sort((a, b) => b.bestScore - a.bestScore);
 
         // Display top 10 in leaderboard
-        const leaderboardList = document.getElementById('leaderboardList');
         leaderboardList.innerHTML = '';
 
-        leaderboard.slice(0, 10).forEach((user, index) => {
-            const item = document.createElement('div');
-            item.className = 'leaderboard-item';
-            
-            let rankClass = '';
-            let rankIcon = `#${index + 1}`;
-            if (index === 0) { rankClass = 'gold'; rankIcon = '🥇'; }
-            else if (index === 1) { rankClass = 'silver'; rankIcon = '🥈'; }
-            else if (index === 2) { rankClass = 'bronze'; rankIcon = '🥉'; }
+        if (leaderboard.length === 0) {
+            leaderboardList.innerHTML = '<p style="text-align:center;color:#999;padding:20px;">No users found.</p>';
+        } else {
+            leaderboard.slice(0, 10).forEach((user, index) => {
+                const item = document.createElement('div');
+                item.className = 'leaderboard-item';
+                
+                let rankClass = '';
+                let rankIcon = `#${index + 1}`;
+                if (index === 0) { rankClass = 'gold'; rankIcon = '🥇'; }
+                else if (index === 1) { rankClass = 'silver'; rankIcon = '🥈'; }
+                else if (index === 2) { rankClass = 'bronze'; rankIcon = '🥉'; }
 
-            item.innerHTML = `
-                <div class="leaderboard-rank ${rankClass}">${rankIcon}</div>
-                <div class="leaderboard-info">
-                    <div class="leaderboard-name">${user.name}</div>
-                    <div class="leaderboard-stats">Avg: ${user.avgScore}% • Exams: ${user.totalExams}</div>
-                </div>
-                <div class="leaderboard-score">${user.bestScore}%</div>
-            `;
-            leaderboardList.appendChild(item);
-        });
+                item.innerHTML = `
+                    <div class="leaderboard-rank ${rankClass}">${rankIcon}</div>
+                    <div class="leaderboard-info">
+                        <div class="leaderboard-name">${user.name}</div>
+                        <div class="leaderboard-stats">Avg: ${user.avgScore}% • Exams: ${user.totalExams}</div>
+                    </div>
+                    <div class="leaderboard-score">${user.bestScore}%</div>
+                `;
+                leaderboardList.appendChild(item);
+            });
+        }
 
         // Display all users
-        const allUsersList = document.getElementById('allUsersPerformance');
         allUsersList.innerHTML = '';
 
-        leaderboard.forEach(user => {
-            const item = document.createElement('div');
-            item.className = 'user-perf-item';
-            item.innerHTML = `
-                <div>
-                    <div class="user-perf-name">${user.name}</div>
-                    <div class="user-perf-stats">Best: ${user.bestScore}% • Avg: ${user.avgScore}% • Exams: ${user.totalExams}</div>
-                </div>
-                <div class="user-perf-score">${user.avgScore}%</div>
-            `;
-            allUsersList.appendChild(item);
-        });
+        if (leaderboard.length === 0) {
+            allUsersList.innerHTML = '<p style="text-align:center;color:#999;padding:20px;">No users found.</p>';
+        } else {
+            leaderboard.forEach(user => {
+                const item = document.createElement('div');
+                item.className = 'user-perf-item';
+                item.innerHTML = `
+                    <div>
+                        <div class="user-perf-name">${user.name}</div>
+                        <div class="user-perf-stats">Best: ${user.bestScore}% • Avg: ${user.avgScore}% • Exams: ${user.totalExams}</div>
+                    </div>
+                    <div class="user-perf-score">${user.avgScore}%</div>
+                `;
+                allUsersList.appendChild(item);
+            });
+        }
     }
 
     getPerformanceData() {
@@ -1031,8 +1046,73 @@ class ExamApp {
     }
 }
 
+// Initialize menu separately - outside DOMContentLoaded
+function initMenu() {
+    const menuBtn = document.getElementById('menuBtn');
+    const menuSidebar = document.getElementById('menuSidebar');
+    const sidebarOverlay = document.getElementById('sidebarOverlay');
+    const closeSidebar = document.getElementById('closeSidebar');
+    
+    if (!menuBtn || !menuSidebar) {
+        setTimeout(initMenu, 100);
+        return;
+    }
+    
+    // Open sidebar
+    menuBtn.onclick = function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        menuSidebar.classList.add('show');
+        if (sidebarOverlay) sidebarOverlay.classList.add('show');
+    };
+    
+    // Close function
+    function closeMenu() {
+        menuSidebar.classList.remove('show');
+        if (sidebarOverlay) sidebarOverlay.classList.remove('show');
+    }
+    
+    if (closeSidebar) closeSidebar.onclick = closeMenu;
+    if (sidebarOverlay) sidebarOverlay.onclick = closeMenu;
+    
+    // Topics
+    const topics = [
+        'Anatomy and Physiology', 'Microbiology', 'Pharmacology',
+        'Nursing Foundation', 'Medical Surgical Nursing I', 'Obstetric Nursing',
+        'Medical Surgical Nursing II', 'Child Health Nursing', 'Mental Health Nursing',
+        'Community Health Nursing', 'Midwifery & Gynecological Nursing',
+        'Professional Trends and Adjustment'
+    ];
+    
+    for (let i = 1; i <= 12; i++) {
+        const topic = document.getElementById('menuTopic' + i);
+        if (topic) {
+            topic.onclick = function() {
+                console.log('Topic clicked:', i, topics[i-1]);
+                if (i === 11) {
+                    // Midwifery & Gynecological - Open separate file
+                    const url = 'midwifery-questions.html';
+                    console.log('Opening:', url);
+                    window.open(url, '_blank');
+                    closeMenu();
+                } else {
+                    alert(topics[i-1] + '\n\nContent coming soon!');
+                    closeMenu();
+                }
+            };
+            console.log('Menu topic ' + i + ' initialized');
+        } else {
+            console.warn('Menu topic ' + i + ' not found');
+        }
+    }
+}
+
 // Initialize on DOM load
 document.addEventListener('DOMContentLoaded', () => {
     const app = new ExamApp();
     app.initPerformanceButton();
+    
+    // Initialize menu
+    initMenu();
 });
+
