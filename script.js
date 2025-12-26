@@ -33,18 +33,20 @@ class ExamApp {
     }
 
     loadQuestions() {
-        // Shuffle questions within each section, then combine
-        const shuffledPage1 = this.shuffleArray([...examQuestions.page1]);
-        const shuffledPage2 = this.shuffleArray([...examQuestions.page2]);
-        const shuffledPage3 = this.shuffleArray([...examQuestions.page3]);
-        const shuffledPage4 = this.shuffleArray([...examQuestions.page4]);
+        // Collect all questions from all 12 sections and shuffle
+        const allQuestions = [];
+        for (let i = 1; i <= 12; i++) {
+            const sectionKey = `section${i}`;
+            if (examQuestions[sectionKey]) {
+                allQuestions.push(...examQuestions[sectionKey]);
+            }
+        }
         
-        this.questions = [
-            ...shuffledPage1.slice(0, 25),
-            ...shuffledPage2.slice(0, 25),
-            ...shuffledPage3.slice(0, 25),
-            ...shuffledPage4.slice(0, 25)
-        ];
+        // Shuffle all questions
+        const shuffled = this.shuffleArray(allQuestions);
+        
+        // Take 100 random questions for the exam
+        this.questions = shuffled.slice(0, 100);
         
         // Update question IDs to reflect new order (1-100)
         this.questions.forEach((q, index) => {
@@ -197,8 +199,9 @@ class ExamApp {
         document.getElementById('section3Count').textContent = examQuestions.page3.length;
         document.getElementById('section4Count').textContent = examQuestions.page4.length;
         
-        const total = examQuestions.page1.length + examQuestions.page2.length + 
-                      examQuestions.page3.length + examQuestions.page4.length;
+        const total = Object.keys(examQuestions).reduce((sum, key) => {
+            return sum + (examQuestions[key]?.length || 0);
+        }, 0);
         document.getElementById('qbTotalCount').textContent = `${total} Questions`;
     }
 
@@ -210,8 +213,8 @@ class ExamApp {
             tab.classList.toggle('active', parseInt(tab.dataset.section) === sectionNum);
         });
         
-        // Get questions for this section
-        const sectionKey = `page${sectionNum}`;
+        // Get questions for this section (section1, section2, etc.)
+        const sectionKey = `section${sectionNum}`;
         const questions = examQuestions[sectionKey] || [];
         
         // Render questions
@@ -310,11 +313,19 @@ class ExamApp {
                 resultTitle: 'Exam Completed!',
                 questionPrefix: 'Question',
                 of: 'of',
-                syllabus: ['Anatomy & Physiology', 'Medical–Surgical Nursing', 'Child Health Nursing', 'Mental Health Nursing', 'Pharmacology', 'Community Health Nursing', 'Midwifery', 'General Knowledge', 'English', 'Aptitude'],
-                section1Title: 'Section 1: Core Nursing (Q1-25)',
-                section2Title: 'Section 2: General Knowledge (Q26-50)',
-                section3Title: 'Section 3: English, Pharma, Community, Midwifery (Q51-75)',
-                section4Title: 'Section 4: Aptitude (Q76-100)'
+                syllabus: ['Anatomy & Physiology', 'Microbiology', 'Nutrition', 'First Aid', 'Nursing Foundation', 'Medical Surgical I', 'Medical Surgical II', 'Child Health', 'Mental Health', 'Community Health', 'Midwifery & OBG', 'Nursing Education & Admin'],
+                section1Title: 'Section 1: Anatomy & Physiology',
+                section2Title: 'Section 2: Microbiology',
+                section3Title: 'Section 3: Nutrition',
+                section4Title: 'Section 4: First Aid',
+                section5Title: 'Section 5: Nursing Foundation',
+                section6Title: 'Section 6: Medical Surgical Nursing (I)',
+                section7Title: 'Section 7: Medical Surgical Nursing (II)',
+                section8Title: 'Section 8: Child Health Nursing',
+                section9Title: 'Section 9: Mental Health Nursing',
+                section10Title: 'Section 10: Community Health Nursing',
+                section11Title: 'Section 11: Midwifery & Gynaecological Nursing',
+                section12Title: 'Section 12: Nursing Education & Administration'
             },
             bn: {
                 examTitle: 'মক পরীক্ষা স্টাফ নার্স',
@@ -327,11 +338,19 @@ class ExamApp {
                 resultTitle: 'পরীক্ষা সম্পন্ন!',
                 questionPrefix: 'প্রশ্ন',
                 of: 'এর মধ্যে',
-                syllabus: ['শারীরস্থান ও শরীরবিদ্যা', 'মেডিকেল-সার্জিক্যাল নার্সিং', 'শিশু স্বাস্থ্য নার্সিং', 'মানসিক স্বাস্থ্য নার্সিং', 'ফার্মাকোলজি', 'কমিউনিটি হেলথ নার্সিং', 'মিডওয়াইফারি', 'সাধারণ জ্ঞান', 'ইংরেজি', 'অ্যাপটিটিউড'],
-                section1Title: 'বিভাগ ১: কোর নার্সিং (প্র ১-২৫)',
-                section2Title: 'বিভাগ ২: সাধারণ জ্ঞান (প্র ২৬-৫০)',
-                section3Title: 'বিভাগ ৩: ইংরেজি, ফার্মা, কমিউনিটি, মিডওয়াইফারি (প্র ৫১-৭৫)',
-                section4Title: 'বিভাগ ৪: অ্যাপটিটিউড (প্র ৭৬-১০০)'
+                syllabus: ['শারীরস্থান ও শরীরবিদ্যা', 'মাইক্রোবায়োলজি', 'পুষ্টি', 'প্রাথমিক চিকিৎসা', 'নার্সিং ফাউন্ডেশন', 'মেডিকেল সার্জিক্যাল I', 'মেডিকেল সার্জিক্যাল II', 'শিশু স্বাস্থ্য', 'মানসিক স্বাস্থ্য', 'কমিউনিটি হেলথ', 'মিডওয়াইফারি ও গাইনোকোলজি', 'নার্সিং শিক্ষা ও প্রশাসন'],
+                section1Title: 'বিভাগ ১: শারীরস্থান ও শরীরবিদ্যা',
+                section2Title: 'বিভাগ ২: মাইক্রোবায়োলজি',
+                section3Title: 'বিভাগ ৩: পুষ্টি',
+                section4Title: 'বিভাগ ৪: প্রাথমিক চিকিৎসা',
+                section5Title: 'বিভাগ ৫: নার্সিং ফাউন্ডেশন',
+                section6Title: 'বিভাগ ৬: মেডিকেল সার্জিক্যাল নার্সিং (I)',
+                section7Title: 'বিভাগ ৭: মেডিকেল সার্জিক্যাল নার্সিং (II)',
+                section8Title: 'বিভাগ ৮: শিশু স্বাস্থ্য নার্সিং',
+                section9Title: 'বিভাগ ৯: মানসিক স্বাস্থ্য নার্সিং',
+                section10Title: 'বিভাগ ১০: কমিউনিটি হেলথ নার্সিং',
+                section11Title: 'বিভাগ ১১: মিডওয়াইফারি ও স্ত্রীরোগ নার্সিং',
+                section12Title: 'বিভাগ ১২: নার্সিং শিক্ষা ও প্রশাসন'
             }
         };
         
