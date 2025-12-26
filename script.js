@@ -278,12 +278,14 @@ class ExamApp {
 
     openExamMode() {
         this.mode = 'exam';
+        // Load and shuffle questions every time exam mode is opened
+        this.loadQuestions();
         this.showScreen('language');
     }
 
     selectLanguage(lang) {
         this.language = lang;
-        this.loadQuestions();
+        // Questions already loaded in openExamMode, just apply language
         this.applyLanguage();
         this.showScreen('start');
     }

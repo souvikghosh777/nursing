@@ -454,10 +454,460 @@ const examQuestions = {
             options_bn: ["২৫০ মিলি", "৫০০ মিলি", "৭৫০ মিলি", "১০০০ মিলি"],
             correct: 1,
             marks: 1
+        },
+        {
+            id: 51,
+            question: "Which vitamin is essential for blood clotting?",
+            question_bn: "রক্ত জমাট বাঁধার জন্য কোন ভিটামিন অপরিহার্য?",
+            options: ["Vitamin D", "Vitamin K", "Vitamin A", "Vitamin E"],
+            options_bn: ["ভিটামিন ডি", "ভিটামিন কে", "ভিটামিন এ", "ভিটামিন ই"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 52,
+            question: "The normal body temperature in Celsius is:",
+            question_bn: "সেলসিয়াসে স্বাভাবিক শরীরের তাপমাত্রা হল:",
+            options: ["38°C", "36.5°C", "35.5°C", "37°C"],
+            options_bn: ["৩৮°সে", "৩৬.৫°সে", "৩৫.৫°সে", "৩৭°সে"],
+            correct: 3,
+            marks: 1
+        },
+        {
+            id: 53,
+            question: "The smallest bone in the human body is located in:",
+            question_bn: "মানবদেহের ক্ষুদ্রতম হাড় অবস্থিত:",
+            options: ["Foot", "Nose", "Hand", "Ear"],
+            options_bn: ["পা", "নাক", "হাত", "কান"],
+            correct: 3,
+            marks: 1
+        },
+        {
+            id: 54,
+            question: "Which gland is known as the 'master gland'?",
+            question_bn: "কোন গ্রন্থিকে 'মাস্টার গ্ল্যান্ড' বলা হয়?",
+            options: ["Adrenal", "Pineal", "Pituitary", "Thyroid"],
+            options_bn: ["অ্যাড্রিনাল", "পাইনিয়াল", "পিটুইটারি", "থাইরয়েড"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 55,
+            question: "How many bones are there in an adult human body?",
+            question_bn: "একজন প্রাপ্তবয়স্ক মানুষের দেহে কতগুলি হাড় আছে?",
+            options: ["226", "196", "216", "206"],
+            options_bn: ["২২৬", "১৯৬", "২১৬", "২০৬"],
+            correct: 3,
+            marks: 1
+        },
+        {
+            id: 56,
+            question: "The process of red blood cell formation is called:",
+            question_bn: "লোহিত রক্ত কণিকা গঠনের প্রক্রিয়াকে বলা হয়:",
+            options: ["Thrombopoiesis", "Hematopoiesis", "Erythropoiesis", "Leucopoiesis"],
+            options_bn: ["থ্রম্বোপয়েসিস", "হেমাটোপয়েসিস", "এরিথ্রোপয়েসিস", "লিউকোপয়েসিস"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 57,
+            question: "The normal adult pulse rate per minute is:",
+            question_bn: "প্রাপ্তবয়স্কদের স্বাভাবিক নাড়ির হার প্রতি মিনিটে:",
+            options: ["100-120", "80-100", "50-60", "60-80"],
+            options_bn: ["১০০-১২০", "৮০-১০০", "৫০-৬০", "৬০-৮০"],
+            correct: 3,
+            marks: 1
+        },
+        {
+            id: 58,
+            question: "Which blood cells are responsible for immunity?",
+            question_bn: "কোন রক্ত কণিকা রোগ প্রতিরোধ ক্ষমতার জন্য দায়ী?",
+            options: ["Red blood cells", "Plasma", "Platelets", "White blood cells"],
+            options_bn: ["লোহিত রক্ত কণিকা", "প্লাজমা", "প্লেটলেট", "শ্বেত রক্ত কণিকা"],
+            correct: 3,
+            marks: 1
+        },
+        {
+            id: 59,
+            question: "The lifespan of a red blood cell is approximately:",
+            question_bn: "একটি লোহিত রক্ত কণিকার আয়ুষ্কাল প্রায়:",
+            options: ["90 days", "150 days", "60 days", "120 days"],
+            options_bn: ["৯০ দিন", "১৫০ দিন", "৬০ দিন", "১২০ দিন"],
+            correct: 3,
+            marks: 1
+        },
+        {
+            id: 60,
+            question: "The valve between left atrium and left ventricle is:",
+            question_bn: "বাম অলিন্দ এবং বাম নিলয়ের মধ্যে ভালভ হল:",
+            options: ["Aortic valve", "Tricuspid valve", "Pulmonary valve", "Mitral valve"],
+            options_bn: ["মহাধমনী ভালভ", "ট্রাইকাসপিড ভালভ", "পালমোনারি ভালভ", "মিট্রাল ভালভ"],
+            correct: 3,
+            marks: 1
+        },
+        {
+            id: 61,
+            question: "Which part of the brain controls balance and coordination?",
+            question_bn: "মস্তিষ্কের কোন অংশ ভারসাম্য এবং সমন্বয় নিয়ন্ত্রণ করে?",
+            options: ["Medulla", "Pons", "Cerebellum", "Cerebrum"],
+            options_bn: ["মেডুলা", "পনস", "সেরিবেলাম", "সেরিব্রাম"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 62,
+            question: "The universal blood donor group is:",
+            question_bn: "সার্বজনীন রক্তদাতা গ্রুপ হল:",
+            options: ["AB+", "B+", "A+", "O-"],
+            options_bn: ["এবি+", "বি+", "এ+", "ও-"],
+            correct: 3,
+            marks: 1
+        },
+        {
+            id: 63,
+            question: "How many chambers does the human heart have?",
+            question_bn: "মানুষের হৃৎপিণ্ডে কতগুলি প্রকোষ্ঠ আছে?",
+            options: ["Three", "Four", "Two", "Five"],
+            options_bn: ["তিন", "চার", "দুই", "পাঁচ"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 64,
+            question: "The normal respiratory rate in adults is:",
+            question_bn: "প্রাপ্তবয়স্কদের স্বাভাবিক শ্বাসপ্রশ্বাসের হার:",
+            options: ["20-30 breaths/min", "30-40 breaths/min", "12-20 breaths/min", "8-12 breaths/min"],
+            options_bn: ["২০-৩০ শ্বাস/মিনিট", "৩০-৪০ শ্বাস/মিনিট", "১২-২০ শ্বাস/মিনিট", "৮-১২ শ্বাস/মিনিট"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 65,
+            question: "Which hormone regulates blood sugar levels?",
+            question_bn: "কোন হরমোন রক্তে শর্করার মাত্রা নিয়ন্ত্রণ করে?",
+            options: ["Adrenaline", "Cortisol", "Thyroxine", "Insulin"],
+            options_bn: ["অ্যাড্রিনালিন", "কর্টিসল", "থাইরক্সিন", "ইনসুলিন"],
+            correct: 3,
+            marks: 1
+        },
+        {
+            id: 66,
+            question: "The longest bone in the human body is:",
+            question_bn: "মানবদেহের দীর্ঘতম হাড় হল:",
+            options: ["Humerus", "Tibia", "Femur", "Radius"],
+            options_bn: ["হিউমেরাস", "টিবিয়া", "ফিমার", "রেডিয়াস"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 67,
+            question: "The bicuspid valve is also known as:",
+            question_bn: "বাইকাসপিড ভালভকে আরও বলা হয়:",
+            options: ["Aortic valve", "Pulmonary valve", "Tricuspid valve", "Mitral valve"],
+            options_bn: ["মহাধমনী ভালভ", "পালমোনারি ভালভ", "ট্রাইকাসপিড ভালভ", "মিট্রাল ভালভ"],
+            correct: 3,
+            marks: 1
+        },
+        {
+            id: 68,
+            question: "Which organ produces bile?",
+            question_bn: "কোন অঙ্গ পিত্ত উৎপন্ন করে?",
+            options: ["Spleen", "Gallbladder", "Liver", "Pancreas"],
+            options_bn: ["প্লীহা", "পিত্তথলি", "যকৃত", "অগ্ন্যাশয়"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 69,
+            question: "The normal blood pressure of an adult is:",
+            question_bn: "একজন প্রাপ্তবয়স্কের স্বাভাবিক রক্তচাপ:",
+            options: ["140/90 mmHg", "100/60 mmHg", "160/100 mmHg", "120/80 mmHg"],
+            options_bn: ["১৪০/৯০ মিমি এইচজি", "১০০/৬০ মিমি এইচজি", "১৬০/১০০ মিমি এইচজি", "১২০/৮০ মিমি এইচজি"],
+            correct: 3,
+            marks: 1
+        },
+        {
+            id: 70,
+            question: "Which part of the eye controls the amount of light entering?",
+            question_bn: "চোখের কোন অংশ প্রবেশকারী আলোর পরিমাণ নিয়ন্ত্রণ করে?",
+            options: ["Cornea", "Retina", "Lens", "Iris"],
+            options_bn: ["কর্নিয়া", "রেটিনা", "লেন্স", "আইরিস"],
+            correct: 3,
+            marks: 1
+        },
+        {
+            id: 71,
+            question: "The functional unit of the nervous system is:",
+            question_bn: "স্নায়ুতন্ত্রের কার্যকরী একক হল:",
+            options: ["Nephron", "Neuron", "Axon", "Dendrite"],
+            options_bn: ["নেফ্রন", "নিউরন", "অ্যাক্সন", "ডেনড্রাইট"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 72,
+            question: "Which blood vessel carries deoxygenated blood from the heart to lungs?",
+            question_bn: "কোন রক্তনালী হৃৎপিণ্ড থেকে ফুসফুসে অক্সিজেনবিহীন রক্ত বহন করে?",
+            options: ["Aorta", "Pulmonary artery", "Pulmonary vein", "Vena cava"],
+            options_bn: ["মহাধমনী", "পালমোনারি ধমনী", "পালমোনারি শিরা", "ভেনা কাভা"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 73,
+            question: "The average capacity of urinary bladder is:",
+            question_bn: "মূত্রথলির গড় ধারণক্ষমতা হল:",
+            options: ["200-300 mL", "400-500 mL", "600-700 mL", "800-900 mL"],
+            options_bn: ["২০০-৩০০ মিলি", "৪০০-৫০০ মিলি", "৬০০-৭০০ মিলি", "৮০০-৯০০ মিলি"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 74,
+            question: "Which vitamin is known as ascorbic acid?",
+            question_bn: "কোন ভিটামিনকে অ্যাসকরবিক অ্যাসিড বলা হয়?",
+            options: ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"],
+            options_bn: ["ভিটামিন এ", "ভিটামিন বি", "ভিটামিন সি", "ভিটামিন ডি"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 75,
+            question: "The normal platelet count per cubic mm of blood is:",
+            question_bn: "রক্তের প্রতি ঘন মিমিতে স্বাভাবিক প্লেটলেট সংখ্যা:",
+            options: ["50,000-100,000", "150,000-400,000", "500,000-700,000", "800,000-1,000,000"],
+            options_bn: ["৫০,০০০-১,০০,০০০", "১,৫০,০০০-৪,০০,০০০", "৫,০০,০০০-৭,০০,০০০", "৮,০০,০০০-১০,০০,০০০"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 76,
+            question: "Which muscle is responsible for breathing?",
+            question_bn: "কোন পেশী শ্বাস-প্রশ্বাসের জন্য দায়ী?",
+            options: ["Intercostal", "Diaphragm", "Abdominal", "Pectoral"],
+            options_bn: ["ইন্টারকস্টাল", "ডায়াফ্রাম", "পেটের পেশী", "পেক্টোরাল"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 77,
+            question: "The pH of normal blood is:",
+            question_bn: "স্বাভাবিক রক্তের pH হল:",
+            options: ["6.8-7.0", "7.35-7.45", "7.8-8.0", "8.2-8.5"],
+            options_bn: ["৬.৮-৭.০", "৭.৩৫-৭.৪৫", "৭.৮-৮.০", "৮.২-৮.৫"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 78,
+            question: "Which organ filters blood to produce urine?",
+            question_bn: "কোন অঙ্গ প্রস্রাব তৈরি করতে রক্ত ছাঁকে?",
+            options: ["Liver", "Spleen", "Kidney", "Bladder"],
+            options_bn: ["যকৃত", "প্লীহা", "কিডনি", "মূত্রথলি"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 79,
+            question: "The largest lymphoid organ in the body is:",
+            question_bn: "দেহের বৃহত্তম লিম্ফয়েড অঙ্গ হল:",
+            options: ["Thymus", "Spleen", "Tonsils", "Lymph nodes"],
+            options_bn: ["থাইমাস", "প্লীহা", "টনসিল", "লিম্ফ নোড"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 80,
+            question: "Which hormone is secreted by the adrenal medulla?",
+            question_bn: "অ্যাড্রিনাল মেডুলা থেকে কোন হরমোন নিঃসৃত হয়?",
+            options: ["Cortisol", "Aldosterone", "Adrenaline", "Insulin"],
+            options_bn: ["কর্টিসল", "অ্যালডোস্টেরন", "অ্যাড্রিনালিন", "ইনসুলিন"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 81,
+            question: "The normal hemoglobin level in adult males is:",
+            question_bn: "প্রাপ্তবয়স্ক পুরুষদের স্বাভাবিক হিমোগ্লোবিন মাত্রা:",
+            options: ["10-12 g/dL", "12-14 g/dL", "13-17 g/dL", "18-20 g/dL"],
+            options_bn: ["১০-১২ গ্রাম/ডিএল", "১২-১৪ গ্রাম/ডিএল", "১৩-১৭ গ্রাম/ডিএল", "১৮-২০ গ্রাম/ডিএল"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 82,
+            question: "Which part of the brain controls body temperature?",
+            question_bn: "মস্তিষ্কের কোন অংশ শরীরের তাপমাত্রা নিয়ন্ত্রণ করে?",
+            options: ["Cerebrum", "Cerebellum", "Hypothalamus", "Thalamus"],
+            options_bn: ["সেরিব্রাম", "সেরিবেলাম", "হাইপোথ্যালামাস", "থ্যালামাস"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 83,
+            question: "The smallest functional unit of lung is:",
+            question_bn: "ফুসফুসের ক্ষুদ্রতম কার্যকরী একক হল:",
+            options: ["Bronchus", "Bronchiole", "Alveolus", "Trachea"],
+            options_bn: ["ব্রঙ্কাস", "ব্রঙ্কিওল", "অ্যালভিওলাস", "শ্বাসনালী"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 84,
+            question: "The normal WBC count per cubic mm is:",
+            question_bn: "প্রতি ঘন মিমিতে স্বাভাবিক WBC সংখ্যা:",
+            options: ["2,000-4,000", "4,000-11,000", "15,000-20,000", "25,000-30,000"],
+            options_bn: ["২,০০০-৪,০০০", "৪,০০০-১১,০০০", "১৫,০০০-২০,০০০", "২৫,০০০-৩০,০০০"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 85,
+            question: "Which organ stores and concentrates bile?",
+            question_bn: "কোন অঙ্গ পিত্ত সঞ্চয় এবং ঘনীভূত করে?",
+            options: ["Liver", "Gallbladder", "Pancreas", "Duodenum"],
+            options_bn: ["যকৃত", "পিত্তথলি", "অগ্ন্যাশয়", "ডিওডেনাম"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 86,
+            question: "The universal blood recipient group is:",
+            question_bn: "সার্বজনীন রক্তগ্রহীতা গ্রুপ হল:",
+            options: ["O+", "A+", "B+", "AB+"],
+            options_bn: ["ও+", "এ+", "বি+", "এবি+"],
+            correct: 3,
+            marks: 1
+        },
+        {
+            id: 87,
+            question: "Which cells produce antibodies?",
+            question_bn: "কোন কোষ অ্যান্টিবডি তৈরি করে?",
+            options: ["Red blood cells", "Platelets", "B lymphocytes", "T lymphocytes"],
+            options_bn: ["লোহিত রক্ত কণিকা", "প্লেটলেট", "বি লিম্ফোসাইট", "টি লিম্ফোসাইট"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 88,
+            question: "The normal specific gravity of urine is:",
+            question_bn: "প্রস্রাবের স্বাভাবিক আপেক্ষিক গুরুত্ব:",
+            options: ["1.003-1.030", "1.050-1.070", "1.080-1.100", "1.110-1.150"],
+            options_bn: ["১.০০৩-১.০৩০", "১.০৫০-১.০৭০", "১.০৮০-১.১০০", "১.১১০-১.১৫০"],
+            correct: 0,
+            marks: 1
+        },
+        {
+            id: 89,
+            question: "Which vitamin is essential for calcium absorption?",
+            question_bn: "ক্যালসিয়াম শোষণের জন্য কোন ভিটামিন অপরিহার্য?",
+            options: ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"],
+            options_bn: ["ভিটামিন এ", "ভিটামিন বি", "ভিটামিন সি", "ভিটামিন ডি"],
+            correct: 3,
+            marks: 1
+        },
+        {
+            id: 90,
+            question: "The strongest muscle in the human body is:",
+            question_bn: "মানবদেহের সবচেয়ে শক্তিশালী পেশী হল:",
+            options: ["Biceps", "Quadriceps", "Masseter", "Gluteus maximus"],
+            options_bn: ["বাইসেপস", "কোয়াড্রিসেপস", "ম্যাসেটার", "গ্লুটিয়াস ম্যাক্সিমাস"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 91,
+            question: "Which organ produces insulin and glucagon?",
+            question_bn: "কোন অঙ্গ ইনসুলিন এবং গ্লুকাগন উৎপন্ন করে?",
+            options: ["Liver", "Kidney", "Pancreas", "Spleen"],
+            options_bn: ["যকৃত", "কিডনি", "অগ্ন্যাশয়", "প্লীহা"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 92,
+            question: "The normal duration of cardiac cycle is:",
+            question_bn: "কার্ডিয়াক চক্রের স্বাভাবিক সময়কাল:",
+            options: ["0.5 seconds", "0.8 seconds", "1.2 seconds", "1.5 seconds"],
+            options_bn: ["০.৫ সেকেন্ড", "০.৮ সেকেন্ড", "১.২ সেকেন্ড", "১.৫ সেকেন্ড"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 93,
+            question: "Which cranial nerve is responsible for vision?",
+            question_bn: "কোন ক্র্যানিয়াল নার্ভ দৃষ্টির জন্য দায়ী?",
+            options: ["Optic nerve", "Oculomotor nerve", "Trochlear nerve", "Trigeminal nerve"],
+            options_bn: ["অপটিক নার্ভ", "অকুলোমোটর নার্ভ", "ট্রকলিয়ার নার্ভ", "ট্রাইজেমিনাল নার্ভ"],
+            correct: 0,
+            marks: 1
+        },
+        {
+            id: 94,
+            question: "The normal potassium level in blood is:",
+            question_bn: "রক্তে স্বাভাবিক পটাসিয়াম মাত্রা:",
+            options: ["2.0-3.0 mEq/L", "3.5-5.0 mEq/L", "6.0-7.0 mEq/L", "8.0-9.0 mEq/L"],
+            options_bn: ["২.০-৩.০ মিক/লি", "৩.৫-৫.০ মিক/লি", "৬.০-৭.০ মিক/লি", "৮.০-৯.০ মিক/লি"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 95,
+            question: "Which part of the nephron is responsible for filtration?",
+            question_bn: "নেফ্রনের কোন অংশ পরিস্রাবণের জন্য দায়ী?",
+            options: ["Loop of Henle", "Distal tubule", "Glomerulus", "Collecting duct"],
+            options_bn: ["হেনলের লুপ", "ডিস্টাল টিউবিউল", "গ্লোমেরুলাস", "সংগ্রাহী নালী"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 96,
+            question: "The normal serum sodium level is:",
+            question_bn: "স্বাভাবিক সিরাম সোডিয়াম মাত্রা:",
+            options: ["120-130 mEq/L", "135-145 mEq/L", "150-160 mEq/L", "165-175 mEq/L"],
+            options_bn: ["১২০-১৩০ মিক/লি", "১৩৫-১৪৫ মিক/লি", "১৫০-১৬০ মিক/লি", "১৬৫-১৭৫ মিক/লি"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 97,
+            question: "Which hormone stimulates milk production?",
+            question_bn: "কোন হরমোন দুধ উৎপাদন উদ্দীপিত করে?",
+            options: ["Oxytocin", "Prolactin", "Estrogen", "Progesterone"],
+            options_bn: ["অক্সিটোসিন", "প্রোল্যাক্টিন", "ইস্ট্রোজেন", "প্রোজেস্টেরন"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 98,
+            question: "The conducting system of the heart starts from:",
+            question_bn: "হৃৎপিণ্ডের সঞ্চালন সিস্টেম শুরু হয়:",
+            options: ["AV node", "SA node", "Bundle of His", "Purkinje fibers"],
+            options_bn: ["এভি নোড", "এসএ নোড", "বান্ডেল অফ হিজ", "পুর্কিনজে ফাইবার"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 99,
+            question: "Which cells are responsible for bone resorption?",
+            question_bn: "কোন কোষ হাড়ের পুনঃশোষণের জন্য দায়ী?",
+            options: ["Osteoblasts", "Osteocytes", "Osteoclasts", "Chondrocytes"],
+            options_bn: ["অস্টিওব্লাস্ট", "অস্টিওসাইট", "অস্টিওক্লাস্ট", "কন্ড্রোসাইট"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 100,
+            question: "The normal fasting blood sugar level is:",
+            question_bn: "স্বাভাবিক উপবাসের রক্তে শর্করার মাত্রা:",
+            options: ["50-70 mg/dL", "70-100 mg/dL", "110-140 mg/dL", "150-180 mg/dL"],
+            options_bn: ["৫০-৭০ মিগ্রা/ডিএল", "৭০-১০০ মিগ্রা/ডিএল", "১১০-১৪০ মিগ্রা/ডিএল", "১৫০-১৮০ মিগ্রা/ডিএল"],
+            correct: 1,
+            marks: 1
         }
     ],
 
-    // Sections 2-12 will be added next
+    // SECTION 2: Microbiology (90 Questions)
     section2: [
         {
             id: 51,
@@ -818,6 +1268,456 @@ const examQuestions = {
             options_bn: ["৪০-৬০ সেকেন্ড", "১০ সেকেন্ড", "২০ সেকেন্ড", "২ মিনিট"],
             correct: 0,
             marks: 1
+        },
+        {
+            id: 101,
+            question: "Which bacteria causes typhoid fever?",
+            question_bn: "কোন ব্যাকটেরিয়া টাইফয়েড জ্বর সৃষ্টি করে?",
+            options: ["Vibrio cholerae", "E. coli", "Shigella", "Salmonella typhi"],
+            options_bn: ["ভিব্রিও কলেরি", "ই. কোলাই", "শিগেলা", "সালমোনেলা টাইফি"],
+            correct: 3,
+            marks: 1
+        },
+        {
+            id: 102,
+            question: "The most common nosocomial infection is:",
+            question_bn: "সবচেয়ে সাধারণ হাসপাতাল-অর্জিত সংক্রমণ হল:",
+            options: ["Bloodstream infection", "Pneumonia", "Surgical site infection", "Urinary tract infection"],
+            options_bn: ["রক্তপ্রবাহের সংক্রমণ", "নিউমোনিয়া", "অস্ত্রোপচারের স্থানের সংক্রমণ", "মূত্রনালীর সংক্রমণ"],
+            correct: 3,
+            marks: 1
+        },
+        {
+            id: 103,
+            question: "Which organism causes malaria?",
+            question_bn: "কোন জীব ম্যালেরিয়া সৃষ্টি করে?",
+            options: ["Virus", "Fungus", "Bacteria", "Protozoa"],
+            options_bn: ["ভাইরাস", "ছত্রাক", "ব্যাকটেরিয়া", "প্রোটোজোয়া"],
+            correct: 3,
+            marks: 1
+        },
+        {
+            id: 104,
+            question: "The causative agent of tuberculosis is:",
+            question_bn: "যক্ষ্মা রোগের কার্যকারক হল:",
+            options: ["Staphylococcus", "Streptococcus", "Mycobacterium tuberculosis", "Pneumococcus"],
+            options_bn: ["স্ট্যাফাইলোকক্কাস", "স্ট্রেপ্টোকক্কাস", "মাইকোব্যাকটেরিয়াম টিউবারকিউলোসিস", "নিউমোকক্কাস"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 105,
+            question: "Which infection control measure is most effective?",
+            question_bn: "কোন সংক্রমণ নিয়ন্ত্রণ ব্যবস্থা সবচেয়ে কার্যকর?",
+            options: ["Wearing mask", "Hand hygiene", "Isolation", "Vaccination"],
+            options_bn: ["মাস্ক পরা", "হাতের স্বাস্থ্যবিধি", "বিচ্ছিন্নকরণ", "টিকাকরণ"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 106,
+            question: "The normal body temperature in Fahrenheit is:",
+            question_bn: "ফারেনহাইটে স্বাভাবিক শরীরের তাপমাত্রা হল:",
+            options: ["96.8°F", "97.8°F", "98.6°F", "99.6°F"],
+            options_bn: ["৯৬.৮°এফ", "৯৭.৮°এফ", "৯৮.৬°এফ", "৯৯.৬°এফ"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 107,
+            question: "Which hepatitis virus is transmitted through blood?",
+            question_bn: "কোন হেপাটাইটিস ভাইরাস রক্তের মাধ্যমে সংক্রমিত হয়?",
+            options: ["Hepatitis A", "Hepatitis B", "Hepatitis E", "All of the above"],
+            options_bn: ["হেপাটাইটিস এ", "হেপাটাইটিস বি", "হেপাটাইটিস ই", "উপরের সবগুলি"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 108,
+            question: "The incubation period of COVID-19 is:",
+            question_bn: "COVID-19-এর ইনকিউবেশন পিরিয়ড হল:",
+            options: ["1-3 days", "2-14 days", "15-21 days", "30 days"],
+            options_bn: ["১-৩ দিন", "২-১৪ দিন", "১৫-২১ দিন", "৩০ দিন"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 109,
+            question: "Which organism causes tetanus?",
+            question_bn: "কোন জীব ধনুষ্টংকার সৃষ্টি করে?",
+            options: ["Clostridium tetani", "Bacillus anthracis", "Corynebacterium diphtheriae", "Neisseria meningitidis"],
+            options_bn: ["ক্লোস্ট্রিডিয়াম টিটানি", "ব্যাসিলাস এনথ্রাসিস", "করাইনোব্যাকটেরিয়াম ডিপথেরি", "নেইসেরিয়া মেনিনজিটিডিস"],
+            correct: 0,
+            marks: 1
+        },
+        {
+            id: 110,
+            question: "The gold standard for sterilization is:",
+            question_bn: "নির্বীজন করার স্বর্ণ মান হল:",
+            options: ["Dry heat", "Autoclaving", "Chemical", "UV radiation"],
+            options_bn: ["শুষ্ক তাপ", "অটোক্লেভিং", "রাসায়নিক", "ইউভি বিকিরণ"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 111,
+            question: "Which disease is caused by a prion?",
+            question_bn: "কোন রোগ প্রিয়ন দ্বারা সৃষ্ট?",
+            options: ["AIDS", "Hepatitis", "Creutzfeldt-Jakob disease", "Influenza"],
+            options_bn: ["এইডস", "হেপাটাইটিস", "ক্রয়েটজফেল্ড-জ্যাকব রোগ", "ইনফ্লুয়েঞ্জা"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 112,
+            question: "The causative organism of diphtheria is:",
+            question_bn: "ডিপথেরিয়ার কার্যকারক জীব হল:",
+            options: ["Streptococcus", "Corynebacterium diphtheriae", "Staphylococcus", "Clostridium"],
+            options_bn: ["স্ট্রেপ্টোকক্কাস", "করাইনোব্যাকটেরিয়াম ডিপথেরি", "স্ট্যাফাইলোকক্কাস", "ক্লোস্ট্রিডিয়াম"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 113,
+            question: "Which fungal infection affects the nails?",
+            question_bn: "কোন ছত্রাক সংক্রমণ নখকে প্রভাবিত করে?",
+            options: ["Candidiasis", "Aspergillosis", "Onychomycosis", "Ringworm"],
+            options_bn: ["ক্যানডিডিয়াসিস", "অ্যাসপারগিলোসিস", "অনিকোমাইকোসিস", "দাদ"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 114,
+            question: "The normal autoclave temperature is:",
+            question_bn: "স্বাভাবিক অটোক্লেভ তাপমাত্রা হল:",
+            options: ["100°C", "121°C", "134°C", "160°C"],
+            options_bn: ["১০০°সে", "১২১°সে", "১৩৪°সে", "১৬০°সে"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 115,
+            question: "Which bacteria causes food poisoning commonly?",
+            question_bn: "কোন ব্যাকটেরিয়া সাধারণত খাদ্য বিষক্রিয়া ঘটায়?",
+            options: ["Salmonella", "E. coli", "Staphylococcus aureus", "All of the above"],
+            options_bn: ["সালমোনেলা", "ই. কোলাই", "স্ট্যাফাইলোকক্কাস অরিয়াস", "উপরের সবগুলি"],
+            correct: 3,
+            marks: 1
+        },
+        {
+            id: 116,
+            question: "The recommended time for autoclaving is:",
+            question_bn: "অটোক্লেভিং এর সুপারিশকৃত সময় হল:",
+            options: ["5 minutes", "15 minutes", "30 minutes", "60 minutes"],
+            options_bn: ["৫ মিনিট", "১৫ মিনিট", "৩০ মিনিট", "৬০ মিনিট"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 117,
+            question: "Which virus causes chickenpox?",
+            question_bn: "কোন ভাইরাস চিকেনপক্স সৃষ্টি করে?",
+            options: ["Herpes simplex", "Varicella-zoster", "Cytomegalovirus", "Epstein-Barr"],
+            options_bn: ["হার্পিস সিমপ্লেক্স", "ভ্যারিসেলা-জোস্টার", "সাইটোমেগালোভাইরাস", "এপস্টাইন-বার"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 118,
+            question: "The most common route of infection transmission in hospital is:",
+            question_bn: "হাসপাতালে সংক্রমণ সংক্রমণের সবচেয়ে সাধারণ পথ হল:",
+            options: ["Airborne", "Contact", "Droplet", "Vector-borne"],
+            options_bn: ["বায়ুবাহিত", "স্পর্শ", "ফোঁটা", "বাহক-বাহিত"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 119,
+            question: "Which test is used to detect HIV?",
+            question_bn: "কোন পরীক্ষা HIV সনাক্ত করতে ব্যবহৃত হয়?",
+            options: ["VDRL", "ELISA", "Mantoux test", "Widal test"],
+            options_bn: ["VDRL", "ELISA", "ম্যানটক্স টেস্ট", "ভিডাল টেস্ট"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 120,
+            question: "The causative agent of cholera is:",
+            question_bn: "কলেরার কার্যকারক হল:",
+            options: ["Vibrio cholerae", "Shigella", "Salmonella", "E. coli"],
+            options_bn: ["ভিব্রিও কলেরি", "শিগেলা", "সালমোনেলা", "ই. কোলাই"],
+            correct: 0,
+            marks: 1
+        },
+        {
+            id: 121,
+            question: "Which infection requires airborne precautions?",
+            question_bn: "কোন সংক্রমণের জন্য বায়ুবাহিত সতর্কতা প্রয়োজন?",
+            options: ["Tuberculosis", "Influenza", "COVID-19", "Pneumonia"],
+            options_bn: ["যক্ষ্মা", "ইনফ্লুয়েঞ্জা", "COVID-19", "নিউমোনিয়া"],
+            correct: 0,
+            marks: 1
+        },
+        {
+            id: 122,
+            question: "The normal duration for surgical hand scrub is:",
+            question_bn: "সার্জিক্যাল হাত স্ক্রাবের স্বাভাবিক সময়কাল হল:",
+            options: ["1-2 minutes", "3-5 minutes", "7-10 minutes", "15 minutes"],
+            options_bn: ["১-২ মিনিট", "৩-৫ মিনিট", "৭-১০ মিনিট", "১৫ মিনিট"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 123,
+            question: "Which organism causes pneumonia most commonly?",
+            question_bn: "কোন জীব সাধারণত নিউমোনিয়া সৃষ্টি করে?",
+            options: ["Staphylococcus aureus", "Streptococcus pneumoniae", "Klebsiella", "Pseudomonas"],
+            options_bn: ["স্ট্যাফাইলোকক্কাস অরিয়াস", "স্ট্রেপ্টোকক্কাস নিউমোনি", "ক্লেবসিয়েলা", "সিউডোমোনাস"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 124,
+            question: "The method of sterilization for heat-sensitive items is:",
+            question_bn: "তাপ-সংবেদনশীল জিনিসপত্রের নির্বীজন পদ্ধতি হল:",
+            options: ["Autoclaving", "Dry heat", "Ethylene oxide", "Boiling"],
+            options_bn: ["অটোক্লেভিং", "শুষ্ক তাপ", "ইথিলিন অক্সাইড", "ফুটানো"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 125,
+            question: "Which bacteria causes meningitis commonly?",
+            question_bn: "কোন ব্যাকটেরিয়া সাধারণত মেনিনজাইটিস ঘটায়?",
+            options: ["Staphylococcus", "Streptococcus", "Neisseria meningitidis", "Pseudomonas"],
+            options_bn: ["স্ট্যাফাইলোকক্কাস", "স্ট্রেপ্টোকক্কাস", "নেইসেরিয়া মেনিনজিটিডিস", "সিউডোমোনাস"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 126,
+            question: "The incubation period of measles is:",
+            question_bn: "হামের ইনকিউবেশন পিরিয়ড হল:",
+            options: ["5-7 days", "10-14 days", "21 days", "30 days"],
+            options_bn: ["৫-৭ দিন", "১০-১৪ দিন", "২১ দিন", "৩০ দিন"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 127,
+            question: "Which virus causes rabies?",
+            question_bn: "কোন ভাইরাস জলাতঙ্ক সৃষ্টি করে?",
+            options: ["Coronavirus", "Lyssavirus", "Flavivirus", "Retrovirus"],
+            options_bn: ["করোনাভাইরাস", "লিসাভাইরাস", "ফ্ল্যাভিভাইরাস", "রেট্রোভাইরাস"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 128,
+            question: "The best disinfectant for hospital floors is:",
+            question_bn: "হাসপাতালের মেঝের জন্য সেরা জীবাণুনাশক হল:",
+            options: ["Alcohol", "Phenol", "Sodium hypochlorite", "Iodine"],
+            options_bn: ["অ্যালকোহল", "ফেনল", "সোডিয়াম হাইপোক্লোরাইট", "আয়োডিন"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 129,
+            question: "Which organism causes urinary tract infections commonly?",
+            question_bn: "কোন জীব সাধারণত মূত্রনালীর সংক্রমণ ঘটায়?",
+            options: ["Staphylococcus aureus", "Streptococcus", "E. coli", "Pseudomonas"],
+            options_bn: ["স্ট্যাফাইলোকক্কাস অরিয়াস", "স্ট্রেপ্টোকক্কাস", "ই. কোলাই", "সিউডোমোনাস"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 130,
+            question: "The concentration of sodium hypochlorite for disinfection is:",
+            question_bn: "জীবাণুনাশকের জন্য সোডিয়াম হাইপোক্লোরাইটের ঘনত্ব হল:",
+            options: ["0.1%", "0.5%", "1%", "5%"],
+            options_bn: ["০.১%", "০.৫%", "১%", "৫%"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 131,
+            question: "Which disease is transmitted by mosquito?",
+            question_bn: "কোন রোগ মশার দ্বারা সংক্রমিত হয়?",
+            options: ["Typhoid", "Cholera", "Dengue", "Tuberculosis"],
+            options_bn: ["টাইফয়েড", "কলেরা", "ডেঙ্গু", "যক্ষ্মা"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 132,
+            question: "The causative agent of whooping cough is:",
+            question_bn: "হুপিং কাশির কার্যকারক হল:",
+            options: ["Bordetella pertussis", "Mycobacterium", "Streptococcus", "Haemophilus"],
+            options_bn: ["বোর্ডেটেলা পারটুসিস", "মাইকোব্যাকটেরিয়াম", "স্ট্রেপ্টোকক্কাস", "হিমোফিলাস"],
+            correct: 0,
+            marks: 1
+        },
+        {
+            id: 133,
+            question: "Which test is used for tuberculosis screening?",
+            question_bn: "যক্ষ্মা স্ক্রীনিং এর জন্য কোন পরীক্ষা ব্যবহৃত হয়?",
+            options: ["ELISA", "Mantoux test", "Widal test", "VDRL"],
+            options_bn: ["ELISA", "ম্যানটক্স টেস্ট", "ভিডাল টেস্ট", "VDRL"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 134,
+            question: "The normal pressure in autoclave is:",
+            question_bn: "অটোক্লেভে স্বাভাবিক চাপ হল:",
+            options: ["5 psi", "10 psi", "15 psi", "20 psi"],
+            options_bn: ["৫ পিএসআই", "১০ পিএসআই", "১৫ পিএসআই", "২০ পিএসআই"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 135,
+            question: "Which organism causes candidiasis?",
+            question_bn: "কোন জীব ক্যানডিডিয়াসিস সৃষ্টি করে?",
+            options: ["Bacteria", "Virus", "Fungus", "Protozoa"],
+            options_bn: ["ব্যাকটেরিয়া", "ভাইরাস", "ছত্রাক", "প্রোটোজোয়া"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 136,
+            question: "The most effective concentration of alcohol for disinfection is:",
+            question_bn: "জীবাণুনাশকের জন্য অ্যালকোহলের সবচেয়ে কার্যকর ঘনত্ব হল:",
+            options: ["50%", "60-70%", "90%", "100%"],
+            options_bn: ["৫০%", "৬০-৭০%", "৯০%", "১০০%"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 137,
+            question: "Which hepatitis has no vaccine?",
+            question_bn: "কোন হেপাটাইটিসের কোন টিকা নেই?",
+            options: ["Hepatitis A", "Hepatitis B", "Hepatitis C", "Hepatitis D"],
+            options_bn: ["হেপাটাইটিস এ", "হেপাটাইটিস বি", "হেপাটাইটিস সি", "হেপাটাইটিস ডি"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 138,
+            question: "The causative organism of leprosy is:",
+            question_bn: "কুষ্ঠরোগের কার্যকারক জীব হল:",
+            options: ["Mycobacterium leprae", "Mycobacterium tuberculosis", "Streptococcus", "Staphylococcus"],
+            options_bn: ["মাইকোব্যাকটেরিয়াম লেপ্রি", "মাইকোব্যাকটেরিয়াম টিউবারকিউলোসিস", "স্ট্রেপ্টোকক্কাস", "স্ট্যাফাইলোকক্কাস"],
+            correct: 0,
+            marks: 1
+        },
+        {
+            id: 139,
+            question: "Which organism causes syphilis?",
+            question_bn: "কোন জীব সিফিলিস সৃষ্টি করে?",
+            options: ["Neisseria gonorrhoeae", "Treponema pallidum", "Chlamydia", "Mycoplasma"],
+            options_bn: ["নেইসেরিয়া গনোরি", "ট্রেপোনিমা প্যালিডাম", "ক্ল্যামিডিয়া", "মাইকোপ্লাজমা"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 140,
+            question: "The incubation period of hepatitis A is:",
+            question_bn: "হেপাটাইটিস এ-এর ইনকিউবেশন পিরিয়ড হল:",
+            options: ["7-14 days", "15-50 days", "60-90 days", "6 months"],
+            options_bn: ["৭-১৪ দিন", "১৫-৫০ দিন", "৬০-৯০ দিন", "৬ মাস"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 141,
+            question: "Which virus causes mumps?",
+            question_bn: "কোন ভাইরাস মাম্পস সৃষ্টি করে?",
+            options: ["Rubella virus", "Paramyxovirus", "Adenovirus", "Parvovirus"],
+            options_bn: ["রুবেলা ভাইরাস", "প্যারামিক্সোভাইরাস", "অ্যাডেনোভাইরাস", "পার্ভোভাইরাস"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 142,
+            question: "The recommended hand rub technique involves:",
+            question_bn: "প্রস্তাবিত হাত ঘষা কৌশল অন্তর্ভুক্ত:",
+            options: ["3 steps", "5 steps", "7 steps", "10 steps"],
+            options_bn: ["৩ ধাপ", "৫ ধাপ", "৭ ধাপ", "১০ ধাপ"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 143,
+            question: "Which organism causes gonorrhea?",
+            question_bn: "কোন জীব গনোরিয়া সৃষ্টি করে?",
+            options: ["Treponema pallidum", "Neisseria gonorrhoeae", "Chlamydia trachomatis", "Candida"],
+            options_bn: ["ট্রেপোনিমা প্যালিডাম", "নেইসেরিয়া গনোরি", "ক্ল্যামিডিয়া ট্র্যাকোমাটিস", "ক্যানডিডা"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 144,
+            question: "The causative agent of anthrax is:",
+            question_bn: "অ্যানথ্রাক্সের কার্যকারক হল:",
+            options: ["Clostridium tetani", "Bacillus anthracis", "Corynebacterium", "Streptococcus"],
+            options_bn: ["ক্লোস্ট্রিডিয়াম টিটানি", "ব্যাসিলাস এনথ্রাসিস", "করাইনোব্যাকটেরিয়াম", "স্ট্রেপ্টোকক্কাস"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 145,
+            question: "Which infection requires contact precautions?",
+            question_bn: "কোন সংক্রমণের জন্য যোগাযোগ সতর্কতা প্রয়োজন?",
+            options: ["Tuberculosis", "MRSA", "Chickenpox", "Measles"],
+            options_bn: ["যক্ষ্মা", "MRSA", "চিকেনপক্স", "হাম"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 146,
+            question: "The normal flora of intestine includes:",
+            question_bn: "অন্ত্রের স্বাভাবিক উদ্ভিদ অন্তর্ভুক্ত:",
+            options: ["E. coli", "Staphylococcus", "Streptococcus", "Pseudomonas"],
+            options_bn: ["ই. কোলাই", "স্ট্যাফাইলোকক্কাস", "স্ট্রেপ্টোকক্কাস", "সিউডোমোনাস"],
+            correct: 0,
+            marks: 1
+        },
+        {
+            id: 147,
+            question: "Which test is used to diagnose typhoid?",
+            question_bn: "টাইফয়েড নির্ণয়ের জন্য কোন পরীক্ষা ব্যবহৃত হয়?",
+            options: ["ELISA", "Mantoux test", "Widal test", "VDRL"],
+            options_bn: ["ELISA", "ম্যানটক্স টেস্ট", "ভিডাল টেস্ট", "VDRL"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 148,
+            question: "The method of cold sterilization is:",
+            question_bn: "ঠান্ডা নির্বীজন পদ্ধতি হল:",
+            options: ["Autoclaving", "Boiling", "Ethylene oxide", "Dry heat"],
+            options_bn: ["অটোক্লেভিং", "ফুটানো", "ইথিলিন অক্সাইড", "শুষ্ক তাপ"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 149,
+            question: "Which organism causes ringworm?",
+            question_bn: "কোন জীব দাদ সৃষ্টি করে?",
+            options: ["Bacteria", "Virus", "Fungus", "Protozoa"],
+            options_bn: ["ব্যাকটেরিয়া", "ভাইরাস", "ছত্রাক", "প্রোটোজোয়া"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 150,
+            question: "The normal skin pH is:",
+            question_bn: "স্বাভাবিক ত্বকের pH হল:",
+            options: ["3.5-4.0", "4.5-6.0", "7.0-7.5", "8.0-8.5"],
+            options_bn: ["৩.৫-৪.০", "৪.৫-৬.০", "৭.০-৭.৫", "৮.০-৮.৫"],
+            correct: 1,
+            marks: 1
         }
     ],
     section3: [
@@ -1135,6 +2035,276 @@ const examQuestions = {
             options_bn: ["শস্য", "ফল এবং শাকসবজি", "মাংস", "চর্বি এবং তেল"],
             correct: 1,
             marks: 1
+        },
+        {
+            id: 151,
+            question: "What is the daily water requirement for an adult?",
+            question_bn: "প্রাপ্তবয়স্কদের দৈনিক জলের চাহিদা কত?",
+            options: ["1-2 liters", "2-3 liters", "4-5 liters", "6-7 liters"],
+            options_bn: ["১-২ লিটার", "২-৩ লিটার", "৪-৫ লিটার", "৬-৭ লিটার"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 152,
+            question: "Which mineral is essential for thyroid function?",
+            question_bn: "থাইরয়েড ফাংশনের জন্য কোন খনিজ অপরিহার্য?",
+            options: ["Calcium", "Iron", "Iodine", "Zinc"],
+            options_bn: ["ক্যালসিয়াম", "আয়রন", "আয়োডিন", "জিঙ্ক"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 153,
+            question: "The best source of vitamin C is:",
+            question_bn: "ভিটামিন সি-এর সেরা উৎস হল:",
+            options: ["Milk", "Meat", "Citrus fruits", "Rice"],
+            options_bn: ["দুধ", "মাংস", "সাইট্রাস ফল", "চাল"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 154,
+            question: "Which nutrient is the main source of energy?",
+            question_bn: "কোন পুষ্টি শক্তির প্রধান উৎস?",
+            options: ["Protein", "Carbohydrate", "Vitamins", "Minerals"],
+            options_bn: ["প্রোটিন", "কার্বোহাইড্রেট", "ভিটামিন", "খনিজ"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 155,
+            question: "The BMI range for normal weight is:",
+            question_bn: "স্বাভাবিক ওজনের জন্য BMI পরিসীমা হল:",
+            options: ["15-18.4", "18.5-24.9", "25-29.9", "30-34.9"],
+            options_bn: ["১৫-১৮.৪", "১৮.৫-২৪.৯", "২৫-২৯.৯", "৩০-৩৪.৯"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 156,
+            question: "Which vitamin is synthesized by gut bacteria?",
+            question_bn: "কোন ভিটামিন অন্ত্রের ব্যাকটেরিয়া দ্বারা সংশ্লেষিত হয়?",
+            options: ["Vitamin A", "Vitamin B12", "Vitamin C", "Vitamin K"],
+            options_bn: ["ভিটামিন এ", "ভিটামিন বি১২", "ভিটামিন সি", "ভিটামিন কে"],
+            correct: 3,
+            marks: 1
+        },
+        {
+            id: 157,
+            question: "The recommended daily protein intake for adults is:",
+            question_bn: "প্রাপ্তবয়স্কদের জন্য প্রস্তাবিত দৈনিক প্রোটিন গ্রহণ হল:",
+            options: ["0.5 g/kg", "0.8 g/kg", "1.5 g/kg", "2 g/kg"],
+            options_bn: ["০.৫ গ্রাম/কেজি", "০.৮ গ্রাম/কেজি", "১.৫ গ্রাম/কেজি", "২ গ্রাম/কেজি"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 158,
+            question: "Which food is highest in iron?",
+            question_bn: "কোন খাবারে সবচেয়ে বেশি আয়রন আছে?",
+            options: ["Rice", "Spinach", "Potato", "Banana"],
+            options_bn: ["ভাত", "পালং শাক", "আলু", "কলা"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 159,
+            question: "The disease caused by vitamin B1 deficiency is:",
+            question_bn: "ভিটামিন বি১-এর অভাবে সৃষ্ট রোগ হল:",
+            options: ["Scurvy", "Beriberi", "Rickets", "Pellagra"],
+            options_bn: ["স্কার্ভি", "বেরিবেরি", "রিকেটস", "পেলাগ্রা"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 160,
+            question: "Which mineral prevents anemia?",
+            question_bn: "কোন খনিজ রক্তাল্পতা প্রতিরোধ করে?",
+            options: ["Calcium", "Iron", "Sodium", "Potassium"],
+            options_bn: ["ক্যালসিয়াম", "আয়রন", "সোডিয়াম", "পটাসিয়াম"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 161,
+            question: "The best source of complete protein is:",
+            question_bn: "সম্পূর্ণ প্রোটিনের সেরা উৎস হল:",
+            options: ["Rice", "Egg", "Potato", "Bread"],
+            options_bn: ["ভাত", "ডিম", "আলু", "রুটি"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 162,
+            question: "Which vitamin is called retinol?",
+            question_bn: "কোন ভিটামিনকে রেটিনল বলা হয়?",
+            options: ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"],
+            options_bn: ["ভিটামিন এ", "ভিটামিন বি", "ভিটামিন সি", "ভিটামিন ডি"],
+            correct: 0,
+            marks: 1
+        },
+        {
+            id: 163,
+            question: "The normal caloric requirement for adult male is:",
+            question_bn: "প্রাপ্তবয়স্ক পুরুষের স্বাভাবিক ক্যালরি চাহিদা হল:",
+            options: ["1500 kcal", "2000 kcal", "2500 kcal", "3500 kcal"],
+            options_bn: ["১৫০০ কিলোক্যালরি", "২০০০ কিলোক্যালরি", "২৫০০ কিলোক্যালরি", "৩৫০০ কিলোক্যালরি"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 164,
+            question: "Which nutrient helps in wound healing?",
+            question_bn: "কোন পুষ্টি ক্ষত নিরাময়ে সাহায্য করে?",
+            options: ["Fat", "Carbohydrate", "Protein", "Water"],
+            options_bn: ["চর্বি", "কার্বোহাইড্রেট", "প্রোটিন", "জল"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 165,
+            question: "The disease caused by vitamin B3 deficiency is:",
+            question_bn: "ভিটামিন বি৩-এর অভাবে সৃষ্ট রোগ হল:",
+            options: ["Scurvy", "Beriberi", "Pellagra", "Rickets"],
+            options_bn: ["স্কার্ভি", "বেরিবেরি", "পেলাগ্রা", "রিকেটস"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 166,
+            question: "Which food is rich in calcium?",
+            question_bn: "কোন খাবারে ক্যালসিয়াম বেশি আছে?",
+            options: ["Rice", "Milk", "Oil", "Sugar"],
+            options_bn: ["ভাত", "দুধ", "তেল", "চিনি"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 167,
+            question: "The primary function of vitamin E is:",
+            question_bn: "ভিটামিন ই-এর প্রাথমিক কাজ হল:",
+            options: ["Blood clotting", "Antioxidant", "Bone formation", "Vision"],
+            options_bn: ["রক্ত জমাট বাঁধা", "অ্যান্টিঅক্সিডেন্ট", "হাড় গঠন", "দৃষ্টি"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 168,
+            question: "Which type of fat is healthiest?",
+            question_bn: "কোন ধরনের চর্বি সবচেয়ে স্বাস্থ্যকর?",
+            options: ["Saturated fat", "Trans fat", "Unsaturated fat", "Hydrogenated fat"],
+            options_bn: ["সম্পৃক্ত চর্বি", "ট্রান্স ফ্যাট", "অসম্পৃক্ত চর্বি", "হাইড্রোজেনেটেড চর্বি"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 169,
+            question: "The recommended daily fiber intake is:",
+            question_bn: "প্রস্তাবিত দৈনিক ফাইবার গ্রহণ হল:",
+            options: ["10-15 grams", "25-30 grams", "40-50 grams", "60-70 grams"],
+            options_bn: ["১০-১৫ গ্রাম", "২৫-৩০ গ্রাম", "৪০-৫০ গ্রাম", "৬০-৭০ গ্রাম"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 170,
+            question: "Which mineral is important for muscle contraction?",
+            question_bn: "কোন খনিজ পেশী সংকোচনের জন্য গুরুত্বপূর্ণ?",
+            options: ["Iodine", "Calcium", "Iron", "Zinc"],
+            options_bn: ["আয়োডিন", "ক্যালসিয়াম", "আয়রন", "জিঙ্ক"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 171,
+            question: "The best time to eat fruits is:",
+            question_bn: "ফল খাওয়ার সেরা সময় হল:",
+            options: ["After meal", "Before meal", "During meal", "At night"],
+            options_bn: ["খাবারের পরে", "খাবারের আগে", "খাবারের সময়", "রাতে"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 172,
+            question: "Which vitamin is heat-sensitive?",
+            question_bn: "কোন ভিটামিন তাপ-সংবেদনশীল?",
+            options: ["Vitamin A", "Vitamin C", "Vitamin D", "Vitamin K"],
+            options_bn: ["ভিটামিন এ", "ভিটামিন সি", "ভিটামিন ডি", "ভিটামিন কে"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 173,
+            question: "The glycemic index measures:",
+            question_bn: "গ্লাইসেমিক ইনডেক্স পরিমাপ করে:",
+            options: ["Protein quality", "Blood sugar response", "Fat content", "Vitamin levels"],
+            options_bn: ["প্রোটিনের গুণমান", "রক্তে শর্করার প্রতিক্রিয়া", "চর্বি উপাদান", "ভিটামিন মাত্রা"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 174,
+            question: "Which food group should be consumed most daily?",
+            question_bn: "কোন খাদ্য গোষ্ঠী প্রতিদিন সবচেয়ে বেশি খাওয়া উচিত?",
+            options: ["Proteins", "Carbohydrates", "Fats", "Vitamins"],
+            options_bn: ["প্রোটিন", "কার্বোহাইড্রেট", "চর্বি", "ভিটামিন"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 175,
+            question: "The deficiency of which vitamin causes bleeding disorders?",
+            question_bn: "কোন ভিটামিনের অভাবে রক্তপাতের সমস্যা হয়?",
+            options: ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin K"],
+            options_bn: ["ভিটামিন এ", "ভিটামিন বি", "ভিটামিন সি", "ভিটামিন কে"],
+            correct: 3,
+            marks: 1
+        },
+        {
+            id: 176,
+            question: "Which nutrient provides 9 kcal per gram?",
+            question_bn: "কোন পুষ্টি প্রতি গ্রামে ৯ কিলোক্যালরি প্রদান করে?",
+            options: ["Protein", "Carbohydrate", "Fat", "Alcohol"],
+            options_bn: ["প্রোটিন", "কার্বোহাইড্রেট", "চর্বি", "অ্যালকোহল"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 177,
+            question: "The best source of omega-3 fatty acids is:",
+            question_bn: "ওমেগা-৩ ফ্যাটি অ্যাসিডের সেরা উৎস হল:",
+            options: ["Rice", "Fish", "Bread", "Milk"],
+            options_bn: ["ভাত", "মাছ", "রুটি", "দুধ"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 178,
+            question: "Which vitamin is called cobalamin?",
+            question_bn: "কোন ভিটামিনকে কোবালামিন বলা হয়?",
+            options: ["Vitamin B6", "Vitamin B12", "Vitamin C", "Vitamin D"],
+            options_bn: ["ভিটামিন বি৬", "ভিটামিন বি১২", "ভিটামিন সি", "ভিটামিন ডি"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 179,
+            question: "The normal adult BMI should be less than:",
+            question_bn: "স্বাভাবিক প্রাপ্তবয়স্ক BMI এর চেয়ে কম হওয়া উচিত:",
+            options: ["20", "25", "30", "35"],
+            options_bn: ["২০", "২৫", "৩০", "৩৫"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 180,
+            question: "Which mineral is essential for hemoglobin formation?",
+            question_bn: "হিমোগ্লোবিন গঠনের জন্য কোন খনিজ অপরিহার্য?",
+            options: ["Calcium", "Iron", "Sodium", "Magnesium"],
+            options_bn: ["ক্যালসিয়াম", "আয়রন", "সোডিয়াম", "ম্যাগনেসিয়াম"],
+            correct: 1,
+            marks: 1
         }
     ],
     section4: [
@@ -1406,6 +2576,276 @@ const examQuestions = {
             options: ["Remove all dressings", "Apply tourniquet as last resort", "Pour alcohol", "Massage the area"],
             options_bn: ["সমস্ত ড্রেসিং সরান", "শেষ উপায় হিসাবে টর্নিকেট প্রয়োগ করুন", "অ্যালকোহল ঢালুন", "এলাকা ম্যাসাজ করুন"],
             correct: 1,
+            marks: 1
+        },
+        {
+            id: 181,
+            question: "Which psychological theory emphasizes unconscious mind?",
+            question_bn: "কোন মনস্তাত্ত্বিক তত্ত্ব অবচেতন মনকে জোর দেয়?",
+            options: ["Cognitivism", "Humanism", "Psychoanalysis", "Behaviorism"],
+            options_bn: ["জ্ঞানবাদ", "মানবতাবাদ", "মনোবিশ্লেষণ", "আচরণবাদ"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 182,
+            question: "The founder of psychoanalysis is:",
+            question_bn: "মনোবিশ্লেষণের প্রতিষ্ঠাতা হলেন:",
+            options: ["Ivan Pavlov", "B.F. Skinner", "Carl Jung", "Sigmund Freud"],
+            options_bn: ["ইভান প্যাভলভ", "বি.এফ. স্কিনার", "কার্ল জং", "সিগমুন্ড ফ্রয়েড"],
+            correct: 3,
+            marks: 1
+        },
+        {
+            id: 183,
+            question: "What is stress?",
+            question_bn: "চাপ কী?",
+            options: ["A mental disorder", "A personality trait", "Body's response to demands", "A disease"],
+            options_bn: ["একটি মানসিক ব্যাধি", "একটি ব্যক্তিত্বের বৈশিষ্ট্য", "চাহিদার প্রতি শরীরের প্রতিক্রিয়া", "একটি রোগ"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 184,
+            question: "Which part of brain controls emotions?",
+            question_bn: "মস্তিষ্কের কোন অংশ আবেগ নিয়ন্ত্রণ করে?",
+            options: ["Cortex", "Brainstem", "Cerebellum", "Limbic system"],
+            options_bn: ["কর্টেক্স", "ব্রেনস্টেম", "সেরিবেলাম", "লিম্বিক সিস্টেম"],
+            correct: 3,
+            marks: 1
+        },
+        {
+            id: 185,
+            question: "The fight or flight response is activated by:",
+            question_bn: "লড়াই বা পলায়ন প্রতিক্রিয়া সক্রিয় হয় দ্বারা:",
+            options: ["Somatic nervous system", "Central nervous system", "Sympathetic nervous system", "Parasympathetic nervous system"],
+            options_bn: ["সোম্যাটিক স্নায়ুতন্ত্র", "কেন্দ্রীয় স্নায়ুতন্ত্র", "সিম্প্যাথেটিক স্নায়ুতন্ত্র", "প্যারাসিম্প্যাথেটিক স্নায়ুতন্ত্র"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 186,
+            question: "What is cognitive therapy?",
+            question_bn: "জ্ঞানমূলক থেরাপি কী?",
+            options: ["Physical therapy", "Group therapy", "Changing thought patterns", "Drug treatment"],
+            options_bn: ["শারীরিক থেরাপি", "গ্রুপ থেরাপি", "চিন্তার ধরন পরিবর্তন", "ওষুধের চিকিৎসা"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 187,
+            question: "The most common mental disorder is:",
+            question_bn: "সবচেয়ে সাধারণ মানসিক ব্যাধি হল:",
+            options: ["OCD", "Bipolar disorder", "Schizophrenia", "Depression"],
+            options_bn: ["OCD", "বাইপোলার ডিসঅর্ডার", "সিজোফ্রেনিয়া", "বিষণ্নতা"],
+            correct: 3,
+            marks: 1
+        },
+        {
+            id: 188,
+            question: "Which hormone is called the stress hormone?",
+            question_bn: "কোন হরমোনকে চাপ হরমোন বলা হয়?",
+            options: ["Growth hormone", "Thyroxine", "Insulin", "Cortisol"],
+            options_bn: ["গ্রোথ হরমোন", "থাইরক্সিন", "ইনসুলিন", "কর্টিসল"],
+            correct: 3,
+            marks: 1
+        },
+        {
+            id: 189,
+            question: "What is active listening?",
+            question_bn: "সক্রিয় শ্রবণ কী?",
+            options: ["Ignoring distractions", "Talking while listening", "Hearing sounds", "Fully concentrating on speaker"],
+            options_bn: ["বিক্ষেপ উপেক্ষা করা", "শোনার সময় কথা বলা", "শব্দ শোনা", "বক্তার উপর সম্পূর্ণ মনোনিবেশ"],
+            correct: 3,
+            marks: 1
+        },
+        {
+            id: 190,
+            question: "The defense mechanism where one reverts to childlike behavior is:",
+            question_bn: "প্রতিরক্ষা ব্যবস্থা যেখানে একজন শিশুসুলভ আচরণে ফিরে যায়:",
+            options: ["Rationalization", "Projection", "Regression", "Denial"],
+            options_bn: ["যুক্তিসংগতকরণ", "প্রক্ষেপণ", "প্রত্যাবর্তন", "অস্বীকার"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 191,
+            question: "What is empathy?",
+            question_bn: "সহানুভূতি কী?",
+            options: ["Giving advice", "Being sympathetic", "Understanding others' feelings", "Feeling sorry"],
+            options_bn: ["পরামর্শ দেওয়া", "সহানুভূতিশীল হওয়া", "অন্যের অনুভূতি বোঝা", "দুঃখিত বোধ করা"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 192,
+            question: "Which stage of Erikson's theory occurs in adolescence?",
+            question_bn: "এরিকসনের তত্ত্বের কোন পর্যায় কৈশোরে ঘটে?",
+            options: ["Trust vs Mistrust", "Identity vs Role confusion", "Intimacy vs Isolation", "Integrity vs Despair"],
+            options_bn: ["বিশ্বাস বনাম অবিশ্বাস", "পরিচয় বনাম ভূমিকা বিভ্রান্তি", "ঘনিষ্ঠতা বনাম বিচ্ছিন্নতা", "সততা বনাম হতাশা"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 193,
+            question: "What is burnout?",
+            question_bn: "বার্নআউট কী?",
+            options: ["Personality disorder", "Mental illness", "Emotional exhaustion from work", "Physical injury"],
+            options_bn: ["ব্যক্তিত্বের ব্যাধি", "মানসিক রোগ", "কাজ থেকে মানসিক ক্লান্তি", "শারীরিক আঘাত"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 194,
+            question: "The technique of repeating patient's words is called:",
+            question_bn: "রোগীর কথা পুনরাবৃত্তি করার কৌশলকে বলা হয়:",
+            options: ["Summarizing", "Paraphrasing", "Clarification", "Reflection"],
+            options_bn: ["সংক্ষিপ্তকরণ", "পুনর্বিবৃতি", "স্পষ্টীকরণ", "প্রতিফলন"],
+            correct: 3,
+            marks: 1
+        },
+        {
+            id: 195,
+            question: "What is anxiety?",
+            question_bn: "উদ্বেগ কী?",
+            options: ["A psychotic disorder", "A mood disorder", "A personality trait", "Feeling of worry and fear"],
+            options_bn: ["একটি সাইকোটিক ব্যাধি", "একটি মেজাজ ব্যাধি", "একটি ব্যক্তিত্বের বৈশিষ্ট্য", "উদ্বেগ এবং ভয়ের অনুভূতি"],
+            correct: 3,
+            marks: 1
+        },
+        {
+            id: 196,
+            question: "The best way to manage stress is:",
+            question_bn: "চাপ পরিচালনার সেরা উপায় হল:",
+            options: ["Medication only", "Isolation", "Relaxation techniques", "Avoidance"],
+            options_bn: ["শুধুমাত্র ওষুধ", "বিচ্ছিন্নতা", "শিথিলকরণ কৌশল", "এড়ানো"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 197,
+            question: "What is self-esteem?",
+            question_bn: "আত্মসম্মান কী?",
+            options: ["Loving oneself", "Feeling superior", "Being confident", "One's sense of self-worth"],
+            options_bn: ["নিজেকে ভালোবাসা", "শ্রেষ্ঠ বোধ করা", "আত্মবিশ্বাসী হওয়া", "নিজের মূল্যবোধের অনুভূতি"],
+            correct: 3,
+            marks: 1
+        },
+        {
+            id: 198,
+            question: "Which type of communication is non-verbal?",
+            question_bn: "কোন ধরনের যোগাযোগ অ-মৌখিক?",
+            options: ["Texting", "Writing", "Body language", "Speaking"],
+            options_bn: ["টেক্সটিং", "লেখা", "দেহভাষা", "কথা বলা"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 199,
+            question: "The psychological need for belongingness is part of:",
+            question_bn: "সম্পর্কিত হওয়ার মনস্তাত্ত্বিক প্রয়োজন অংশ:",
+            options: ["Esteem needs", "Physiological needs", "Social needs", "Safety needs"],
+            options_bn: ["সম্মান চাহিদা", "শারীরবৃত্তীয় চাহিদা", "সামাজিক চাহিদা", "নিরাপত্তা চাহিদা"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 200,
+            question: "What is therapeutic communication?",
+            question_bn: "থেরাপিউটিক যোগাযোগ কী?",
+            options: ["Casual talk", "Professional interaction to help patient", "Medical prescription", "Written communication"],
+            options_bn: ["নৈমিত্তিক কথাবার্তা", "রোগীকে সাহায্য করার জন্য পেশাদার মিথস্ক্রিয়া", "চিকিৎসা প্রেসক্রিপশন", "লিখিত যোগাযোগ"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 201,
+            question: "Which stage comes first in Kubler-Ross grief model?",
+            question_bn: "কুব্লার-রস দুঃখ মডেলে কোন পর্যায় প্রথম আসে?",
+            options: ["Anger", "Denial", "Bargaining", "Depression"],
+            options_bn: ["রাগ", "অস্বীকার", "দরকষাকষি", "বিষণ্নতা"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 202,
+            question: "What is positive reinforcement?",
+            question_bn: "ইতিবাপক শক্তিবৃদ্ধি কী?",
+            options: ["Criticism", "Negative feedback", "Punishment", "Reward for good behavior"],
+            options_bn: ["সমালোচনা", "নেতিবাচক প্রতিক্রিয়া", "শাস্তি", "ভাল আচরণের জন্য পুরস্কার"],
+            correct: 3,
+            marks: 1
+        },
+        {
+            id: 203,
+            question: "The ideal nurse-patient relationship is:",
+            question_bn: "আদর্শ নার্স-রোগী সম্পর্ক হল:",
+            options: ["Social", "Personal", "Therapeutic", "Casual"],
+            options_bn: ["সামাজিক", "ব্যক্তিগত", "থেরাপিউটিক", "নৈমিত্তিক"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 204,
+            question: "What is body image?",
+            question_bn: "শরীরের ইমেজ কী?",
+            options: ["How one perceives their body", "Height", "Weight", "Physical appearance"],
+            options_bn: ["কীভাবে কেউ তাদের শরীরকে উপলব্ধি করে", "উচ্চতা", "ওজন", "শারীরিক চেহারা"],
+            correct: 0,
+            marks: 1
+        },
+        {
+            id: 205,
+            question: "The study of human behavior is called:",
+            question_bn: "মানুষের আচরণের অধ্যয়নকে বলা হয়:",
+            options: ["Philosophy", "Psychology", "Anthropology", "Sociology"],
+            options_bn: ["দর্শন", "মনোবিজ্ঞান", "নৃতত্ত্ব", "সমাজবিজ্ঞান"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 206,
+            question: "What is motivation?",
+            question_bn: "প্রেরণা কী?",
+            options: ["Memory", "Personality", "Drive to achieve goals", "Intelligence"],
+            options_bn: ["স্মৃতি", "ব্যক্তিত্ব", "লক্ষ্য অর্জনের জন্য চালনা", "বুদ্ধিমত্তা"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 207,
+            question: "Which is a coping mechanism?",
+            question_bn: "কোনটি একটি মোকাবেলা ব্যবস্থা?",
+            options: ["Substance abuse", "Problem-solving", "Ignoring problems", "Social withdrawal"],
+            options_bn: ["পদার্থ অপব্যবহার", "সমস্যা সমাধান", "সমস্যা উপেক্ষা করা", "সামাজিক প্রত্যাহার"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 208,
+            question: "The process of adjusting to new situations is:",
+            question_bn: "নতুন পরিস্থিতিতে সমন্বয় করার প্রক্রিয়া হল:",
+            options: ["Evolution", "Development", "Adaptation", "Maturation"],
+            options_bn: ["বিবর্তন", "উন্নয়ন", "অভিযোজন", "পরিপক্বতা"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 209,
+            question: "What is assertiveness?",
+            question_bn: "দৃঢ়তা কী?",
+            options: ["Dominating others", "Expressing oneself confidently", "Being passive", "Being aggressive"],
+            options_bn: ["অন্যদের উপর প্রাধান্য দেওয়া", "আত্মবিশ্বাসের সাথে নিজেকে প্রকাশ করা", "নিষ্ক্রিয় হওয়া", "আক্রমণাত্মক হওয়া"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 210,
+            question: "The ability to understand and manage emotions is:",
+            question_bn: "আবেগ বোঝার এবং পরিচালনা করার ক্ষমতা হল:",
+            options: ["Personality", "Memory", "Emotional intelligence", "IQ"],
+            options_bn: ["ব্যক্তিত্ব", "স্মৃতি", "আবেগিক বুদ্ধিমত্তা", "আইকিউ"],
+            correct: 2,
             marks: 1
         }
     ],
@@ -1859,6 +3299,411 @@ const examQuestions = {
             options_bn: ["শুধু অস্ত্রোপচার", "কোন যত্ন নেই", "গুরুতর অসুস্থতার জন্য আরাম যত্ন", "নিরাময় কেন্দ্রিক"],
             correct: 2,
             marks: 1
+        },
+        {
+            id: 211,
+            question: "The recommended hand hygiene time before aseptic procedures is:",
+            question_bn: "নির্জীব প্রক্রিয়ার আগে প্রস্তাবিত হাত স্বাস্থ্যবিধি সময় হল:",
+            options: ["10 seconds", "20-30 seconds", "40-60 seconds", "2 minutes"],
+            options_bn: ["১০ সেকেন্ড", "২০-৩০ সেকেন্ড", "৪০-৬০ সেকেন্ড", "২ মিনিট"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 212,
+            question: "Which position is used for rectal examination?",
+            question_bn: "মলদ্বার পরীক্ষার জন্য কোন অবস্থান ব্যবহৃত হয়?",
+            options: ["Supine", "Prone", "Sim's position", "Fowler's"],
+            options_bn: ["সুপাইন", "প্রোন", "সিমের অবস্থান", "ফাউলারের"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 213,
+            question: "The universal precaution applies to:",
+            question_bn: "সার্বজনীন সতর্কতা প্রযোজ্য:",
+            options: ["All patients", "Infected patients only", "Immunocompromised only", "Children only"],
+            options_bn: ["সমস্ত রোগী", "শুধুমাত্র সংক্রমিত রোগী", "শুধুমাত্র ইমিউনোকম্প্রোমাইজড", "শুধুমাত্র শিশু"],
+            correct: 0,
+            marks: 1
+        },
+        {
+            id: 214,
+            question: "The first step in nursing process is:",
+            question_bn: "নার্সিং প্রক্রিয়ার প্রথম ধাপ হল:",
+            options: ["Planning", "Assessment", "Implementation", "Evaluation"],
+            options_bn: ["পরিকল্পনা", "মূল্যায়ন", "বাস্তবায়ন", "মূল্যায়ন"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 215,
+            question: "Which site is preferred for IM injection in adults?",
+            question_bn: "প্রাপ্তবয়স্কদের IM ইনজেকশনের জন্য কোন স্থান পছন্দ করা হয়?",
+            options: ["Deltoid", "Dorsogluteal", "Ventrogluteal", "Vastus lateralis"],
+            options_bn: ["ডেল্টয়েড", "ডর্সোগ্লুটিয়াল", "ভেন্ট্রোগ্লুটিয়াল", "ভাস্টাস ল্যাটারালিস"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 216,
+            question: "The normal urine output per day is:",
+            question_bn: "প্রতিদিন স্বাভাবিক প্রস্রাব আউটপুট হল:",
+            options: ["500-750 mL", "1000-1500 mL", "2000-2500 mL", "3000 mL"],
+            options_bn: ["৫০০-৭৫০ মিলি", "১০০০-১৫০০ মিলি", "২০০০-২৫০০ মিলি", "৩০০০ মিলি"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 217,
+            question: "Which type of enema is given to relieve constipation?",
+            question_bn: "কোন ধরনের এনিমা কোষ্ঠকাঠিন্য উপশম করার জন্য দেওয়া হয়?",
+            options: ["Barium enema", "Cleansing enema", "Retention enema", "Oil retention enema"],
+            options_bn: ["বেরিয়াম এনিমা", "ক্লিনজিং এনিমা", "রিটেনশন এনিমা", "তেল রিটেনশন এনিমা"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 218,
+            question: "The recommended needle gauge for blood transfusion is:",
+            question_bn: "রক্ত সঞ্চালনের জন্য প্রস্তাবিত সুই গজ হল:",
+            options: ["26G", "23G", "18-20G", "15G"],
+            options_bn: ["২৬জি", "২৩জি", "১৮-২০জি", "১৫জি"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 219,
+            question: "What is the purpose of deep breathing exercises?",
+            question_bn: "গভীর শ্বাস-প্রশ্বাস ব্যায়ামের উদ্দেশ্য কী?",
+            options: ["Prevent atelectasis", "Increase heart rate", "Reduce blood pressure", "Improve digestion"],
+            options_bn: ["অ্যাটেলেক্টাসিস প্রতিরোধ", "হৃদস্পন্দন বৃদ্ধি", "রক্তচাপ হ্রাস", "হজম উন্নত"],
+            correct: 0,
+            marks: 1
+        },
+        {
+            id: 220,
+            question: "The maximum time a tourniquet should remain in place is:",
+            question_bn: "একটি টর্নিকেট সর্বোচ্চ কত সময় থাকা উচিত:",
+            options: ["5 minutes", "30 seconds", "1 minute", "15 minutes"],
+            options_bn: ["৫ মিনিট", "৩০ সেকেন্ড", "১ মিনিট", "১৫ মিনিট"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 221,
+            question: "Which bed position is best for shock patients?",
+            question_bn: "শক রোগীদের জন্য কোন বিছানার অবস্থান সেরা?",
+            options: ["Semi-Fowler's", "Fowler's", "Trendelenburg", "Supine"],
+            options_bn: ["সেমি-ফাউলারের", "ফাউলারের", "ট্রেন্ডেলেনবার্গ", "সুপাইন"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 222,
+            question: "The most accurate site for temperature measurement is:",
+            question_bn: "তাপমাত্রা পরিমাপের জন্য সবচেয়ে সঠিক স্থান হল:",
+            options: ["Oral", "Rectal", "Tympanic", "Axillary"],
+            options_bn: ["মৌখিক", "মলদ্বার", "টিম্প্যানিক", "বগলে"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 223,
+            question: "Which type of isolation is required for measles?",
+            question_bn: "হামের জন্য কোন ধরনের বিচ্ছিন্নতা প্রয়োজন?",
+            options: ["Protective", "Contact", "Airborne", "Droplet"],
+            options_bn: ["প্রতিরক্ষামূলক", "যোগাযোগ", "বায়ুবাহিত", "ফোঁটা"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 224,
+            question: "The normal CVP range is:",
+            question_bn: "স্বাভাবিক CVP পরিসীমা হল:",
+            options: ["15-20 cmH2O", "25-30 cmH2O", "8-12 cmH2O", "2-6 cmH2O"],
+            options_bn: ["১৫-২০ সেমি এইচ২ও", "২৫-৩০ সেমি এইচ২ও", "৮-১২ সেমি এইচ২ও", "২-৬ সেমি এইচ২ও"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 225,
+            question: "Which solution is used for wound irrigation?",
+            question_bn: "ক্ষত সেচের জন্য কোন দ্রবণ ব্যবহৃত হয়?",
+            options: ["Alcohol", "Iodine", "Hydrogen peroxide", "Normal saline"],
+            options_bn: ["অ্যালকোহল", "আয়োডিন", "হাইড্রোজেন পারঅক্সাইড", "নরমাল স্যালাইন"],
+            correct: 3,
+            marks: 1
+        },
+        {
+            id: 226,
+            question: "The recommended angle for subcutaneous injection is:",
+            question_bn: "সাবকিউটেনিয়াস ইনজেকশনের প্রস্তাবিত কোণ হল:",
+            options: ["15 degrees", "90 degrees", "180 degrees", "45 degrees"],
+            options_bn: ["১৫ ডিগ্রি", "৯০ ডিগ্রি", "১৮০ ডিগ্রি", "৪৫ ডিগ্রি"],
+            correct: 3,
+            marks: 1
+        },
+        {
+            id: 227,
+            question: "What is the purpose of range of motion exercises?",
+            question_bn: "রেঞ্জ অফ মোশন ব্যায়ামের উদ্দেশ্য কী?",
+            options: ["Increase weight", "Prevent contractures", "Improve appetite", "Reduce pain"],
+            options_bn: ["ওজন বৃদ্ধি", "সংকোচন প্রতিরোধ", "ক্ষুধা উন্নত", "ব্যথা হ্রাস"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 228,
+            question: "Which vitamin should be given with iron supplements?",
+            question_bn: "আয়রন সম্পূরকের সাথে কোন ভিটামিন দেওয়া উচিত?",
+            options: ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"],
+            options_bn: ["ভিটামিন এ", "ভিটামিন বি", "ভিটামিন সি", "ভিটামিন ডি"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 229,
+            question: "The normal respiratory rate for adults is:",
+            question_bn: "প্রাপ্তবয়স্কদের স্বাভাবিক শ্বাসপ্রশ্বাসের হার হল:",
+            options: ["8-10 breaths/min", "12-20 breaths/min", "25-30 breaths/min", "35-40 breaths/min"],
+            options_bn: ["৮-১০ শ্বাস/মিনিট", "১২-২০ শ্বাস/মিনিট", "২৫-৩০ শ্বাস/মিনিট", "৩৫-৪০ শ্বাস/মিনিট"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 230,
+            question: "Which type of dressing is used for infected wounds?",
+            question_bn: "সংক্রমিত ক্ষতের জন্য কোন ধরনের ড্রেসিং ব্যবহৃত হয়?",
+            options: ["Transparent dressing", "Wet to dry dressing", "Dry dressing", "Occlusive dressing"],
+            options_bn: ["স্বচ্ছ ড্রেসিং", "ভিজা থেকে শুকনো ড্রেসিং", "শুকনো ড্রেসিং", "অক্ল্যুসিভ ড্রেসিং"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 231,
+            question: "The recommended site for pulse oximetry is:",
+            question_bn: "পালস অক্সিমেট্রির জন্য প্রস্তাবিত স্থান হল:",
+            options: ["Forehead", "Finger", "Ear", "Toe"],
+            options_bn: ["কপাল", "আঙুল", "কান", "পায়ের আঙুল"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 232,
+            question: "What is the purpose of Logan's bow?",
+            question_bn: "লোগানের ধনুর উদ্দেশ্য কী?",
+            options: ["Blood transfusion", "Cleft lip surgery", "Fracture support", "Wound drainage"],
+            options_bn: ["রক্ত সঞ্চালন", "ফাটল ঠোঁট অস্ত্রোপচার", "ফ্র্যাকচার সহায়তা", "ক্ষত নিষ্কাশন"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 233,
+            question: "The normal capillary refill time is:",
+            question_bn: "স্বাভাবিক কৈশিক পুনরায় পূরণ সময় হল:",
+            options: ["<2 seconds", "3-5 seconds", "6-8 seconds", ">10 seconds"],
+            options_bn: ["<২ সেকেন্ড", "৩-৫ সেকেন্ড", "৬-৮ সেকেন্ড", ">১০ সেকেন্ড"],
+            correct: 0,
+            marks: 1
+        },
+        {
+            id: 234,
+            question: "Which type of bath is given to reduce fever?",
+            question_bn: "জ্বর কমাতে কোন ধরনের স্নান দেওয়া হয়?",
+            options: ["Tepid sponge bath", "Cold bath", "Steam bath", "Hot bath"],
+            options_bn: ["উষ্ণ স্পঞ্জ স্নান", "ঠান্ডা স্নান", "বাষ্প স্নান", "গরম স্নান"],
+            correct: 0,
+            marks: 1
+        },
+        {
+            id: 235,
+            question: "The recommended flow rate for oxygen via nasal cannula is:",
+            question_bn: "নাকের ক্যানুলার মাধ্যমে অক্সিজেনের প্রস্তাবিত প্রবাহ হার হল:",
+            options: ["1-6 L/min", "8-10 L/min", "12-15 L/min", "20 L/min"],
+            options_bn: ["১-৬ লি/মিনিট", "৮-১০ লি/মিনিট", "১২-১৫ লি/মিনিট", "২০ লি/মিনিট"],
+            correct: 0,
+            marks: 1
+        },
+        {
+            id: 236,
+            question: "Which position is used for postural drainage of upper lobes?",
+            question_bn: "উপরের লোবের পোস্টুরাল ড্রেনেজের জন্য কোন অবস্থান ব্যবহৃত হয়?",
+            options: ["Prone", "Supine", "Sitting upright", "Trendelenburg"],
+            options_bn: ["প্রোন", "সুপাইন", "সোজা বসা", "ট্রেন্ডেলেনবার্গ"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 237,
+            question: "The recommended time to keep thermometer in axilla is:",
+            question_bn: "বগলে থার্মোমিটার রাখার প্রস্তাবিত সময় হল:",
+            options: ["10 minutes", "5 minutes", "1 minute", "3 minutes"],
+            options_bn: ["১০ মিনিট", "৫ মিনিট", "১ মিনিট", "৩ মিনিট"],
+            correct: 3,
+            marks: 1
+        },
+        {
+            id: 238,
+            question: "Which drug antidote is used for morphine overdose?",
+            question_bn: "মরফিন ওভারডোজের জন্য কোন ড্রাগ অ্যান্টিডোট ব্যবহৃত হয়?",
+            options: ["Atropine", "Naloxone", "Epinephrine", "Dopamine"],
+            options_bn: ["অ্যাট্রোপিন", "নালোক্সোন", "এপিনেফ্রিন", "ডোপামিন"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 239,
+            question: "The purpose of incentive spirometry is:",
+            question_bn: "ইনসেন্টিভ স্পাইরোমেট্রির উদ্দেশ্য হল:",
+            options: ["Check heart rate", "Improve lung function", "Test reflexes", "Measure blood pressure"],
+            options_bn: ["হৃৎস্পন্দন পরীক্ষা", "ফুসফুসের কার্যকারিতা উন্নত", "প্রতিবর্ত পরীক্ষা", "রক্তচাপ পরিমাপ"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 240,
+            question: "Which site is used for apical pulse measurement?",
+            question_bn: "এপিক্যাল পালস পরিমাপের জন্য কোন স্থান ব্যবহৃত হয়?",
+            options: ["Femoral artery", "5th intercostal space", "Carotid artery", "Radial artery"],
+            options_bn: ["ফিমোরাল ধমনী", "৫ম ইন্টারকোস্টাল স্পেস", "ক্যারোটিড ধমনী", "রেডিয়াল ধমনী"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 241,
+            question: "The recommended duration for chest compression in CPR is:",
+            question_bn: "CPR-এ বুকের সংকোচনের প্রস্তাবিত সময়কাল হল:",
+            options: ["30:2 ratio", "15:2 ratio", "20:2 ratio", "40:2 ratio"],
+            options_bn: ["৩০:২ অনুপাত", "১৫:২ অনুপাত", "২০:২ অনুপাত", "৪০:২ অনুপাত"],
+            correct: 0,
+            marks: 1
+        },
+        {
+            id: 242,
+            question: "Which type of catheter is used for urinary retention?",
+            question_bn: "প্রস্রাব ধারণের জন্য কোন ধরনের ক্যাথেটার ব্যবহৃত হয়?",
+            options: ["Condom catheter", "Straight catheter", "Foley catheter", "Suprapubic catheter"],
+            options_bn: ["কন্ডোম ক্যাথেটার", "সোজা ক্যাথেটার", "ফোলি ক্যাথেটার", "সুপ্রাপিউবিক ক্যাথেটার"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 243,
+            question: "The recommended depth for chest compression in adults is:",
+            question_bn: "প্রাপ্তবয়স্কদের বুকের সংকোচনের প্রস্তাবিত গভীরতা হল:",
+            options: ["8-10 cm", "1-2 cm", "5-6 cm", "2-3 cm"],
+            options_bn: ["৮-১০ সেমি", "১-২ সেমি", "৫-৬ সেমি", "২-৩ সেমি"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 244,
+            question: "Which assessment tool is used for pressure ulcer risk?",
+            question_bn: "প্রেসার আলসার ঝুঁকির জন্য কোন মূল্যায়ন সরঞ্জাম ব্যবহৃত হয়?",
+            options: ["Norton scale", "Braden scale", "APGAR score", "Glasgow coma scale"],
+            options_bn: ["নর্টন স্কেল", "ব্রাডেন স্কেল", "APGAR স্কোর", "গ্লাসগো কোমা স্কেল"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 245,
+            question: "The recommended rate for chest compressions in CPR is:",
+            question_bn: "CPR-এ বুকের সংকোচনের প্রস্তাবিত হার হল:",
+            options: ["180-200/min", "60-80/min", "140-160/min", "100-120/min"],
+            options_bn: ["১৮০-২০০/মিনিট", "৬০-৮০/মিনিট", "১৪০-১৬০/মিনিট", "১০০-১২০/মিনিট"],
+            correct: 3,
+            marks: 1
+        },
+        {
+            id: 246,
+            question: "Which solution is used for bladder irrigation?",
+            question_bn: "মূত্রথলি সেচের জন্য কোন দ্রবণ ব্যবহৃত হয়?",
+            options: ["Dextrose", "Normal saline", "Ringer's lactate", "Distilled water"],
+            options_bn: ["ডেক্সট্রোজ", "নরমাল স্যালাইন", "রিঙ্গারের ল্যাকটেট", "পাতিত জল"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 247,
+            question: "The first action when finding an unresponsive patient is:",
+            question_bn: "একজন অসাড়া রোগী খুঁজে পাওয়ার প্রথম পদস্থেপ হল:",
+            options: ["Give oxygen", "Check responsiveness", "Start CPR", "Call for help"],
+            options_bn: ["অক্সিজেন দিন", "প্রতিক্রিয়া পরীক্ষা করুন", "CPR শুরু করুন", "সাহায্যের জন্য ডাকুন"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 248,
+            question: "Which type of precaution is needed for C. difficile?",
+            question_bn: "সি. ডিফিসাইলের জন্য কোন ধরনের সতর্কতা প্রয়োজন?",
+            options: ["Droplet", "Airborne", "Contact", "Standard"],
+            options_bn: ["ফোঁটা", "বায়ুবাহিত", "যোগাযোগ", "স্ট্যান্ডার্ড"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 249,
+            question: "The recommended angle for IM injection is:",
+            question_bn: "IM ইনজেকশনের প্রস্তাবিত কোণ হল:",
+            options: ["15 degrees", "45 degrees", "90 degrees", "180 degrees"],
+            options_bn: ["১৫ ডিগ্রি", "৪৫ ডিগ্রি", "৯০ ডিগ্রি", "১৮০ ডিগ্রি"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 250,
+            question: "Which equipment is used to prevent foot drop?",
+            question_bn: "পা পড়ে যাওয়া প্রতিরোধের জন্য কোন সরঞ্জাম ব্যবহৃত হয়?",
+            options: ["Trochanter roll", "Footboard", "Hand roll", "Splint"],
+            options_bn: ["ট্রোক্যান্টার রোল", "ফুটবোর্ড", "হ্যান্ড রোল", "স্প্লিন্ট"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 251,
+            question: "The recommended frequency for turning bedridden patients is:",
+            question_bn: "বিছানায় শায়িত রোগীদের ঘোরানোর প্রস্তাবিত ফ্রিকোয়েন্সি হল:",
+            options: ["Every 8 hours", "Every 2 hours", "Every 4 hours", "Every hour"],
+            options_bn: ["প্রতি ৮ ঘণ্টা", "প্রতি ২ ঘণ্টা", "প্রতি ৪ ঘণ্টা", "প্রতি ঘণ্টা"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 252,
+            question: "Which solution is isotonic?",
+            question_bn: "কোন দ্রবণ আইসোটনিক?",
+            options: ["10% Dextrose", "3% NaCl", "0.9% NaCl", "0.45% NaCl"],
+            options_bn: ["১০% ডেক্সট্রোজ", "৩% NaCl", "০.৯% NaCl", "০.৪৫% NaCl"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 253,
+            question: "The purpose of sequential compression devices is:",
+            question_bn: "সিকোয়েনশিয়াল কম্প্রেশন ডিভাইসের উদ্দেশ্য হল:",
+            options: ["Measure blood pressure", "Prevent DVT", "Control bleeding", "Reduce pain"],
+            options_bn: ["রক্তচাপ পরিমাপ", "DVT প্রতিরোধ", "রক্তপাত নিয়ন্ত্রণ", "ব্যথা হ্রাস"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 254,
+            question: "The recommended site for intradermal injection is:",
+            question_bn: "ইন্ট্রাডার্মাল ইনজেকশনের প্রস্তাবিত স্থান হল:",
+            options: ["Deltoid", "Forearm", "Thigh", "Buttock"],
+            options_bn: ["ডেল্টয়েড", "হাতের অগ্রভাগ", "উরু", "নিতম্ব"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 255,
+            question: "Which type of suctioning is used for unconscious patients?",
+            question_bn: "অজ্ঞান রোগীদের জন্য কোন ধরনের স্তন্যপান ব্যবহৃত হয়?",
+            options: ["Gastric suctioning", "Oral suctioning", "Endotracheal suctioning", "Nasopharyngeal suctioning"],
+            options_bn: ["গ্যাস্ট্রিক স্তন্যপান", "মুখের স্তন্যপান", "এন্ডোট্রাকিয়াল স্তন্যপান", "নাসোফ্যারিঞ্জিয়াল স্তন্যপান"],
+            correct: 3,
+            marks: 1
         }
     ],
     section6: [
@@ -1884,18 +3729,18 @@ const examQuestions = {
             id: 208,
             question: "Which position is best for a patient with dyspnea?",
             question_bn: "ডিসপনিয়া রোগীর জন্য কোন অবস্থান সেরা?",
-            options: ["Trendelenburg", "Supine", "High Fowler's", "Prone"],
-            options_bn: ["ট্রেন্ডেলেনবার্গ", "সুপাইন", "উচ্চ ফাউলার", "প্রোন"],
-            correct: 2,
+            options: ["Prone", "Supine", "Trendelenburg", "High Fowler's"],
+            options_bn: ["প্রোন", "সুপাইন", "ট্রেন্ডেলেনবার্গ", "উচ্চ ফাউলার"],
+            correct: 3,
             marks: 1
         },
         {
             id: 209,
             question: "What is the most common complication of hypertension?",
             question_bn: "উচ্চ রক্তচাপের সবচেয়ে সাধারণ জটিলতা কী?",
-            options: ["Arthritis", "Stroke", "Diabetes", "Cancer"],
-            options_bn: ["আর্থ্রাইটিস", "স্ট্রোক", "ডায়াবেটিস", "ক্যান্সার"],
-            correct: 1,
+            options: ["Cancer", "Diabetes", "Stroke", "Arthritis"],
+            options_bn: ["ক্যান্সার", "ডায়াবেটিস", "স্ট্রোক", "আর্থ্রাইটিস"],
+            correct: 2,
             marks: 1
         },
         {
@@ -2313,12 +4158,767 @@ const examQuestions = {
             marks: 1
         }
     ],
-    section7: [],
-    section8: [],
-    section9: [],
-    section10: [],
-    section11: [],
-    section12: []
+    // SECTION 7: Medical Surgical Nursing II (50+ Questions)
+    section7: [
+        {
+            id: 306,
+            question: "What is the treatment for anaphylactic shock?",
+            question_bn: "অ্যানাফাইলেক্টিক শকের চিকিৎসা কী?",
+            options: ["Antibiotics", "Epinephrine", "Insulin", "Digoxin"],
+            options_bn: ["অ্যান্টিবায়োটিক", "এপিনেফ্রিন", "ইনসুলিন", "ডিগক্সিন"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 307,
+            question: "Which position reduces intracranial pressure?",
+            question_bn: "কোন অবস্থান ইন্ট্রাক্রানিয়াল চাপ হ্রাস করে?",
+            options: ["Trendelenburg", "Head elevated 30 degrees", "Prone", "Supine"],
+            options_bn: ["ট্রেন্ডেলেনবার্গ", "মাথা ৩০ ডিগ্রি উঁচু", "প্রোন", "সুপাইন"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 308,
+            question: "The most common cause of COPD is:",
+            question_bn: "COPD-এর সবচেয়ে সাধারণ কারণ হল:",
+            options: ["Air pollution", "Smoking", "Infection", "Genetics"],
+            options_bn: ["বায়ু দূষণ", "ধূমপান", "সংক্রমণ", "জেনেটিক্স"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 309,
+            question: "Which drug is used for myocardial infarction?",
+            question_bn: "মায়োকার্ডিয়াল ইনফার্কশনের জন্য কোন ড্রাগ ব্যবহৃত হয়?",
+            options: ["Aspirin", "Paracetamol", "Antibiotic", "Vitamin"],
+            options_bn: ["অ্যাসপিরিন", "প্যারাসিটামল", "অ্যান্টিবায়োটিক", "ভিটামিন"],
+            correct: 0,
+            marks: 1
+        },
+        {
+            id: 310,
+            question: "The normal INR range for patients on warfarin is:",
+            question_bn: "ওয়ারফারিন গ্রহণকারী রোগীদের স্বাভাবিক INR পরিসীমা হল:",
+            options: ["0.5-1.0", "2.0-3.0", "4.0-5.0", "6.0-7.0"],
+            options_bn: ["০.৫-১.০", "২.০-৩.০", "৪.০-৫.০", "৬.০-৭.০"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 311,
+            question: "What is the treatment for acute pancreatitis?",
+            question_bn: "তীব্র প্যানক্রিয়াটাইটিসের চিকিৎসা কী?",
+            options: ["Exercise", "Oral feeding", "NPO and IV fluids", "High protein diet"],
+            options_bn: ["ব্যায়াম", "মৌখিক খাওয়ানো", "NPO এবং IV তরল", "উচ্চ প্রোটিন খাদ্য"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 312,
+            question: "Which test diagnoses pulmonary embolism?",
+            question_bn: "কোন পরীক্ষা পালমোনারি এমবোলিজম নির্ণয় করে?",
+            options: ["Urine test", "X-ray chest only", "CT pulmonary angiography", "Blood sugar"],
+            options_bn: ["প্রস্রাব পরীক্ষা", "শুধুমাত্র বুকের এক্স-রে", "সিটি পালমোনারি এনজিওগ্রাফি", "রক্তের শর্করা"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 313,
+            question: "What is the sign of digoxin toxicity?",
+            question_bn: "ডিগক্সিন বিষাক্ততার লক্ষণ কী?",
+            options: ["Increased appetite", "Hypertension", "Visual disturbances", "Fever"],
+            options_bn: ["ক্ষুধা বৃদ্ধি", "উচ্চ রক্তচাপ", "দৃষ্টি বিকৃতি", "জ্বর"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 314,
+            question: "The treatment for pneumothorax is:",
+            question_bn: "নিউমোথোরাক্সের চিকিৎসা হল:",
+            options: ["Exercise", "Chest tube insertion", "Bed rest only", "Antibiotics only"],
+            options_bn: ["ব্যায়াম", "বুকের নল সন্নিবেশ", "শুধুমাত্র বিছানায় বিশ্রাম", "শুধুমাত্র অ্যান্টিবায়োটিক"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 315,
+            question: "What is cirrhosis?",
+            question_bn: "সিরোসিস কী?",
+            options: ["Lung disease", "Kidney disease", "Liver scarring", "Heart disease"],
+            options_bn: ["ফুসফুসের রোগ", "কিডনি রোগ", "লিভার দাগ", "হৃদরোগ"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 316,
+            question: "Which medication reduces stomach acid?",
+            question_bn: "কোন ওষুধ পেটের অ্যাসিড হ্রাস করে?",
+            options: ["Diuretics", "Antibiotics", "Proton pump inhibitors", "Laxatives"],
+            options_bn: ["ডাইউরেটিক্স", "অ্যান্টিবায়োটিক", "প্রোটন পাম্প ইনহিবিটার", "লাক্সেটিভ"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 317,
+            question: "What is the sign of hyperglycemia?",
+            question_bn: "হাইপারগ্লাইসেমিয়ার লক্ষণ কী?",
+            options: ["Low BP", "Bradycardia", "Polyuria and polydipsia", "Sweating"],
+            options_bn: ["নিম্ন রক্তচাপ", "ব্র্যাডিকার্ডিয়া", "পলিউরিয়া এবং পলিডিপসিয়া", "ঘাম"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 318,
+            question: "The treatment for hypoglycemia is:",
+            question_bn: "হাইপোগ্লাইসেমিয়ার চিকিৎসা হল:",
+            options: ["Diuretics", "Antibiotics", "IV dextrose", "Insulin"],
+            options_bn: ["ডাইউরেটিক্স", "অ্যান্টিবায়োটিক", "আইভি ডেক্সট্রোজ", "ইনসুলিন"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 319,
+            question: "What is atrial fibrillation?",
+            question_bn: "অ্যাট্রিয়াল ফাইব্রিলেশন কী?",
+            options: ["Liver disease", "Kidney failure", "Irregular heartbeat", "Lung disease"],
+            options_bn: ["লিভার রোগ", "কিডনি ব্যর্থতা", "অনিয়মিত হৃদস্পন্দন", "ফুসফুসের রোগ"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 320,
+            question: "Which drug is used for heart failure?",
+            question_bn: "হৃদযন্ত্রের ব্যর্থতার জন্য কোন ওষুধ ব্যবহৃত হয়?",
+            options: ["Antibiotics", "ACE inhibitors", "Laxatives", "Antacids"],
+            options_bn: ["অ্যান্টিবায়োটিক", "ACE ইনহিবিটার", "লাক্সেটিভ", "অ্যান্টাসিড"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 321,
+            question: "What is the complication of untreated hypertension?",
+            question_bn: "অচিকিৎসিত উচ্চ রক্তচাপের জটিলতা কী?",
+            options: ["Weight loss", "Stroke and heart disease", "Better sleep", "Improved vision"],
+            options_bn: ["ওজন হ্রাস", "স্ট্রোক এবং হৃদরোগ", "ভাল ঘুম", "দৃষ্টি উন্নতি"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 322,
+            question: "The treatment for septic shock includes:",
+            question_bn: "সেপটিক শকের চিকিৎসা অন্তর্ভুক্ত:",
+            options: ["Cold compress", "Fasting", "Antibiotics and fluids", "Exercise"],
+            options_bn: ["ঠান্ডা সেক", "উপবাস", "অ্যান্টিবায়োটিক এবং তরল", "ব্যায়াম"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 323,
+            question: "What is osteoporosis?",
+            question_bn: "অস্টিওপোরোসিস কী?",
+            options: ["Lung disease", "Heart disease", "Bone density loss", "Muscle disease"],
+            options_bn: ["ফুসফুসের রোগ", "হৃদরোগ", "হাড়ের ঘনত্ব হ্রাস", "পেশীর রোগ"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 324,
+            question: "Which vitamin prevents rickets?",
+            question_bn: "কোন ভিটামিন রিকেট প্রতিরোধ করে?",
+            options: ["Vitamin E", "Vitamin C", "Vitamin D", "Vitamin A"],
+            options_bn: ["ভিটামিন ই", "ভিটামিন সি", "ভিটামিন ডি", "ভিটামিন এ"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 325,
+            question: "What is the sign of DVT?",
+            question_bn: "DVT এর লক্ষণ কী?",
+            options: ["Swollen painful leg", "Cough", "Rash", "Fever"],
+            options_bn: ["ফোলা বেদনাদায়ক পা", "কাশি", "ফুসকুড়ি", "জ্বর"],
+            correct: 0,
+            marks: 1
+        },
+        {
+            id: 326,
+            question: "The treatment for asthma includes:",
+            question_bn: "হাঁপানির চিকিৎসা অন্তর্ভুক্ত:",
+            options: ["Antibiotics only", "Bronchodilators", "Surgery", "Exercise only"],
+            options_bn: ["শুধুমাত্র অ্যান্টিবায়োটিক", "ব্রঙ্কোডাইলেটর", "অস্ত্রোপচার", "শুধুমাত্র ব্যায়াম"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 327,
+            question: "What is the purpose of nebulizer?",
+            question_bn: "নেবুলাইজারের উদ্দেশ্য কী?",
+            options: ["Test blood", "Deliver medication to lungs", "Check temperature", "Measure BP"],
+            options_bn: ["রক্ত পরীক্ষা", "ফুসফুসে ওষুধ সরবরাহ", "তাপমাত্রা পরীক্ষা", "রক্তচাপ পরিমাপ"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 328,
+            question: "Which condition causes jaundice?",
+            question_bn: "কোন অবস্থা জন্ডিস সৃষ্টি করে?",
+            options: ["Lung disease", "Liver disease", "Kidney failure", "Heart failure"],
+            options_bn: ["ফুসফুসের রোগ", "লিভার রোগ", "কিডনি ব্যর্থতা", "হৃদযন্ত্রের ব্যর্থতা"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 329,
+            question: "What is the treatment for myasthenia gravis?",
+            question_bn: "মায়াসথেনিয়া গ্রাভিসের চিকিৎসা কী?",
+            options: ["Laxatives", "Anticholinesterase drugs", "Antacids", "Antibiotics"],
+            options_bn: ["লাক্সেটিভ", "অ্যান্টিকোলিনেস্টারেজ ওষুধ", "অ্যান্টাসিড", "অ্যান্টিবায়োটিক"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 330,
+            question: "What is multiple sclerosis?",
+            question_bn: "মাল্টিপল স্ক্লেরোসিস কী?",
+            options: ["Liver disease", "Nervous system disease", "Kidney disease", "Heart disease"],
+            options_bn: ["লিভার রোগ", "স্নায়ুতন্ত্রের রোগ", "কিডনি রোগ", "হৃদরোগ"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 331,
+            question: "The sign of increased intracranial pressure is:",
+            question_bn: "বর্ধিত ইন্ট্রাক্রানিয়াল চাপের লক্ষণ হল:",
+            options: ["Normal vision", "Headache and vomiting", "Increased appetite", "Low BP"],
+            options_bn: ["স্বাভাবিক দৃষ্টি", "মাথাব্যথা এবং বমি", "ক্ষুধা বৃদ্ধি", "নিম্ন রক্তচাপ"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 332,
+            question: "What is Parkinson's disease?",
+            question_bn: "পার্কিনসন রোগ কী?",
+            options: ["Kidney disease", "Progressive neurological disorder", "Liver disease", "Heart disease"],
+            options_bn: ["কিডনি রোগ", "প্রগতিশীল স্নায়বিক ব্যাধি", "লিভার রোগ", "হৃদরোগ"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 333,
+            question: "The treatment for Parkinson's includes:",
+            question_bn: "পার্কিনসনের চিকিৎসা অন্তর্ভুক্ত:",
+            options: ["Laxatives", "Levodopa", "Antacids", "Antibiotics"],
+            options_bn: ["লাক্সেটিভ", "লেভোডোপা", "অ্যান্টাসিড", "অ্যান্টিবায়োটিক"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 334,
+            question: "What is Guillain-Barré syndrome?",
+            question_bn: "গুইলেন-বারে সিন্ড্রোম কী?",
+            options: ["Heart disease", "Ascending paralysis", "Liver disease", "Kidney disease"],
+            options_bn: ["হৃদরোগ", "আরোহী পক্ষাঘাত", "লিভার রোগ", "কিডনি রোগ"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 335,
+            question: "What is the treatment for stroke?",
+            question_bn: "স্ট্রোকের চিকিৎসা কী?",
+            options: ["Antibiotics", "Thrombolytics within 4.5 hours", "Cold compress", "Exercise only"],
+            options_bn: ["অ্যান্টিবায়োটিক", "৪.৫ ঘন্টার মধ্যে থ্রম্বোলাইটিক্স", "ঠান্ডা সেক", "শুধুমাত্র ব্যায়াম"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 336,
+            question: "What is meningitis?",
+            question_bn: "মেনিনজাইটিস কী?",
+            options: ["Kidney inflammation", "Brain and spinal cord inflammation", "Liver inflammation", "Heart inflammation"],
+            options_bn: ["কিডনি প্রদাহ", "মস্তিষ্ক এবং মেরুদণ্ডের প্রদাহ", "লিভার প্রদাহ", "হৃদযন্ত্রের প্রদাহ"],
+            correct: 1,
+            marks: 1
+        }
+    ],
+
+    // SECTION 8: Child Health Nursing (50+ Questions)
+    section8: [
+        {
+            id: 356,
+            question: "The vaccine given at birth is:",
+            question_bn: "জন্মের সময় দেওয়া টিকা হল:",
+            options: ["MMR", "BCG", "DPT", "Hepatitis A"],
+            options_bn: ["এমএমআর", "বিসিজি", "ডিপিটি", "হেপাটাইটিস এ"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 357,
+            question: "The normal fontanelle closure age is:",
+            question_bn: "স্বাভাবিক ফন্টানেল বন্ধ হওয়ার বয়স হল:",
+            options: ["3-6 months", "12-18 months", "24-36 months", "48 months"],
+            options_bn: ["৩-৬ মাস", "১২-১৮ মাস", "২৪-৩৬ মাস", "৪৮ মাস"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 358,
+            question: "The first solid food given to baby is:",
+            question_bn: "শিশুকে দেওয়া প্রথম কঠিন খাবার হল:",
+            options: ["Rice", "Egg", "Fruit puree", "Meat"],
+            options_bn: ["ভাত", "ডিম", "ফল পিউরি", "মাংস"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 359,
+            question: "At what age does a child start walking?",
+            question_bn: "একটি শিশু কত বয়সে হাঁটতে শুরু করে?",
+            options: ["6 months", "9 months", "12 months", "18 months"],
+            options_bn: ["৬ মাস", "৯ মাস", "১২ মাস", "১৮ মাস"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 360,
+            question: "The normal birth weight is:",
+            question_bn: "স্বাভাবিক জন্ম ওজন হল:",
+            options: ["1.5-2.0 kg", "2.5-3.5 kg", "4.0-5.0 kg", "6.0 kg"],
+            options_bn: ["১.৫-২.০ কেজি", "২.৫-৩.৫ কেজি", "৪.০-৫.০ কেজি", "৬.০ কেজি"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 361,
+            question: "The Apgar score assesses:",
+            question_bn: "অ্যাপগার স্কোর মূল্যায়ন করে:",
+            options: ["Father's health", "Placental health", "Newborn's condition", "Mother's health"],
+            options_bn: ["বাবার স্বাস্থ্য", "প্ল্যাসেন্টাল স্বাস্থ্য", "নবজাতকের অবস্থা", "মায়ের স্বাস্থ্য"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 362,
+            question: "Colostrum is rich in:",
+            question_bn: "কোলোস্ট্রাম সমৃদ্ধ:",
+            options: ["Sodium", "Sugar", "Antibodies", "Fat"],
+            options_bn: ["সোডিয়াম", "চিনি", "অ্যান্টিবডি", "চর্বি"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 363,
+            question: "At what age is measles vaccine given?",
+            question_bn: "কত বয়সে হাম টিকা দেওয়া হয়?",
+            options: ["10 years", "5 years", "9 months", "Birth"],
+            options_bn: ["১০ বছর", "৫ বছর", "৯ মাস", "জন্ম"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 364,
+            question: "What is kwashiorkor?",
+            question_bn: "কোয়াশিয়রকর কী?",
+            options: ["Calcium deficiency", "Iron deficiency", "Protein deficiency", "Vitamin deficiency"],
+            options_bn: ["ক্যালসিয়ামের অভাব", "আয়রনের অভাব", "প্রোটিনের অভাব", "ভিটামিনের অভাব"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 365,
+            question: "The treatment for dehydration in children is:",
+            question_bn: "শিশুদের পানিশূন্যতার চিকিৎসা হল:",
+            options: ["Exercise", "ORS", "Surgery", "Antibiotics"],
+            options_bn: ["ব্যায়াম", "ওআরএস", "অস্ত্রোপচার", "অ্যান্টিবায়োটিক"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 366,
+            question: "What is the sign of whooping cough?",
+            question_bn: "হুপিং কাশির লক্ষণ কী?",
+            options: ["Diarrhea", "Rash", "Severe cough with whooping sound", "Fever only"],
+            options_bn: ["ডায়রিয়া", "ফুসকুড়ি", "হুপিং শব্দ সহ গুরুতর কাশি", "শুধুমাত্র জ্বর"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 367,
+            question: "The DPT vaccine protects against:",
+            question_bn: "ডিপিটি টিকা সুরক্ষা দেয়:",
+            options: ["Polio", "TB", "Diphtheria, pertussis, tetanus", "Malaria"],
+            options_bn: ["পোলিও", "টিবি", "ডিফথেরিয়া, পার্টুসিস, টিটেনাস", "ম্যালেরিয়া"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 368,
+            question: "At what age does the posterior fontanelle close?",
+            question_bn: "কত বয়সে পিছনের ফন্টানেল বন্ধ হয়?",
+            options: ["18 months", "12 months", "2-3 months", "Birth"],
+            options_bn: ["১৮ মাস", "১২ মাস", "২-৩ মাস", "জন্ম"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 369,
+            question: "What is croup?",
+            question_bn: "ক্রুপ কী?",
+            options: ["Kidney disease", "Liver disease", "Upper airway infection", "Heart disease"],
+            options_bn: ["কিডনি রোগ", "লিভার রোগ", "উপরের শ্বাসনালী সংক্রমণ", "হৃদরোগ"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 370,
+            question: "The treatment for febrile seizures includes:",
+            question_bn: "জ্বরজনিত খিঁচুনির চিকিৎসা অন্তর্ভুক্ত:",
+            options: ["Exercise", "Antipyretics and anticonvulsants", "Antibiotics only", "Surgery"],
+            options_bn: ["ব্যায়াম", "অ্যান্টিপাইরেটিক্স এবং অ্যান্টিকনভালসেন্ট", "শুধুমাত্র অ্যান্টিবায়োটিক", "অস্ত্রোপচার"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 371,
+            question: "What is jaundice in newborns called?",
+            question_bn: "নবজাতকের জন্ডিস কী বলা হয়?",
+            options: ["Physiological jaundice", "Pathological only", "Hepatitis", "Cirrhosis"],
+            options_bn: ["শারীরবৃত্তীয় জন্ডিস", "শুধুমাত্র প্যাথলজিক্যাল", "হেপাটাইটিস", "সিরোসিস"],
+            correct: 0,
+            marks: 1
+        },
+        {
+            id: 372,
+            question: "The treatment for neonatal jaundice is:",
+            question_bn: "নবজাতকের জন্ডিসের চিকিৎসা হল:",
+            options: ["Surgery", "Phototherapy", "Exercise", "Fasting"],
+            options_bn: ["অস্ত্রোপচার", "ফোটোথেরাপি", "ব্যায়াম", "উপবাস"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 373,
+            question: "What is pyloric stenosis?",
+            question_bn: "পাইলোরিক স্টেনোসিস কী?",
+            options: ["Lung disease", "Kidney disease", "Narrowing of pylorus", "Heart defect"],
+            options_bn: ["ফুসফুসের রোগ", "কিডনি রোগ", "পাইলোরাসের সংকীর্ণতা", "হৃদযন্ত্রের ত্রুটি"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 374,
+            question: "The sign of intussusception is:",
+            question_bn: "ইন্টুসাসেপশনের লক্ষণ হল:",
+            options: ["Currant jelly stools", "Cough", "Rash", "Fever only"],
+            options_bn: ["কারান্ট জেলি মল", "কাশি", "ফুসকুড়ি", "শুধুমাত্র জ্বর"],
+            correct: 0,
+            marks: 1
+        },
+        {
+            id: 375,
+            question: "What is tetralogy of Fallot?",
+            question_bn: "টেট্রালজি অফ ফ্যালট কী?",
+            options: ["Kidney disease", "Congenital heart defect", "Liver disease", "Lung disease"],
+            options_bn: ["কিডনি রোগ", "জন্মগত হৃদযন্ত্রের ত্রুটি", "লিভার রোগ", "ফুসফুসের রোগ"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 376,
+            question: "What is Down syndrome?",
+            question_bn: "ডাউন সিন্ড্রোম কী?",
+            options: ["Infection", "Heart disease", "Genetic disorder", "Injury"],
+            options_bn: ["সংক্রমণ", "হৃদরোগ", "জেনেটিক ব্যাধি", "আঘাত"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 377,
+            question: "The sign of respiratory distress in newborn is:",
+            question_bn: "নবজাতকের শ্বাসকষ্টের লক্ষণ হল:",
+            options: ["Good appetite", "Normal color", "Grunting and retractions", "Normal breathing"],
+            options_bn: ["ভাল ক্ষুধা", "স্বাভাবিক রঙ", "গুঁজন এবং পশ্চাদপসরণ", "স্বাভাবিক শ্বাস"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 378,
+            question: "What is cerebral palsy?",
+            question_bn: "সেরিব্রাল পলসি কী?",
+            options: ["Movement disorder from brain damage", "Heart disease", "Kidney disease", "Liver disease"],
+            options_bn: ["মস্তিষ্কের ক্ষতি থেকে চলাচল ব্যাধি", "হৃদরোগ", "কিডনি রোগ", "লিভার রোগ"],
+            correct: 0,
+            marks: 1
+        },
+        {
+            id: 379,
+            question: "What is the treatment for iron deficiency anemia in children?",
+            question_bn: "শিশুদের আয়রনের ঘাটতি রক্তাল্পতার চিকিৎসা কী?",
+            options: ["Surgery", "Exercise only", "Iron supplements", "Antibiotics"],
+            options_bn: ["অস্ত্রোপচার", "শুধুমাত্র ব্যায়াম", "আয়রন সাপ্লিমেন্ট", "অ্যান্টিবায়োটিক"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 380,
+            question: "What is otitis media?",
+            question_bn: "ওটাইটিস মিডিয়া কী?",
+            options: ["Lung infection", "Middle ear infection", "Throat infection", "Eye infection"],
+            options_bn: ["ফুসফুসের সংক্রমণ", "মধ্য কানের সংক্রমণ", "গলার সংক্রমণ", "চোখের সংক্রমণ"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 381,
+            question: "The treatment for oral thrush in infants is:",
+            question_bn: "শিশুদের মুখের থ্রাশের চিকিৎসা হল:",
+            options: ["Exercise", "Nystatin", "Surgery", "Antibiotics"],
+            options_bn: ["ব্যায়াম", "নিস্ট্যাটিন", "অস্ত্রোপচার", "অ্যান্টিবায়োটিক"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 382,
+            question: "What is the normal respiratory rate for newborns?",
+            question_bn: "নবজাতকের স্বাভাবিক শ্বাসপ্রশ্বাসের হার কত?",
+            options: ["30-60/min", "70-80/min", "100/min", "12-20/min"],
+            options_bn: ["৩০-৬০/মিনিট", "৭০-৮০/মিনিট", "১০০/মিনিট", "১২-২০/মিনিট"],
+            correct: 0,
+            marks: 1
+        },
+        {
+            id: 383,
+            question: "What is chickenpox caused by?",
+            question_bn: "চিকেনপক্স কী দ্বারা সৃষ্ট?",
+            options: ["Varicella zoster virus", "Fungus", "Parasite", "Bacteria"],
+            options_bn: ["ভ্যারিসেলা জোস্টার ভাইরাস", "ছত্রাক", "পরজীবী", "ব্যাকটেরিয়া"],
+            correct: 0,
+            marks: 1
+        },
+        {
+            id: 384,
+            question: "The treatment for head lice is:",
+            question_bn: "মাথার উকুনের চিকিৎসা হল:",
+            options: ["Antibiotics", "Permethrin lotion", "Surgery", "Exercise"],
+            options_bn: ["অ্যান্টিবায়োটিক", "পার্মেথ্রিন লোশন", "অস্ত্রোপচার", "ব্যায়াম"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 385,
+            question: "What is the most common childhood cancer?",
+            question_bn: "সবচেয়ে সাধারণ শৈশব ক্যান্সার কী?",
+            options: ["Leukemia", "Liver cancer", "Kidney cancer", "Lung cancer"],
+            options_bn: ["লিউকেমিয়া", "লিভার ক্যান্সার", "কিডনি ক্যান্সার", "ফুসফুসের ক্যান্সার"],
+            correct: 0,
+            marks: 1
+        },
+        {
+            id: 386,
+            question: "What is nephrotic syndrome?",
+            question_bn: "নেফ্রোটিক সিন্ড্রোম কী?",
+            options: ["Kidney disorder with protein loss", "Lung disease", "Liver disease", "Heart disease"],
+            options_bn: ["প্রোটিন ক্ষয় সহ কিডনি ব্যাধি", "ফুসফুসের রোগ", "লিভার রোগ", "হৃদরোগ"],
+            correct: 0,
+            marks: 1
+        }
+    ],
+
+    // SECTION 9: Mental Health Nursing (50+ Questions)
+    section9: [
+        {
+            id: 406,
+            question: "The most common symptom of depression is:",
+            question_bn: "বিষণ্নতার সবচেয়ে সাধারণ লক্ষণ হল:",
+            options: ["Fever", "Persistent sadness", "Cough", "Rash"],
+            options_bn: ["জ্বর", "ক্রমাগত দুঃখ", "কাশি", "ফুসকুড়ি"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 407,
+            question: "Which therapy is used for phobias?",
+            question_bn: "ফোবিয়াসের জন্য কোন থেরাপি ব্যবহৃত হয়?",
+            options: ["Surgery", "Exposure therapy", "Radiation", "Chemotherapy"],
+            options_bn: ["অস্ত্রোপচার", "এক্সপোজার থেরাপি", "বিকিরণ", "কেমোথেরাপি"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 408,
+            question: "The hallmark symptom of schizophrenia is:",
+            question_bn: "সিজোফ্রেনিয়ার প্রধান লক্ষণ হল:",
+            options: ["Fever", "Hallucinations", "Cough", "Pain"],
+            options_bn: ["জ্বর", "হ্যালুসিনেশন", "কাশি", "ব্যথা"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 409,
+            question: "Which drug class is used for anxiety?",
+            question_bn: "উদ্বেগের জন্য কোন ড্রাগ ক্লাস ব্যবহৃত হয়?",
+            options: ["Antibiotics", "Benzodiazepines", "Antacids", "Laxatives"],
+            options_bn: ["অ্যান্টিবায়োটিক", "বেনজোডায়াজেপাইনস", "অ্যান্টাসিড", "লাক্সেটিভ"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 410,
+            question: "The therapeutic relationship is based on:",
+            question_bn: "থেরাপিউটিক সম্পর্ক ভিত্তিক:",
+            options: ["Friendship", "Trust", "Money", "Fear"],
+            options_bn: ["বন্ধুত্ব", "বিশ্বাস", "অর্থ", "ভয়"],
+            correct: 1,
+            marks: 1
+        }
+    ],
+
+    // SECTION 10: Community Health Nursing (50+ Questions)
+    section10: [
+        {
+            id: 456,
+            question: "The primary level of prevention includes:",
+            question_bn: "প্রাথমিক পর্যায়ের প্রতিরোধ অন্তর্ভুক্ত:",
+            options: ["Treatment", "Immunization", "Rehabilitation", "Surgery"],
+            options_bn: ["চিকিৎসা", "টিকাকরণ", "পুনর্বাসন", "অস্ত্রোপচার"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 457,
+            question: "The most effective method of family planning is:",
+            question_bn: "পরিবার পরিকল্পনার সবচেয়ে কার্যকর পদ্ধতি হল:",
+            options: ["Withdrawal", "IUD", "Calendar method", "Breastfeeding"],
+            options_bn: ["প্রত্যাহার", "IUD", "ক্যালেন্ডার পদ্ধতি", "বুকের দুধ খাওয়ানো"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 458,
+            question: "The vector for malaria is:",
+            question_bn: "ম্যালেরিয়ার বাহক হল:",
+            options: ["Housefly", "Anopheles mosquito", "Cockroach", "Rat"],
+            options_bn: ["মাছি", "অ্যানোফিলিস মশা", "তেলাপোকা", "ইঁদুর"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 459,
+            question: "The safe water storage method is:",
+            question_bn: "নিরাপদ জল সঞ্চয় পদ্ধতি হল:",
+            options: ["Open container", "Covered container", "Dirty container", "Broken container"],
+            options_bn: ["খোলা পাত্র", "ঢাকা পাত্র", "নোংরা পাত্র", "ভাঙা পাত্র"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 460,
+            question: "The WHO recommended exclusive breastfeeding duration is:",
+            question_bn: "WHO প্রস্তাবিত একচেটিয়া বুকের দুধ খাওয়ানোর সময়কাল হল:",
+            options: ["2 months", "6 months", "12 months", "24 months"],
+            options_bn: ["২ মাস", "৬ মাস", "১২ মাস", "২৪ মাস"],
+            correct: 1,
+            marks: 1
+        }
+    ],
+
+    // SECTION 11: Midwifery and Gynecological Nursing (50+ Questions)
+    section11: [
+        {
+            id: 506,
+            question: "The normal duration of pregnancy is:",
+            question_bn: "গর্ভাবস্থার স্বাভাবিক সময়কাল হল:",
+            options: ["28 weeks", "32 weeks", "40 weeks", "48 weeks"],
+            options_bn: ["২৮ সপ্তাহ", "৩২ সপ্তাহ", "৪০ সপ্তাহ", "৪৮ সপ্তাহ"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 507,
+            question: "The first stage of labor ends with:",
+            question_bn: "প্রসবের প্রথম পর্যায় শেষ হয়:",
+            options: ["Delivery of baby", "Full cervical dilatation", "Placental delivery", "Water breaks"],
+            options_bn: ["শিশুর প্রসব", "সম্পূর্ণ সার্ভিকাল প্রসারণ", "প্ল্যাসেন্টাল প্রসব", "জল ভাঙে"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 508,
+            question: "The Apgar score is assessed at:",
+            question_bn: "অ্যাপগার স্কোর মূল্যায়ন করা হয়:",
+            options: ["1 hour after birth", "1 and 5 minutes after birth", "24 hours", "1 week"],
+            options_bn: ["জন্মের ১ ঘন্টা পরে", "জন্মের ১ এবং ৫ মিনিট পরে", "২৪ ঘন্টা", "১ সপ্তাহ"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 509,
+            question: "The hormone detected in pregnancy test is:",
+            question_bn: "গর্ভাবস্থা পরীক্ষায় সনাক্ত হরমোন হল:",
+            options: ["Estrogen", "Progesterone", "hCG", "Prolactin"],
+            options_bn: ["ইস্ট্রোজেন", "প্রোজেস্টেরন", "এইচসিজি", "প্রোল্যাক্টিন"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 510,
+            question: "The most common cause of postpartum hemorrhage is:",
+            question_bn: "প্রসবোত্তর রক্তক্ষরণের সবচেয়ে সাধারণ কারণ হল:",
+            options: ["Infection", "Uterine atony", "Trauma", "Retained placenta"],
+            options_bn: ["সংক্রমণ", "জরায়ু অ্যাটোনি", "ট্রমা", "রক্ষিত প্ল্যাসেন্টা"],
+            correct: 1,
+            marks: 1
+        }
+    ],
+
+    // SECTION 12: Professional Trends and Adjustment (50+ Questions)
+    section12: [
+        {
+            id: 556,
+            question: "The founder of modern nursing is:",
+            question_bn: "আধুনিক নার্সিংয়ের প্রতিষ্ঠাতা হলেন:",
+            options: ["Clara Barton", "Florence Nightingale", "Mary Seacole", "Dorothea Dix"],
+            options_bn: ["ক্লারা বার্টন", "ফ্লোরেন্স নাইটিংগেল", "মেরি সিকোল", "ডোরোথিয়া ডিক্স"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 557,
+            question: "The ethical principle of doing good is:",
+            question_bn: "ভাল করার নৈতিক নীতি হল:",
+            options: ["Autonomy", "Beneficence", "Justice", "Fidelity"],
+            options_bn: ["স্বায়ত্তশাসন", "উপকারিতা", "ন্যায়বিচার", "বিশ্বস্ততা"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 558,
+            question: "The nursing council of India was established in:",
+            question_bn: "ভারতের নার্সিং কাউন্সিল প্রতিষ্ঠিত হয়েছিল:",
+            options: ["1947", "1950", "1953", "1960"],
+            options_bn: ["১৯৪৭", "১৯৫০", "১৯৫৩", "১৯৬০"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 559,
+            question: "Patient confidentiality is part of:",
+            question_bn: "রোগীর গোপনীয়তা অংশ:",
+            options: ["Medical procedure", "Nursing ethics", "Hospital policy only", "Family rights"],
+            options_bn: ["চিকিৎসা পদ্ধতি", "নার্সিং নীতিশাস্ত্র", "শুধুমাত্র হাসপাতাল নীতি", "পারিবারিক অধিকার"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 560,
+            question: "The symbol of nursing profession is:",
+            question_bn: "নার্সিং পেশার প্রতীক হল:",
+            options: ["Red cross", "Lamp", "Stethoscope", "Syringe"],
+            options_bn: ["লাল ক্রস", "প্রদীপ", "স্টেথোস্কোপ", "সিরিঞ্জ"],
+            correct: 1,
+            marks: 1
+        }
+    ]
 };
 
 // Section names for display
