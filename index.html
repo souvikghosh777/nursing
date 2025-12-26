@@ -9,7 +9,10 @@
 <body>
     <!-- Home Screen - Choose Mode -->
     <div id="homeScreen" class="home-screen active">
-        <div class="exam-center-header" data-en="Souvik Exam Center" data-bn="সৌভিক পরীক্ষা কেন্দ্র">Souvik Exam Center</div>
+        <div class="exam-center-header">
+            <span data-en="Souvik Exam Center" data-bn="সৌভিক পরীক্ষা কেন্দ্র">Souvik Exam Center</span>
+            <button class="performance-home-btn" id="performanceHomeBtn">📊 Performance</button>
+        </div>
         <div class="home-container">
             <div class="home-header">
                 <div class="exam-icon">👩‍⚕️</div>
@@ -429,6 +432,65 @@
             </div>
 
             <button class="restart-btn" id="restartBtn" data-en="🔄 Restart Exam" data-bn="🔄 পুনরায় পরীক্ষা দিন">🔄 Restart Exam</button>
+        </div>
+    </div>
+
+    <!-- Performance Popup Modal -->
+    <div id="performanceModal" class="performance-modal">
+        <div class="performance-modal-content">
+            <span class="performance-close">&times;</span>
+            <div class="performance-tabs">
+                <button class="perf-tab active" data-tab="myPerformance">My Performance</button>
+                <button class="perf-tab" data-tab="othersPerformance">Others Performance</button>
+            </div>
+            
+            <!-- My Performance Tab -->
+            <div id="myPerformanceTab" class="perf-tab-content active">
+                <h2>📊 My Performance</h2>
+                <div class="perf-stats">
+                    <div class="perf-stat-card">
+                        <div class="perf-stat-label">Total Exams</div>
+                        <div class="perf-stat-value" id="myTotalExams">0</div>
+                    </div>
+                    <div class="perf-stat-card">
+                        <div class="perf-stat-label">Average Score</div>
+                        <div class="perf-stat-value" id="myAvgScore">0%</div>
+                    </div>
+                    <div class="perf-stat-card">
+                        <div class="perf-stat-label">Best Score</div>
+                        <div class="perf-stat-value" id="myBestScore">0%</div>
+                    </div>
+                    <div class="perf-stat-card">
+                        <div class="perf-stat-label">Latest Score</div>
+                        <div class="perf-stat-value" id="myLatestScore">N/A</div>
+                    </div>
+                </div>
+                <div class="perf-history">
+                    <h3>Recent Performance History</h3>
+                    <div id="myPerformanceList" class="performance-list"></div>
+                </div>
+            </div>
+            
+            <!-- Others Performance Tab -->
+            <div id="othersPerformanceTab" class="perf-tab-content">
+                <h2>👥 Others Performance</h2>
+                <div class="password-section" id="passwordSection">
+                    <p>Enter password to view others' performance:</p>
+                    <input type="password" id="perfPassword" placeholder="Enter password" />
+                    <button id="unlockPerfBtn">Unlock</button>
+                    <p class="password-error" id="passwordError"></p>
+                </div>
+                <div class="others-perf-content" id="othersPerfContent" style="display:none;">
+                    <div class="perf-leaderboard">
+                        <h3>🏆 Top Performers</h3>
+                        <div id="leaderboardList" class="leaderboard-list"></div>
+                    </div>
+                    <div class="all-users-perf">
+                        <h3>All Users Performance</h3>
+                        <div id="allUsersPerformance" class="all-users-list"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 

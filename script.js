@@ -720,6 +720,25 @@ class ExamApp {
         document.getElementById('section3Score').textContent = `${sectionScores[2]}/25`;
         document.getElementById('section4Score').textContent = `${sectionScores[3]}/25`;
         
+        // Calculate time taken
+        const timeTaken = this.formatTime(3600 - this.timeLeft);
+        const percentage = Math.round((correct / this.totalQuestions) * 100);
+        
+        // Save performance data
+        const performanceItem = {
+            name: this.candidateName || 'Anonymous',
+            type: 'user',
+            timestamp: Date.now(),
+            correct: correct,
+            incorrect: incorrect,
+            unanswered: unanswered,
+            total: this.totalQuestions,
+            percentage: percentage,
+            timeTaken: timeTaken,
+            sectionScores: sectionScores
+        };
+        this.savePerformanceData(performanceItem);
+        
         // Result message based on language
         let message = '';
         if (this.language === 'bn') {
@@ -779,9 +798,235 @@ class ExamApp {
         
         this.showScreen('home');
     }
+
+    // Performance tracking methods
+    initPerformanceButton() {
+        const perfBtn = document.getElementById('performanceHomeBtn');
+        const perfModal = document.getElementById('performanceModal');
+        const closeBtn = document.querySelector('.performance-close');
+        const perfTabs = document.querySelectorAll('.perf-tab');
+        const unlockBtn = document.getElementById('unlockPerfBtn');
+        const perfPassword = document.getElementById('perfPassword');
+
+        if (perfBtn) {
+            perfBtn.addEventListener('click', () => {
+                this.openPerformanceModal();
+            });
+        }
+
+        if (closeBtn) {
+            closeBtn.addEventListener('click', () => {
+                perfModal.style.display = 'none';
+            });
+        }
+
+        window.addEventListener('click', (e) => {
+            if (e.target === perfModal) {
+                perfModal.style.display = 'none';
+            }
+        });
+
+        perfTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const tabName = tab.getAttribute('data-tab');
+                this.switchPerformanceTab(tabName);
+            });
+        });
+
+        if (unlockBtn) {
+            unlockBtn.addEventListener('click', () => {
+                this.unlockOthersPerformance();
+            });
+        }
+
+        if (perfPassword) {
+            perfPassword.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') {
+                    this.unlockOthersPerformance();
+                }
+            });
+        }
+    }
+
+    openPerformanceModal() {
+        const modal = document.getElementById('performanceModal');
+        modal.style.display = 'block';
+        this.loadMyPerformance();
+        this.switchPerformanceTab('myPerformance');
+    }
+
+    switchPerformanceTab(tabName) {
+        const tabs = document.querySelectorAll('.perf-tab');
+        const tabContents = document.querySelectorAll('.perf-tab-content');
+
+        tabs.forEach(tab => {
+            if (tab.getAttribute('data-tab') === tabName) {
+                tab.classList.add('active');
+            } else {
+                tab.classList.remove('active');
+            }
+        });
+
+        tabContents.forEach(content => {
+            if (content.id === tabName + 'Tab') {
+                content.classList.add('active');
+            } else {
+                content.classList.remove('active');
+            }
+        });
+
+        // Reset password section when switching to others tab
+        if (tabName === 'othersPerformance') {
+            document.getElementById('passwordSection').style.display = 'block';
+            document.getElementById('othersPerfContent').style.display = 'none';
+            document.getElementById('perfPassword').value = '';
+            document.getElementById('passwordError').textContent = '';
+        }
+    }
+
+    loadMyPerformance() {
+        const performanceData = this.getPerformanceData();
+        const myData = performanceData.filter(item => item.type === 'user');
+
+        // Calculate statistics
+        const totalExams = myData.length;
+        const avgScore = totalExams > 0 ? (myData.reduce((sum, item) => sum + item.percentage, 0) / totalExams).toFixed(1) : 0;
+        const bestScore = totalExams > 0 ? Math.max(...myData.map(item => item.percentage)) : 0;
+        const latestScore = totalExams > 0 ? myData[0].percentage : 'N/A';
+
+        document.getElementById('myTotalExams').textContent = totalExams;
+        document.getElementById('myAvgScore').textContent = avgScore + '%';
+        document.getElementById('myBestScore').textContent = bestScore + '%';
+        document.getElementById('myLatestScore').textContent = latestScore !== 'N/A' ? latestScore + '%' : 'N/A';
+
+        // Display performance history
+        const listContainer = document.getElementById('myPerformanceList');
+        listContainer.innerHTML = '';
+
+        if (myData.length === 0) {
+            listContainer.innerHTML = '<p style="text-align:center;color:#666;padding:20px;">No exam history yet. Take an exam to see your performance!</p>';
+        } else {
+            myData.slice(0, 10).forEach(item => {
+                const perfItem = document.createElement('div');
+                perfItem.className = 'perf-item';
+                perfItem.innerHTML = `
+                    <div class="perf-item-info">
+                        <div class="perf-item-score">${item.percentage}%</div>
+                        <div class="perf-item-date">${new Date(item.timestamp).toLocaleString()}</div>
+                        <div class="perf-item-details">${item.correct}/${item.total} correct • Time: ${item.timeTaken}</div>
+                    </div>
+                `;
+                listContainer.appendChild(perfItem);
+            });
+        }
+    }
+
+    unlockOthersPerformance() {
+        const password = document.getElementById('perfPassword').value;
+        const errorMsg = document.getElementById('passwordError');
+
+        if (password === '12345') {
+            document.getElementById('passwordSection').style.display = 'none';
+            document.getElementById('othersPerfContent').style.display = 'block';
+            this.loadOthersPerformance();
+        } else {
+            errorMsg.textContent = '❌ Incorrect password!';
+        }
+    }
+
+    loadOthersPerformance() {
+        const performanceData = this.getPerformanceData();
+        
+        // Calculate best performance for each user
+        const userStats = {};
+        performanceData.forEach(item => {
+            const userId = item.name || 'Anonymous';
+            if (!userStats[userId]) {
+                userStats[userId] = {
+                    name: userId,
+                    bestScore: 0,
+                    totalExams: 0,
+                    avgScore: 0,
+                    scores: []
+                };
+            }
+            userStats[userId].scores.push(item.percentage);
+            userStats[userId].totalExams++;
+            if (item.percentage > userStats[userId].bestScore) {
+                userStats[userId].bestScore = item.percentage;
+            }
+        });
+
+        // Calculate averages
+        Object.keys(userStats).forEach(userId => {
+            const user = userStats[userId];
+            user.avgScore = (user.scores.reduce((a, b) => a + b, 0) / user.scores.length).toFixed(1);
+        });
+
+        // Convert to array and sort by best score
+        const leaderboard = Object.values(userStats).sort((a, b) => b.bestScore - a.bestScore);
+
+        // Display top 10 in leaderboard
+        const leaderboardList = document.getElementById('leaderboardList');
+        leaderboardList.innerHTML = '';
+
+        leaderboard.slice(0, 10).forEach((user, index) => {
+            const item = document.createElement('div');
+            item.className = 'leaderboard-item';
+            
+            let rankClass = '';
+            let rankIcon = `#${index + 1}`;
+            if (index === 0) { rankClass = 'gold'; rankIcon = '🥇'; }
+            else if (index === 1) { rankClass = 'silver'; rankIcon = '🥈'; }
+            else if (index === 2) { rankClass = 'bronze'; rankIcon = '🥉'; }
+
+            item.innerHTML = `
+                <div class="leaderboard-rank ${rankClass}">${rankIcon}</div>
+                <div class="leaderboard-info">
+                    <div class="leaderboard-name">${user.name}</div>
+                    <div class="leaderboard-stats">Avg: ${user.avgScore}% • Exams: ${user.totalExams}</div>
+                </div>
+                <div class="leaderboard-score">${user.bestScore}%</div>
+            `;
+            leaderboardList.appendChild(item);
+        });
+
+        // Display all users
+        const allUsersList = document.getElementById('allUsersPerformance');
+        allUsersList.innerHTML = '';
+
+        leaderboard.forEach(user => {
+            const item = document.createElement('div');
+            item.className = 'user-perf-item';
+            item.innerHTML = `
+                <div>
+                    <div class="user-perf-name">${user.name}</div>
+                    <div class="user-perf-stats">Best: ${user.bestScore}% • Avg: ${user.avgScore}% • Exams: ${user.totalExams}</div>
+                </div>
+                <div class="user-perf-score">${user.avgScore}%</div>
+            `;
+            allUsersList.appendChild(item);
+        });
+    }
+
+    getPerformanceData() {
+        const data = localStorage.getItem('examPerformance');
+        return data ? JSON.parse(data) : [];
+    }
+
+    savePerformanceData(performanceItem) {
+        const data = this.getPerformanceData();
+        data.unshift(performanceItem);
+        // Keep only last 100 records
+        if (data.length > 100) {
+            data.splice(100);
+        }
+        localStorage.setItem('examPerformance', JSON.stringify(data));
+    }
 }
 
 // Initialize on DOM load
 document.addEventListener('DOMContentLoaded', () => {
-    new ExamApp();
+    const app = new ExamApp();
+    app.initPerformanceButton();
 });
