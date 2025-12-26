@@ -342,14 +342,32 @@
         function displayQuestion(index) {
             const question = midwiferyQuestions[index];
             const container = document.getElementById('questionContainer');
+            const isAnswered = userAnswers[question.id] !== undefined;
             
             const optionLabels = ['A', 'B', 'C', 'D'];
             
             let optionsHtml = '';
             question.options.forEach((option, i) => {
-                const isSelected = userAnswers[question.id] === i;
+                let optionClass = '';
+                
+                // If already answered, show correct/incorrect
+                if (isAnswered) {
+                    if (i === question.correct) {
+                        optionClass = 'correct'; // Always show correct answer
+                    } else if (i === userAnswers[question.id] && i !== question.correct) {
+                        optionClass = 'incorrect'; // Show user's wrong answer
+                    }
+                } else {
+                    // Not answered yet, show selected state
+                    if (userAnswers[question.id] === i) {
+                        optionClass = 'selected';
+                    }
+                }
+                
+                const clickHandler = isAnswered ? '' : `onclick="selectOption(${i})"`;
+                
                 optionsHtml += `
-                    <div class="option ${isSelected ? 'selected' : ''}" onclick="selectOption(${i})">
+                    <div class="option ${optionClass}" ${clickHandler}>
                         <span class="option-label">${optionLabels[i]}.</span>
                         <span>${option}</span>
                     </div>
@@ -373,10 +391,25 @@
             
             // Update button states
             document.getElementById('prevBtn').disabled = index === 0;
-            document.getElementById('checkBtn').style.display = userAnswers[question.id] === undefined ? 'block' : 'none';
+            document.getElementById('checkBtn').style.display = isAnswered ? 'none' : 'block';
             
-            // Clear result
-            document.getElementById('resultContainer').innerHTML = '';
+            // Show result if already answered
+            if (isAnswered) {
+                const isCorrect = userAnswers[question.id] === question.correct;
+                const resultContainer = document.getElementById('resultContainer');
+                
+                resultContainer.innerHTML = `
+                    <div class="result ${isCorrect ? 'correct' : 'incorrect'}">
+                        ${isCorrect ? '✅ Correct!' : '❌ Incorrect!'}
+                    </div>
+                    <div class="explanation">
+                        <strong>Correct Answer:</strong> ${optionLabels[question.correct]}. ${question.options[question.correct]}
+                    </div>
+                `;
+            } else {
+                // Clear result
+                document.getElementById('resultContainer').innerHTML = '';
+            }
         }
 
         function selectOption(optionIndex) {
