@@ -314,18 +314,10 @@ class ExamApp {
                 questionPrefix: 'Question',
                 of: 'of',
                 syllabus: ['Anatomy & Physiology', 'Microbiology', 'Nutrition', 'First Aid', 'Nursing Foundation', 'Medical Surgical I', 'Medical Surgical II', 'Child Health', 'Mental Health', 'Community Health', 'Midwifery & OBG', 'Nursing Education & Admin'],
-                section1Title: 'Section 1: Anatomy & Physiology',
-                section2Title: 'Section 2: Microbiology',
-                section3Title: 'Section 3: Nutrition',
-                section4Title: 'Section 4: First Aid',
-                section5Title: 'Section 5: Nursing Foundation',
-                section6Title: 'Section 6: Medical Surgical Nursing (I)',
-                section7Title: 'Section 7: Medical Surgical Nursing (II)',
-                section8Title: 'Section 8: Child Health Nursing',
-                section9Title: 'Section 9: Mental Health Nursing',
-                section10Title: 'Section 10: Community Health Nursing',
-                section11Title: 'Section 11: Midwifery & Gynaecological Nursing',
-                section12Title: 'Section 12: Nursing Education & Administration'
+                section1Title: 'Part 1: Anatomy, Microbiology & Nutrition (Sections 1-3)',
+                section2Title: 'Part 2: First Aid & Nursing Foundation (Sections 4-5)',
+                section3Title: 'Part 3: Medical Surgical & Child Health (Sections 6-8)',
+                section4Title: 'Part 4: Mental Health, Community Health, Midwifery & Education (Sections 9-12)'
             },
             bn: {
                 examTitle: 'মক পরীক্ষা স্টাফ নার্স',
@@ -339,18 +331,10 @@ class ExamApp {
                 questionPrefix: 'প্রশ্ন',
                 of: 'এর মধ্যে',
                 syllabus: ['শারীরস্থান ও শরীরবিদ্যা', 'মাইক্রোবায়োলজি', 'পুষ্টি', 'প্রাথমিক চিকিৎসা', 'নার্সিং ফাউন্ডেশন', 'মেডিকেল সার্জিক্যাল I', 'মেডিকেল সার্জিক্যাল II', 'শিশু স্বাস্থ্য', 'মানসিক স্বাস্থ্য', 'কমিউনিটি হেলথ', 'মিডওয়াইফারি ও গাইনোকোলজি', 'নার্সিং শিক্ষা ও প্রশাসন'],
-                section1Title: 'বিভাগ ১: শারীরস্থান ও শরীরবিদ্যা',
-                section2Title: 'বিভাগ ২: মাইক্রোবায়োলজি',
-                section3Title: 'বিভাগ ৩: পুষ্টি',
-                section4Title: 'বিভাগ ৪: প্রাথমিক চিকিৎসা',
-                section5Title: 'বিভাগ ৫: নার্সিং ফাউন্ডেশন',
-                section6Title: 'বিভাগ ৬: মেডিকেল সার্জিক্যাল নার্সিং (I)',
-                section7Title: 'বিভাগ ৭: মেডিকেল সার্জিক্যাল নার্সিং (II)',
-                section8Title: 'বিভাগ ৮: শিশু স্বাস্থ্য নার্সিং',
-                section9Title: 'বিভাগ ৯: মানসিক স্বাস্থ্য নার্সিং',
-                section10Title: 'বিভাগ ১০: কমিউনিটি হেলথ নার্সিং',
-                section11Title: 'বিভাগ ১১: মিডওয়াইফারি ও স্ত্রীরোগ নার্সিং',
-                section12Title: 'বিভাগ ১২: নার্সিং শিক্ষা ও প্রশাসন'
+                section1Title: 'অংশ ১: শারীরস্থান, মাইক্রোবায়োলজি ও পুষ্টি (বিভাগ ১-৩)',
+                section2Title: 'অংশ ২: প্রাথমিক চিকিৎসা ও নার্সিং ফাউন্ডেশন (বিভাগ ৪-৫)',
+                section3Title: 'অংশ ৩: মেডিকেল সার্জিক্যাল ও শিশু স্বাস্থ্য (বিভাগ ৬-৮)',
+                section4Title: 'অংশ ৪: মানসিক স্বাস্থ্য, কমিউনিটি হেলথ, মিডওয়াইফারি ও শিক্ষা (বিভাগ ৯-১২)'
             }
         };
         
