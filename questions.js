@@ -4770,6 +4770,411 @@ const examQuestions = {
             options_bn: ["বন্ধুত্ব", "বিশ্বাস", "অর্থ", "ভয়"],
             correct: 1,
             marks: 1
+        },
+        {
+            id: 411,
+            question: "ECT (Electroconvulsive therapy) is primarily used for:",
+            question_bn: "ইসিটি (ইলেক্ট্রোকনভালসিভ থেরাপি) প্রধানত ব্যবহৃত হয়:",
+            options: ["Severe depression", "Diabetes", "Hypertension", "Asthma"],
+            options_bn: ["গুরুতর বিষণ্নতা", "ডায়াবেটিস", "উচ্চ রক্তচাপ", "হাঁপানি"],
+            correct: 0,
+            marks: 1
+        },
+        {
+            id: 412,
+            question: "Obsessive-compulsive disorder involves:",
+            question_bn: "অবসেসিভ-কমপালসিভ ডিসঅর্ডার জড়িত:",
+            options: ["Repetitive thoughts and behaviors", "Memory loss", "High fever", "Skin rash"],
+            options_bn: ["পুনরাবৃত্তিমূলক চিন্তা এবং আচরণ", "স্মৃতিশক্তি হ্রাস", "উচ্চ জ্বর", "ত্বকের ফুসকুড়ি"],
+            correct: 0,
+            marks: 1
+        },
+        {
+            id: 413,
+            question: "Bipolar disorder is characterized by:",
+            question_bn: "বাইপোলার ডিসঅর্ডার চিহ্নিত করা হয়:",
+            options: ["Only mania", "Alternating depression and mania", "Only depression", "Memory loss"],
+            options_bn: ["শুধুমাত্র উন্মাদনা", "বিকল্প বিষণ্নতা এবং উন্মাদনা", "শুধুমাত্র বিষণ্নতা", "স্মৃতিশক্তি হ্রাস"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 414,
+            question: "Therapeutic communication includes:",
+            question_bn: "থেরাপিউটিক যোগাযোগ অন্তর্ভুক্ত:",
+            options: ["Judging patients", "Active listening", "Ignoring concerns", "Giving orders"],
+            options_bn: ["রোগীদের বিচার করা", "সক্রিয় শ্রবণ", "উদ্বেগ উপেক্ষা করা", "আদেশ দেওয়া"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 415,
+            question: "Delirium is characterized by:",
+            question_bn: "ডেলিরিয়াম চিহ্নিত করা হয়:",
+            options: ["Normal alertness", "Chronic memory loss", "Acute confusion", "Clear thinking"],
+            options_bn: ["স্বাভাবিক সতর্কতা", "দীর্ঘস্থায়ী স্মৃতিশক্তি হ্রাস", "তীব্র বিভ্রান্তি", "স্পষ্ট চিন্তা"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 416,
+            question: "PTSD stands for:",
+            question_bn: "পিটিএসডি মানে:",
+            options: ["Pre Treatment Stress Disease", "Post Traumatic Stress Disorder", "Painful Tissue Stress Disorder", "Patient Treatment Safety Device"],
+            options_bn: ["প্রি ট্রিটমেন্ট স্ট্রেস ডিজিজ", "পোস্ট ট্রমাটিক স্ট্রেস ডিসঅর্ডার", "বেদনাদায়ক টিস্যু স্ট্রেস ডিসঅর্ডার", "রোগী চিকিত্সা নিরাপত্তা ডিভাইস"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 417,
+            question: "Antipsychotic medications are used for:",
+            question_bn: "অ্যান্টিসাইকোটিক ওষুধ ব্যবহৃত হয়:",
+            options: ["Schizophrenia", "Headache", "Common cold", "Diabetes"],
+            options_bn: ["সিজোফ্রেনিয়া", "মাথাব্যথা", "সাধারণ ঠান্ডা", "ডায়াবেটিস"],
+            correct: 0,
+            marks: 1
+        },
+        {
+            id: 418,
+            question: "The defense mechanism of denying reality is called:",
+            question_bn: "বাস্তবতা অস্বীকার করার প্রতিরক্ষা প্রক্রিয়াকে বলা হয়:",
+            options: ["Projection", "Sublimation", "Denial", "Regression"],
+            options_bn: ["প্রজেকশন", "সাবলিমেশন", "ডিনায়াল", "রিগ্রেশন"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 419,
+            question: "Group therapy is beneficial for:",
+            question_bn: "গ্রুপ থেরাপি উপকারী:",
+            options: ["Social support and sharing", "Physical injuries only", "Surgery preparation", "Lab tests"],
+            options_bn: ["সামাজিক সমর্থন এবং ভাগাভাগি", "শুধুমাত্র শারীরিক আঘাত", "অস্ত্রোপচার প্রস্তুতি", "ল্যাব পরীক্ষা"],
+            correct: 0,
+            marks: 1
+        },
+        {
+            id: 420,
+            question: "Suicide risk assessment should include:",
+            question_bn: "আত্মহত্যার ঝুঁকি মূল্যায়ন অন্তর্ভুক্ত করা উচিত:",
+            options: ["Suicidal ideation and plan", "Blood pressure only", "Height and weight", "Skin color"],
+            options_bn: ["আত্মহত্যার চিন্তা এবং পরিকল্পনা", "শুধুমাত্র রক্তচাপ", "উচ্চতা এবং ওজন", "ত্বকের রঙ"],
+            correct: 0,
+            marks: 1
+        },
+        {
+            id: 421,
+            question: "Milieu therapy focuses on:",
+            question_bn: "মিলিউ থেরাপি মনোনিবেশ করে:",
+            options: ["Surgery", "Therapeutic environment", "Medication only", "Diet only"],
+            options_bn: ["অস্ত্রোপচার", "থেরাপিউটিক পরিবেশ", "শুধুমাত্র ওষুধ", "শুধুমাত্র ডায়েট"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 422,
+            question: "Anorexia nervosa is characterized by:",
+            question_bn: "অ্যানোরেক্সিয়া নার্ভোসা চিহ্নিত করা হয়:",
+            options: ["Normal appetite", "Refusal to maintain normal weight", "Excessive eating", "Overeating"],
+            options_bn: ["স্বাভাবিক ক্ষুধা", "স্বাভাবিক ওজন বজায় রাখতে অস্বীকার", "অত্যধিক খাওয়া", "অতিরিক্ত খাওয়া"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 423,
+            question: "Cognitive behavioral therapy (CBT) aims to change:",
+            question_bn: "কগনিটিভ বিহেভিয়ারাল থেরাপি (সিবিটি) পরিবর্তন করতে চায়:",
+            options: ["Negative thought patterns", "Blood type", "DNA", "Eye color"],
+            options_bn: ["নেতিবাচক চিন্তার ধরণ", "রক্তের ধরন", "ডিএনএ", "চোখের রঙ"],
+            correct: 0,
+            marks: 1
+        },
+        {
+            id: 424,
+            question: "The most common side effect of antidepressants is:",
+            question_bn: "অ্যান্টিডিপ্রেসেন্টসের সবচেয়ে সাধারণ পার্শ্ব প্রতিক্রিয়া হল:",
+            options: ["Fever", "Skin rash", "Dry mouth", "Hair loss"],
+            options_bn: ["জ্বর", "ত্বকের ফুসকুড়ি", "শুষ্ক মুখ", "চুল পড়া"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 425,
+            question: "Alzheimer's disease primarily affects:",
+            question_bn: "আলঝাইমার রোগ প্রধানত প্রভাবিত করে:",
+            options: ["Lungs", "Memory and cognition", "Heart", "Kidneys"],
+            options_bn: ["ফুসফুস", "স্মৃতি এবং জ্ঞান", "হৃদয়", "কিডনি"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 426,
+            question: "Restraints in psychiatric care should be:",
+            question_bn: "মনোরোগ চিকিৎসায় সংযম হওয়া উচিত:",
+            options: ["Never documented", "Used as last resort", "Used as first option", "Applied loosely"],
+            options_bn: ["কখনও নথিভুক্ত নয়", "শেষ অবলম্বন হিসাবে ব্যবহৃত", "প্রথম বিকল্প হিসাবে ব্যবহৃত", "আলগাভাবে প্রয়োগ"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 427,
+            question: "Paranoia involves:",
+            question_bn: "প্যারানোয়া জড়িত:",
+            options: ["Normal thinking", "Unfounded suspicions", "Memory loss", "Excessive happiness"],
+            options_bn: ["স্বাভাবিক চিন্তা", "ভিত্তিহীন সন্দেহ", "স্মৃতিশক্তি হ্রাস", "অত্যধিক সুখ"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 428,
+            question: "Panic disorder is characterized by:",
+            question_bn: "প্যানিক ডিসঅর্ডার চিহ্নিত করা হয়:",
+            options: ["Clear thinking", "Sudden intense fear", "Slow heart rate", "Normal breathing"],
+            options_bn: ["স্পষ্ট চিন্তা", "হঠাৎ তীব্র ভয়", "ধীর হৃদস্পন্দন", "স্বাভাবিক শ্বাস"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 429,
+            question: "Substance abuse disorder involves:",
+            question_bn: "সাবস্ট্যান্স অ্যাবিউজ ডিসঅর্ডার জড়িত:",
+            options: ["Good sleep", "Compulsive drug use", "Healthy lifestyle", "Normal behavior"],
+            options_bn: ["ভাল ঘুম", "বাধ্যতামূলক ড্রাগ ব্যবহার", "স্বাস্থ্যকর জীবনযাত্রা", "স্বাভাবিক আচরণ"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 430,
+            question: "The mental status examination includes assessment of:",
+            question_bn: "মানসিক অবস্থা পরীক্ষা মূল্যায়ন অন্তর্ভুক্ত:",
+            options: ["Appearance, mood, and thought process", "Blood sugar only", "Only height", "Only weight"],
+            options_bn: ["চেহারা, মেজাজ এবং চিন্তা প্রক্রিয়া", "শুধুমাত্র রক্তের শর্করা", "শুধুমাত্র উচ্চতা", "শুধুমাত্র ওজন"],
+            correct: 0,
+            marks: 1
+        },
+        {
+            id: 431,
+            question: "Conversion disorder manifests as:",
+            question_bn: "কনভার্শন ডিসঅর্ডার প্রকাশ পায়:",
+            options: ["High fever", "Infection", "Physical symptoms without medical cause", "Normal health"],
+            options_bn: ["উচ্চ জ্বর", "সংক্রমণ", "চিকিৎসা কারণ ছাড়া শারীরিক লক্ষণ", "স্বাভাবিক স্বাস্থ্য"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 432,
+            question: "Electroconvulsive therapy requires:",
+            question_bn: "ইলেক্ট্রোকনভালসিভ থেরাপি প্রয়োজন:",
+            options: ["Informed consent and anesthesia", "No preparation", "Only oral medication", "No monitoring"],
+            options_bn: ["সচেতন সম্মতি এবং অ্যানেস্থেসিয়া", "কোন প্রস্তুতি নেই", "শুধুমাত্র মৌখিক ওষুধ", "কোন পর্যবেক্ষণ নেই"],
+            correct: 0,
+            marks: 1
+        },
+        {
+            id: 433,
+            question: "Borderline personality disorder includes:",
+            question_bn: "বর্ডারলাইন পার্সোনালিটি ডিসঅর্ডার অন্তর্ভুক্ত:",
+            options: ["No emotional changes", "Stable relationships", "Unstable moods and relationships", "Normal behavior"],
+            options_bn: ["কোন আবেগজনিত পরিবর্তন নেই", "স্থিতিশীল সম্পর্ক", "অস্থির মেজাজ এবং সম্পর্ক", "স্বাভাবিক আচরণ"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 434,
+            question: "Crisis intervention should be:",
+            question_bn: "সংকট হস্তক্ষেপ হওয়া উচিত:",
+            options: ["Immediate and short-term", "Delayed", "Long-term only", "Avoided"],
+            options_bn: ["তাত্ক্ষণিক এবং স্বল্পমেয়াদী", "বিলম্বিত", "শুধুমাত্র দীর্ঘমেয়াদী", "এড়ানো"],
+            correct: 0,
+            marks: 1
+        },
+        {
+            id: 435,
+            question: "Hallucinations differ from delusions in that hallucinations are:",
+            question_bn: "হ্যালুসিনেশনগুলি বিভ্রান্তি থেকে ভিন্ন যে হ্যালুসিনেশনগুলি হল:",
+            options: ["Normal thoughts", "False perceptions", "False beliefs", "True experiences"],
+            options_bn: ["স্বাভাবিক চিন্তা", "মিথ্যা উপলব্ধি", "মিথ্যা বিশ্বাস", "সত্য অভিজ্ঞতা"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 436,
+            question: "Social anxiety disorder involves fear of:",
+            question_bn: "সামাজিক উদ্বেগ ডিসঅর্ডার ভয় জড়িত:",
+            options: ["Heights", "Social situations", "Animals", "Being alone"],
+            options_bn: ["উচ্চতা", "সামাজিক পরিস্থিতি", "প্রাণী", "একা থাকা"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 437,
+            question: "Lithium is primarily used to treat:",
+            question_bn: "লিথিয়াম প্রধানত চিকিত্সা করতে ব্যবহৃত হয়:",
+            options: ["Diabetes", "Bipolar disorder", "Infection", "Hypertension"],
+            options_bn: ["ডায়াবেটিস", "বাইপোলার ডিসঅর্ডার", "সংক্রমণ", "উচ্চ রক্তচাপ"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 438,
+            question: "Autism spectrum disorder is characterized by:",
+            question_bn: "অটিজম স্পেকট্রাম ডিসঅর্ডার চিহ্নিত করা হয়:",
+            options: ["High intelligence always", "Impaired social communication", "Normal social interaction", "No symptoms"],
+            options_bn: ["সর্বদা উচ্চ বুদ্ধিমত্তা", "প্রতিবন্ধী সামাজিক যোগাযোগ", "স্বাভাবিক সামাজিক মিথস্ক্রিয়া", "কোন লক্ষণ নেই"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 439,
+            question: "ADHD stands for:",
+            question_bn: "এডিএইচডি মানে:",
+            options: ["Advanced Diabetes Health Disease", "Acute Disease Health Disorder", "Attention Deficit Hyperactivity Disorder", "Automatic Defense Health Device"],
+            options_bn: ["অ্যাডভান্সড ডায়াবেটিস হেলথ ডিজিজ", "অ্যাকিউট ডিজিজ হেলথ ডিসঅর্ডার", "অ্যাটেনশন ডেফিসিট হাইপারঅ্যাক্টিভিটি ডিসঅর্ডার", "অটোম্যাটিক ডিফেন্স হেলথ ডিভাইস"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 440,
+            question: "Seclusion in psychiatric care should be used:",
+            question_bn: "মনোরোগ চিকিৎসায় নির্জনতা ব্যবহার করা উচিত:",
+            options: ["Only when patient is danger to self or others", "Routinely", "For convenience", "Never"],
+            options_bn: ["শুধুমাত্র যখন রোগী নিজের বা অন্যদের জন্য বিপদ", "নিয়মিত", "সুবিধার জন্য", "কখনও না"],
+            correct: 0,
+            marks: 1
+        },
+        {
+            id: 441,
+            question: "Dementia is characterized by:",
+            question_bn: "ডিমেনশিয়া চিহ্নিত করা হয়:",
+            options: ["Enhanced thinking", "Progressive cognitive decline", "Improved memory", "Normal aging"],
+            options_bn: ["উন্নত চিন্তা", "প্রগতিশীল জ্ঞানীয় পতন", "উন্নত স্মৃতি", "স্বাভাবিক বার্ধক্য"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 442,
+            question: "Psychosis involves loss of contact with:",
+            question_bn: "সাইকোসিস যোগাযোগ হারানো জড়িত:",
+            options: ["Work", "Reality", "Family", "Friends"],
+            options_bn: ["কাজ", "বাস্তবতা", "পরিবার", "বন্ধুরা"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 443,
+            question: "Family therapy is beneficial for:",
+            question_bn: "পারিবারিক থেরাপি উপকারী:",
+            options: ["Physical illness only", "Family dynamics and relationships", "Individual problems only", "No conditions"],
+            options_bn: ["শুধুমাত্র শারীরিক অসুস্থতা", "পারিবারিক গতিশীলতা এবং সম্পর্ক", "শুধুমাত্র ব্যক্তিগত সমস্যা", "কোন শর্ত নেই"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 444,
+            question: "The priority in managing an aggressive patient is:",
+            question_bn: "একটি আক্রমণাত্মক রোগী পরিচালনার অগ্রাধিকার হল:",
+            options: ["Medication only", "Safety of all involved", "Punishment", "Discharge"],
+            options_bn: ["শুধুমাত্র ওষুধ", "সকল জড়িতদের নিরাপত্তা", "শাস্তি", "ডিসচার্জ"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 445,
+            question: "Seasonal affective disorder is associated with:",
+            question_bn: "মৌসুমী আক্রান্ত ডিসঅর্ডার সম্পর্কিত:",
+            options: ["Always present", "Changes in seasons", "Summer only", "No pattern"],
+            options_bn: ["সর্বদা উপস্থিত", "ঋতুতে পরিবর্তন", "শুধুমাত্র গ্রীষ্ম", "কোন প্যাটার্ন নেই"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 446,
+            question: "Trichotillomania involves:",
+            question_bn: "ট্রাইকোটিলোম্যানিয়া জড়িত:",
+            options: ["Nail biting", "Hair pulling", "Skin picking", "Normal grooming"],
+            options_bn: ["নখ কামড়ানো", "চুল টানা", "ত্বক তোলা", "স্বাভাবিক গ্রুমিং"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 447,
+            question: "The therapeutic use of self includes:",
+            question_bn: "নিজের থেরাপিউটিক ব্যবহার অন্তর্ভুক্ত:",
+            options: ["Avoiding interaction", "Using personality to help patients", "Being distant", "Judging patients"],
+            options_bn: ["মিথস্ক্রিয়া এড়ানো", "রোগীদের সাহায্য করতে ব্যক্তিত্ব ব্যবহার করা", "দূরে থাকা", "রোগীদের বিচার করা"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 448,
+            question: "Antianxiety medications should be used:",
+            question_bn: "অ্যান্টিঅ্যাংজাইটি ওষুধ ব্যবহার করা উচিত:",
+            options: ["By anyone", "Short-term with caution", "Long-term always", "Without monitoring"],
+            options_bn: ["যে কেউ দ্বারা", "সতর্কতার সাথে স্বল্পমেয়াদী", "সর্বদা দীর্ঘমেয়াদী", "পর্যবেক্ষণ ছাড়া"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 449,
+            question: "Postpartum depression can occur:",
+            question_bn: "প্রসবোত্তর বিষণ্নতা ঘটতে পারে:",
+            options: ["Only during pregnancy", "After childbirth", "Only in elderly", "Never"],
+            options_bn: ["শুধুমাত্র গর্ভাবস্থায়", "সন্তান জন্মের পরে", "শুধুমাত্র বয়স্কদের মধ্যে", "কখনই না"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 450,
+            question: "Therapeutic touch in mental health nursing promotes:",
+            question_bn: "মানসিক স্বাস্থ্য নার্সিং থেরাপিউটিক স্পর্শ প্রচার করে:",
+            options: ["Fear", "Trust and comfort", "Discomfort", "Anxiety"],
+            options_bn: ["ভয়", "বিশ্বাস এবং আরাম", "অস্বস্তি", "উদ্বেগ"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 451,
+            question: "Sleep disorders commonly associated with mental illness include:",
+            question_bn: "মানসিক অসুস্থতার সাথে সাধারণত সম্পর্কিত ঘুমের ব্যাধি অন্তর্ভুক্ত:",
+            options: ["No changes", "Insomnia", "Normal sleep", "Long sleep only"],
+            options_bn: ["কোন পরিবর্তন নেই", "অনিদ্রা", "স্বাভাবিক ঘুম", "শুধুমাত্র দীর্ঘ ঘুম"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 452,
+            question: "Mental health first aid includes:",
+            question_bn: "মানসিক স্বাস্থ্য প্রাথমিক চিকিৎসা অন্তর্ভুক্ত:",
+            options: ["No intervention", "Assessing and providing initial support", "Ignoring crisis", "Avoiding patient"],
+            options_bn: ["কোন হস্তক্ষেপ নেই", "মূল্যায়ন এবং প্রাথমিক সহায়তা প্রদান", "সংকট উপেক্ষা করা", "রোগী এড়ানো"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 453,
+            question: "Stigma in mental health can be reduced by:",
+            question_bn: "মানসিক স্বাস্থ্যে কলঙ্ক হ্রাস করা যায়:",
+            options: ["Discrimination", "Education and awareness", "Hiding illness", "Isolation"],
+            options_bn: ["বৈষম্য", "শিক্ষা এবং সচেতনতা", "অসুস্থতা লুকানো", "বিচ্ছিন্নতা"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 454,
+            question: "Recovery-oriented care focuses on:",
+            question_bn: "পুনরুদ্ধার-ভিত্তিক যত্ন মনোনিবেশ করে:",
+            options: ["Hospitalization", "Hope, empowerment and quality of life", "Symptoms only", "Medication only"],
+            options_bn: ["হাসপাতালে ভর্তি", "আশা, ক্ষমতায়ন এবং জীবনের মান", "শুধুমাত্র লক্ষণ", "শুধুমাত্র ওষুধ"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 455,
+            question: "Community mental health services provide:",
+            question_bn: "কমিউনিটি মানসিক স্বাস্থ্য সেবা প্রদান করে:",
+            options: ["Expensive treatment only", "Care in patient's own environment", "Hospital care only", "No services"],
+            options_bn: ["শুধুমাত্র ব্যয়বহুল চিকিৎসা", "রোগীর নিজস্ব পরিবেশে যত্ন", "শুধুমাত্র হাসপাতাল যত্ন", "কোন সেবা নেই"],
+            correct: 1,
+            marks: 1
         }
     ],
 
@@ -4817,6 +5222,411 @@ const examQuestions = {
             question_bn: "WHO প্রস্তাবিত একচেটিয়া বুকের দুধ খাওয়ানোর সময়কাল হল:",
             options: ["2 months", "6 months", "12 months", "24 months"],
             options_bn: ["২ মাস", "৬ মাস", "১২ মাস", "২৪ মাস"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 461,
+            question: "Oral Rehydration Solution (ORS) is used for:",
+            question_bn: "ওরাল রিহাইড্রেশন সলিউশন (ওআরএস) ব্যবহৃত হয়:",
+            options: ["Hypertension", "Dehydration from diarrhea", "Diabetes", "Asthma"],
+            options_bn: ["উচ্চ রক্তচাপ", "ডায়রিয়া থেকে ডিহাইড্রেশন", "ডায়াবেটিস", "হাঁপানি"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 462,
+            question: "The National Health Mission focuses on:",
+            question_bn: "জাতীয় স্বাস্থ্য মিশন মনোনিবেশ করে:",
+            options: ["Urban areas only", "Rural and urban health", "Education only", "Agriculture"],
+            options_bn: ["শুধুমাত্র শহুরে এলাকা", "গ্রামীণ এবং শহুরে স্বাস্থ্য", "শুধুমাত্র শিক্ষা", "কৃষি"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 463,
+            question: "ASHA worker stands for:",
+            question_bn: "আশা কর্মী মানে:",
+            options: ["Accredited Social Health Activist", "Advanced System Health Agent", "All State Health Administrator", "Annual Survey Health Advisor"],
+            options_bn: ["স্বীকৃত সামাজিক স্বাস্থ্য কর্মী", "উন্নত সিস্টেম স্বাস্থ্য এজেন্ট", "সমস্ত রাজ্য স্বাস্থ্য প্রশাসক", "বার্ষিক সমীক্ষা স্বাস্থ্য উপদেষ্টা"],
+            correct: 0,
+            marks: 1
+        },
+        {
+            id: 464,
+            question: "Tuberculosis is primarily spread through:",
+            question_bn: "যক্ষ্মা প্রধানত ছড়ায়:",
+            options: ["Water", "Airborne droplets", "Food", "Blood"],
+            options_bn: ["জল", "বায়ুবাহিত ড্রপলেট", "খাদ্য", "রক্ত"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 465,
+            question: "DOTS stands for:",
+            question_bn: "ডটস মানে:",
+            options: ["Direct Observed Treatment Short-course", "Disease Outbreak Treatment System", "Doctor On-call Treatment Service", "Daily Oral Treatment Schedule"],
+            options_bn: ["সরাসরি পর্যবেক্ষিত চিকিৎসা সংক্ষিপ্ত কোর্স", "রোগ প্রাদুর্ভাব চিকিৎসা সিস্টেম", "ডাক্তার অন-কল চিকিৎসা সেবা", "দৈনিক মৌখিক চিকিৎসা সময়সূচী"],
+            correct: 0,
+            marks: 1
+        },
+        {
+            id: 466,
+            question: "Pulse Polio Programme aims to eradicate:",
+            question_bn: "পালস পোলিও কর্মসূচি নির্মূল করার লক্ষ্য:",
+            options: ["Tuberculosis", "Poliomyelitis", "Malaria", "Dengue"],
+            options_bn: ["যক্ষ্মা", "পোলিওমাইলাইটিস", "ম্যালেরিয়া", "ডেঙ্গু"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 467,
+            question: "Anganwadi centers provide:",
+            question_bn: "অঙ্গনওয়াড়ি কেন্দ্র প্রদান করে:",
+            options: ["Hospital care", "Maternal and child health services", "Surgery", "Cancer treatment"],
+            options_bn: ["হাসপাতাল যত্ন", "মাতৃ ও শিশু স্বাস্থ্য সেবা", "অস্ত্রোপচার", "ক্যান্সার চিকিৎসা"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 468,
+            question: "Integrated Child Development Services (ICDS) targets:",
+            question_bn: "ইন্টিগ্রেটেড চাইল্ড ডেভেলপমেন্ট সার্ভিসেস (আইসিডিএস) লক্ষ্য:",
+            options: ["Elderly only", "Children 0-6 years", "Adults only", "Teenagers only"],
+            options_bn: ["শুধুমাত্র বয়স্ক", "০-৬ বছর বয়সী শিশু", "শুধুমাত্র প্রাপ্তবয়স্ক", "শুধুমাত্র কিশোর"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 469,
+            question: "The most common vector-borne disease in India is:",
+            question_bn: "ভারতে সবচেয়ে সাধারণ ভেক্টর-বাহিত রোগ হল:",
+            options: ["Cholera", "Malaria", "Typhoid", "Hepatitis"],
+            options_bn: ["কলেরা", "ম্যালেরিয়া", "টাইফয়েড", "হেপাটাইটিস"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 470,
+            question: "Sanitary latrine helps prevent:",
+            question_bn: "স্যানিটারি ল্যাট্রিন প্রতিরোধ করতে সাহায্য করে:",
+            options: ["Heart disease", "Waterborne diseases", "Cancer", "Diabetes"],
+            options_bn: ["হৃদরোগ", "জলবাহিত রোগ", "ক্যান্সার", "ডায়াবেটিস"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 471,
+            question: "Universal Immunization Programme includes vaccines for:",
+            question_bn: "সার্বজনীন টিকাকরণ কর্মসূচি টিকা অন্তর্ভুক্ত:",
+            options: ["Adults only", "Children and pregnant women", "Elderly only", "No one"],
+            options_bn: ["শুধুমাত্র প্রাপ্তবয়স্ক", "শিশু এবং গর্ভবতী মহিলা", "শুধুমাত্র বয়স্ক", "কেউ না"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 472,
+            question: "Cold chain maintenance is important for:",
+            question_bn: "কোল্ড চেইন রক্ষণাবেক্ষণ গুরুত্বপূর্ণ:",
+            options: ["Food storage", "Vaccine potency", "Medicine storage", "All of above"],
+            options_bn: ["খাদ্য সংরক্ষণ", "টিকার ক্ষমতা", "ওষুধ সংরক্ষণ", "উপরের সবগুলো"],
+            correct: 3,
+            marks: 1
+        },
+        {
+            id: 473,
+            question: "Janani Suraksha Yojana promotes:",
+            question_bn: "জননী সুরক্ষা যোজনা প্রচার করে:",
+            options: ["Child education", "Institutional delivery", "Old age pension", "Agriculture"],
+            options_bn: ["শিশু শিক্ষা", "প্রাতিষ্ঠানিক প্রসব", "বৃদ্ধাশ্রম পেনশন", "কৃষি"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 474,
+            question: "The safe disposal of solid waste includes:",
+            question_bn: "কঠিন বর্জ্য নিরাপদ নিষ্পত্তি অন্তর্ভুক্ত:",
+            options: ["Open dumping", "Segregation and proper disposal", "Burning openly", "River disposal"],
+            options_bn: ["খোলা ডাম্পিং", "পৃথকীকরণ এবং সঠিক নিষ্পত্তি", "খোলাখুলি পোড়ানো", "নদী নিষ্পত্তি"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 475,
+            question: "Zoonotic diseases are transmitted from:",
+            question_bn: "জুনোটিক রোগ থেকে সংক্রমিত হয়:",
+            options: ["Plants to humans", "Animals to humans", "Water to humans", "Air to humans"],
+            options_bn: ["উদ্ভিদ থেকে মানুষ", "প্রাণী থেকে মানুষ", "জল থেকে মানুষ", "বায়ু থেকে মানুষ"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 476,
+            question: "Swachh Bharat Mission aims at:",
+            question_bn: "স্বচ্ছ ভারত মিশন লক্ষ্য:",
+            options: ["Clean India", "Education", "Employment", "Agriculture"],
+            options_bn: ["পরিষ্কার ভারত", "শিক্ষা", "কর্মসংস্থান", "কৃষি"],
+            correct: 0,
+            marks: 1
+        },
+        {
+            id: 477,
+            question: "The epidemiological triad consists of:",
+            question_bn: "মহামারী বিজ্ঞান ট্রায়াড গঠিত:",
+            options: ["Agent, host, environment", "Doctor, nurse, patient", "Hospital, clinic, home", "Medicine, food, water"],
+            options_bn: ["এজেন্ট, হোস্ট, পরিবেশ", "ডাক্তার, নার্স, রোগী", "হাসপাতাল, ক্লিনিক, বাড়ি", "ওষুধ, খাদ্য, জল"],
+            correct: 0,
+            marks: 1
+        },
+        {
+            id: 478,
+            question: "Herd immunity occurs when:",
+            question_bn: "হার্ড ইমিউনিটি ঘটে যখন:",
+            options: ["One person is immune", "Most of population is immune", "No one is immune", "Animals are immune"],
+            options_bn: ["একজন ব্যক্তি প্রতিরোধী", "জনসংখ্যার বেশিরভাগ প্রতিরোধী", "কেউ প্রতিরোধী নয়", "প্রাণী প্রতিরোধী"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 479,
+            question: "Dengue is transmitted by:",
+            question_bn: "ডেঙ্গু সংক্রমিত হয়:",
+            options: ["Anopheles mosquito", "Aedes mosquito", "Culex mosquito", "Housefly"],
+            options_bn: ["অ্যানোফিলিস মশা", "এডিস মশা", "কিউলেক্স মশা", "মাছি"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 480,
+            question: "Baby Friendly Hospital Initiative promotes:",
+            question_bn: "বেবি ফ্রেন্ডলি হসপিটাল ইনিশিয়েটিভ প্রচার করে:",
+            options: ["Formula feeding", "Breastfeeding", "Mixed feeding", "No feeding"],
+            options_bn: ["ফর্মুলা ফিডিং", "বুকের দুধ খাওয়ানো", "মিশ্র খাওয়ানো", "কোন খাওয়ানো নেই"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 481,
+            question: "The incubation period of measles is:",
+            question_bn: "হামের ইনকিউবেশন পিরিয়ড হল:",
+            options: ["1-2 days", "7-14 days", "21-28 days", "1-2 months"],
+            options_bn: ["১-২ দিন", "৭-১৪ দিন", "২১-২৮ দিন", "১-২ মাস"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 482,
+            question: "Communicable diseases are spread through:",
+            question_bn: "সংক্রামক রোগ ছড়ায়:",
+            options: ["Genetics only", "Contact, air, water, vector", "Heredity only", "Age"],
+            options_bn: ["শুধুমাত্র জিনগত", "যোগাযোগ, বায়ু, জল, বাহক", "শুধুমাত্র বংশগত", "বয়স"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 483,
+            question: "The 'Three Delays' model in maternal mortality refers to:",
+            question_bn: "মাতৃমৃত্যুতে 'তিন বিলম্ব' মডেল বোঝায়:",
+            options: ["Delays in decision, reaching facility, receiving care", "Hospital delays only", "Doctor delays", "Nurse delays"],
+            options_bn: ["সিদ্ধান্ত, সুবিধায় পৌঁছানো, যত্ন গ্রহণে বিলম্ব", "শুধুমাত্র হাসপাতাল বিলম্ব", "ডাক্তার বিলম্ব", "নার্স বিলম্ব"],
+            correct: 0,
+            marks: 1
+        },
+        {
+            id: 484,
+            question: "Rabies is prevented by:",
+            question_bn: "রেবিস প্রতিরোধ করা হয়:",
+            options: ["Antibiotics", "Post-exposure prophylaxis vaccine", "Surgery", "Rest"],
+            options_bn: ["অ্যান্টিবায়োটিক", "পোস্ট-এক্সপোজার প্রফিল্যাক্সিস টিকা", "অস্ত্রোপচার", "বিশ্রাম"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 485,
+            question: "Iron and Folic Acid supplementation is given to:",
+            question_bn: "আয়রন এবং ফলিক অ্যাসিড সম্পূরক দেওয়া হয়:",
+            options: ["Men only", "Pregnant women and adolescents", "Elderly only", "Infants only"],
+            options_bn: ["শুধুমাত্র পুরুষ", "গর্ভবতী মহিলা এবং কিশোর", "শুধুমাত্র বয়স্ক", "শুধুমাত্র শিশু"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 486,
+            question: "Mission Indradhanush focuses on:",
+            question_bn: "মিশন ইন্দ্রধনুষ মনোনিবেশ করে:",
+            options: ["Education", "Full immunization coverage", "Employment", "Housing"],
+            options_bn: ["শিক্ষা", "সম্পূর্ণ টিকাকরণ কভারেজ", "কর্মসংস্থান", "আবাসন"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 487,
+            question: "The main cause of infant mortality in India is:",
+            question_bn: "ভারতে শিশুমৃত্যুর প্রধান কারণ হল:",
+            options: ["Cancer", "Respiratory infections and prematurity", "Accidents", "Old age"],
+            options_bn: ["ক্যান্সার", "শ্বাসযন্ত্রের সংক্রমণ এবং অকাল জন্ম", "দুর্ঘটনা", "বৃদ্ধ বয়স"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 488,
+            question: "Food adulteration can be detected by:",
+            question_bn: "খাদ্য ভেজাল সনাক্ত করা যায়:",
+            options: ["Simple tests and lab analysis", "Taste only", "Color only", "Smell only"],
+            options_bn: ["সাধারণ পরীক্ষা এবং ল্যাব বিশ্লেষণ", "শুধুমাত্র স্বাদ", "শুধুমাত্র রঙ", "শুধুমাত্র গন্ধ"],
+            correct: 0,
+            marks: 1
+        },
+        {
+            id: 489,
+            question: "The objective of school health programme is:",
+            question_bn: "স্কুল স্বাস্থ্য কর্মসূচির উদ্দেশ্য হল:",
+            options: ["Education only", "Promote health of school children", "Sports only", "Building construction"],
+            options_bn: ["শুধুমাত্র শিক্ষা", "স্কুল শিশুদের স্বাস্থ্য প্রচার", "শুধুমাত্র খেলাধুলা", "বিল্ডিং নির্মাণ"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 490,
+            question: "Epidemics are controlled by:",
+            question_bn: "মহামারী নিয়ন্ত্রিত হয়:",
+            options: ["Ignoring", "Early detection and response", "Waiting", "No action"],
+            options_bn: ["উপেক্ষা করা", "প্রাথমিক সনাক্তকরণ এবং প্রতিক্রিয়া", "অপেক্ষা করা", "কোন পদক্ষেপ নেই"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 491,
+            question: "The concept of Primary Health Care was introduced at:",
+            question_bn: "প্রাথমিক স্বাস্থ্য পরিচর্যার ধারণা প্রবর্তিত হয়েছিল:",
+            options: ["Alma Ata Conference 1978", "WHO 2000", "UN 1990", "Geneva 1950"],
+            options_bn: ["আলমা আটা সম্মেলন ১৯৭৮", "ডব্লিউএইচও ২০০০", "ইউএন ১৯৯০", "জেনেভা ১৯৫০"],
+            correct: 0,
+            marks: 1
+        },
+        {
+            id: 492,
+            question: "The ratio of health workers to population in a Primary Health Center is:",
+            question_bn: "প্রাথমিক স্বাস্থ্য কেন্দ্রে জনসংখ্যার সাথে স্বাস্থ্যকর্মীদের অনুপাত হল:",
+            options: ["1:10,000", "1:30,000", "1:50,000", "1:1,00,000"],
+            options_bn: ["১:১০,০০০", "১:৩০,০০০", "১:৫০,০০০", "১:১,০০,০০০"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 493,
+            question: "Biomedical waste should be disposed in:",
+            question_bn: "বায়োমেডিকেল বর্জ্য নিষ্পত্তি করা উচিত:",
+            options: ["General waste bin", "Color-coded bags as per rules", "Open area", "River"],
+            options_bn: ["সাধারণ বর্জ্য বিন", "নিয়ম অনুযায়ী রঙ-কোড ব্যাগ", "খোলা এলাকা", "নদী"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 494,
+            question: "Vitamin A supplementation prevents:",
+            question_bn: "ভিটামিন এ সম্পূরক প্রতিরোধ করে:",
+            options: ["Diabetes", "Night blindness", "Hypertension", "Arthritis"],
+            options_bn: ["ডায়াবেটিস", "রাতকানা", "উচ্চ রক্তচাপ", "বাত"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 495,
+            question: "The National Vector Borne Disease Control Programme targets:",
+            question_bn: "জাতীয় ভেক্টর বাহিত রোগ নিয়ন্ত্রণ কর্মসূচি লক্ষ্য:",
+            options: ["Cancer", "Malaria, dengue, chikungunya", "Diabetes", "Heart disease"],
+            options_bn: ["ক্যান্সার", "ম্যালেরিয়া, ডেঙ্গু, চিকুনগুনিয়া", "ডায়াবেটিস", "হৃদরোগ"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 496,
+            question: "Handwashing with soap prevents:",
+            question_bn: "সাবান দিয়ে হাত ধোয়া প্রতিরোধ করে:",
+            options: ["Only dirt", "Diarrhea and respiratory infections", "Nothing", "Cancer"],
+            options_bn: ["শুধুমাত্র ময়লা", "ডায়রিয়া এবং শ্বাসযন্ত্রের সংক্রমণ", "কিছুই না", "ক্যান্সার"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 497,
+            question: "The triple vaccine DPT protects against:",
+            question_bn: "ট্রিপল ভ্যাকসিন ডিপিটি রক্ষা করে:",
+            options: ["Diphtheria, Pertussis, Tetanus", "Dengue, Polio, Typhoid", "Diabetes, Pneumonia, TB", "Diarrhea, Plague, Tumor"],
+            options_bn: ["ডিপথেরিয়া, পারটুসিস, টিটেনাস", "ডেঙ্গু, পোলিও, টাইফয়েড", "ডায়াবেটিস, নিউমোনিয়া, টিবি", "ডায়রিয়া, প্লেগ, টিউমার"],
+            correct: 0,
+            marks: 1
+        },
+        {
+            id: 498,
+            question: "Leprosy is caused by:",
+            question_bn: "কুষ্ঠরোগ সৃষ্ট হয়:",
+            options: ["Virus", "Mycobacterium leprae", "Parasite", "Fungus"],
+            options_bn: ["ভাইরাস", "মাইকোব্যাক্টেরিয়াম লেপ্রে", "পরজীবী", "ছত্রাক"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 499,
+            question: "The goal of palliative care is:",
+            question_bn: "প্যালিয়েটিভ কেয়ারের লক্ষ্য হল:",
+            options: ["Cure disease", "Improve quality of life", "Prolong suffering", "Surgery"],
+            options_bn: ["রোগ নিরাময়", "জীবনের মান উন্নত করা", "কষ্ট দীর্ঘায়িত করা", "অস্ত্রোপচার"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 500,
+            question: "Occupational health focuses on:",
+            question_bn: "পেশাগত স্বাস্থ্য মনোনিবেশ করে:",
+            options: ["Home health", "Workplace health and safety", "School health", "Hospital health"],
+            options_bn: ["বাড়ির স্বাস্থ্য", "কর্মক্ষেত্র স্বাস্থ্য এবং নিরাপত্তা", "স্কুল স্বাস্থ্য", "হাসপাতাল স্বাস্থ্য"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 501,
+            question: "Health education is most effective when it is:",
+            question_bn: "স্বাস্থ্য শিক্ষা সবচেয়ে কার্যকর যখন এটি:",
+            options: ["One-way communication", "Interactive and participatory", "Only written", "Ignored"],
+            options_bn: ["একমুখী যোগাযোগ", "ইন্টারেক্টিভ এবং অংশগ্রহণমূলক", "শুধুমাত্র লিখিত", "উপেক্ষিত"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 502,
+            question: "The sentinel surveillance is used for:",
+            question_bn: "সেন্টিনেল নজরদারি ব্যবহৃত হয়:",
+            options: ["Early warning of disease outbreaks", "Treatment only", "Surgery", "No purpose"],
+            options_bn: ["রোগ প্রাদুর্ভাবের প্রাথমিক সতর্কতা", "শুধুমাত্র চিকিৎসা", "অস্ত্রোপচার", "কোন উদ্দেশ্য নেই"],
+            correct: 0,
+            marks: 1
+        },
+        {
+            id: 503,
+            question: "Community participation in health means:",
+            question_bn: "স্বাস্থ্যে সম্প্রদায়ের অংশগ্রহণ মানে:",
+            options: ["Only government action", "Active involvement of community", "Only doctors' work", "No participation"],
+            options_bn: ["শুধুমাত্র সরকারি পদক্ষেপ", "সম্প্রদায়ের সক্রিয় অংশগ্রহণ", "শুধুমাত্র ডাক্তারদের কাজ", "কোন অংশগ্রহণ নেই"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 504,
+            question: "Ayushman Bharat scheme provides:",
+            question_bn: "আয়ুষ্মান ভারত প্রকল্প প্রদান করে:",
+            options: ["Free education", "Health insurance and wellness centers", "Free housing", "Employment"],
+            options_bn: ["বিনামূল্যে শিক্ষা", "স্বাস্থ্য বীমা এবং সুস্থতা কেন্দ্র", "বিনামূল্যে আবাসন", "কর্মসংস্থান"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 505,
+            question: "The essential components of Primary Health Care include:",
+            question_bn: "প্রাথমিক স্বাস্থ্য পরিচর্যার অপরিহার্য উপাদান অন্তর্ভুক্ত:",
+            options: ["Only curative care", "Promotive, preventive, curative and rehabilitative", "Only surgery", "Only medicine"],
+            options_bn: ["শুধুমাত্র নিরাময় যত্ন", "প্রচারমূলক, প্রতিরোধমূলক, নিরাময় এবং পুনর্বাসন", "শুধুমাত্র অস্ত্রোপচার", "শুধুমাত্র ওষুধ"],
             correct: 1,
             marks: 1
         }
@@ -4868,6 +5678,411 @@ const examQuestions = {
             options_bn: ["সংক্রমণ", "জরায়ু অ্যাটোনি", "ট্রমা", "রক্ষিত প্ল্যাসেন্টা"],
             correct: 1,
             marks: 1
+        },
+        {
+            id: 511,
+            question: "Which hormone is responsible for milk ejection?",
+            question_bn: "কোন হরমোন দুধ নিঃসরণের জন্য দায়ী?",
+            options: ["Prolactin", "Oxytocin", "Estrogen", "Progesterone"],
+            options_bn: ["প্রোল্যাক্টিন", "অক্সিটোসিন", "ইস্ট্রোজেন", "প্রোজেস্টেরন"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 512,
+            question: "The cardinal movements of labor include all EXCEPT:",
+            question_bn: "প্রসবের মূল নড়াচড়া সব অন্তর্ভুক্ত ব্যতীত:",
+            options: ["Descent", "Flexion", "Extension", "Retraction"],
+            options_bn: ["অবতরণ", "নমন", "প্রসারণ", "সংকোচন"],
+            correct: 3,
+            marks: 1
+        },
+        {
+            id: 513,
+            question: "Pre-eclampsia is characterized by:",
+            question_bn: "প্রি-একলাম্পসিয়া চিহ্নিত হয়:",
+            options: ["Hypertension and proteinuria", "Low BP and edema", "Diabetes and hypertension", "Anemia and fever"],
+            options_bn: ["উচ্চ রক্তচাপ এবং প্রোটিনুরিয়া", "নিম্ন বিপি এবং শোথ", "ডায়াবেটিস এবং উচ্চ রক্তচাপ", "রক্তাল্পতা এবং জ্বর"],
+            correct: 0,
+            marks: 1
+        },
+        {
+            id: 514,
+            question: "Lochia rubra is seen for:",
+            question_bn: "লোচিয়া রুব্রা দেখা যায়:",
+            options: ["1-3 days postpartum", "4-7 days postpartum", "8-14 days postpartum", "15-21 days postpartum"],
+            options_bn: ["প্রসবোত্তর ১-৩ দিন", "প্রসবোত্তর ৪-৭ দিন", "প্রসবোত্তর ৮-১৪ দিন", "প্রসবোত্তর ১৫-২১ দিন"],
+            correct: 0,
+            marks: 1
+        },
+        {
+            id: 515,
+            question: "The best position for a woman in labor is:",
+            question_bn: "প্রসব শ্রমে নারীর জন্য সেরা অবস্থান হল:",
+            options: ["Supine", "Left lateral", "Trendelenburg", "Prone"],
+            options_bn: ["চিৎ হয়ে শোয়া", "বাম পার্শ্বীয়", "ট্রেন্ডেলেনবার্গ", "উপুড়"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 516,
+            question: "Which of the following is a presumptive sign of pregnancy?",
+            question_bn: "নিম্নলিখিত কোনটি গর্ভাবস্থার একটি অনুমানমূলক চিহ্ন?",
+            options: ["Fetal heart sounds", "Ultrasound visualization", "Morning sickness", "Positive pregnancy test"],
+            options_bn: ["ভ্রূণের হৃদয়ের শব্দ", "আল্ট্রাসাউন্ড ভিজ্যুয়ালাইজেশন", "সকালের অসুস্থতা", "ইতিবাচক গর্ভাবস্থা পরীক্ষা"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 517,
+            question: "Placenta previa means:",
+            question_bn: "প্ল্যাসেন্টা প্রিভিয়া মানে:",
+            options: ["Placenta in normal position", "Placenta covering cervical os", "Premature placental separation", "Retained placenta"],
+            options_bn: ["স্বাভাবিক অবস্থানে প্ল্যাসেন্টা", "সার্ভিকাল ওএস ঢেকে প্ল্যাসেন্টা", "অকাল প্ল্যাসেন্টাল বিচ্ছেদ", "রক্ষিত প্ল্যাসেন্টা"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 518,
+            question: "The normal fetal heart rate is:",
+            question_bn: "স্বাভাবিক ভ্রূণের হৃদস্পন্দন হার হল:",
+            options: ["60-80 bpm", "80-100 bpm", "120-160 bpm", "180-200 bpm"],
+            options_bn: ["৬০-৮০ বিপিএম", "৮০-১০০ বিপিএম", "১২০-১৬০ বিপিএম", "১৮০-২০০ বিপিএম"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 519,
+            question: "Episiotomy is performed to:",
+            question_bn: "এপিসিওটমি করা হয়:",
+            options: ["Delay delivery", "Prevent perineal tears", "Stop bleeding", "Induce labor"],
+            options_bn: ["প্রসব বিলম্বিত করতে", "পেরিনিয়াল টিয়ার প্রতিরোধ করতে", "রক্তপাত বন্ধ করতে", "শ্রম প্রবর্তন করতে"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 520,
+            question: "The drug used to prevent postpartum hemorrhage is:",
+            question_bn: "প্রসবোত্তর রক্তক্ষরণ প্রতিরোধ করতে ব্যবহৃত ওষুধ হল:",
+            options: ["Magnesium sulfate", "Oxytocin", "Methyldopa", "Heparin"],
+            options_bn: ["ম্যাগনেসিয়াম সালফেট", "অক্সিটোসিন", "মিথাইলডোপা", "হেপারিন"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 521,
+            question: "Gestational diabetes is diagnosed during:",
+            question_bn: "গর্ভকালীন ডায়াবেটিস নির্ণয় করা হয়:",
+            options: ["First trimester", "Second trimester", "Third trimester", "Postpartum period"],
+            options_bn: ["প্রথম ত্রৈমাসিক", "দ্বিতীয় ত্রৈমাসিক", "তৃতীয় ত্রৈমাসিক", "প্রসবোত্তর সময়কাল"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 522,
+            question: "The process of descent of fetal head into the pelvis is called:",
+            question_bn: "শ্রোণীতে ভ্রূণের মাথার অবতরণ প্রক্রিয়াকে বলা হয়:",
+            options: ["Engagement", "Extension", "Restitution", "Expulsion"],
+            options_bn: ["এনগেজমেন্ট", "এক্সটেনশন", "পুনঃস্থাপন", "বহিষ্করণ"],
+            correct: 0,
+            marks: 1
+        },
+        {
+            id: 523,
+            question: "Which vaccine is given to pregnant women to prevent neonatal tetanus?",
+            question_bn: "নবজাতক টিটেনাস প্রতিরোধ করতে গর্ভবতী মহিলাদের কোন টিকা দেওয়া হয়?",
+            options: ["BCG", "TT vaccine", "Hepatitis B", "MMR"],
+            options_bn: ["বিসিজি", "টিটি টিকা", "হেপাটাইটিস বি", "এমএমআর"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 524,
+            question: "Antepartum hemorrhage occurs:",
+            question_bn: "এন্টিপার্টাম রক্তক্ষরণ ঘটে:",
+            options: ["Before 28 weeks", "After 28 weeks before delivery", "During delivery", "After delivery"],
+            options_bn: ["২৮ সপ্তাহের আগে", "প্রসবের আগে ২৮ সপ্তাহ পরে", "প্রসবের সময়", "প্রসবের পরে"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 525,
+            question: "The length of the umbilical cord at term is approximately:",
+            question_bn: "মেয়াদে নাভির কর্ডের দৈর্ঘ্য প্রায়:",
+            options: ["30 cm", "50 cm", "70 cm", "100 cm"],
+            options_bn: ["৩০ সেমি", "৫০ সেমি", "৭০ সেমি", "১০০ সেমি"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 526,
+            question: "Mastitis is best prevented by:",
+            question_bn: "ম্যাস্টাইটিস সবচেয়ে ভালো প্রতিরোধ করা হয়:",
+            options: ["Antibiotic prophylaxis", "Proper breastfeeding technique", "Avoiding breastfeeding", "Wearing tight bras"],
+            options_bn: ["অ্যান্টিবায়োটিক প্রফিল্যাক্সিস", "সঠিক বুকের দুধ খাওয়ানোর কৌশল", "স্তন্যপান এড়ানো", "টাইট ব্রা পরা"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 527,
+            question: "Which immunoglobulin crosses the placenta?",
+            question_bn: "কোন ইমিউনোগ্লোবুলিন প্ল্যাসেন্টা অতিক্রম করে?",
+            options: ["IgA", "IgM", "IgG", "IgE"],
+            options_bn: ["আইজিএ", "আইজিএম", "আইজিজি", "আইজিই"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 528,
+            question: "Contraindication for breastfeeding includes:",
+            question_bn: "বুকের দুধ খাওয়ানোর জন্য নিষেধাজ্ঞা অন্তর্ভুক্ত:",
+            options: ["Common cold", "HIV positive mother", "Mild fever", "Headache"],
+            options_bn: ["সাধারণ ঠান্ডা", "এইচআইভি পজিটিভ মা", "হালকা জ্বর", "মাথাব্যথা"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 529,
+            question: "Quickening is first felt by a primigravida at:",
+            question_bn: "প্রাইমিগ্রাভিডা দ্বারা প্রথম শিশুর নড়াচড়া অনুভূত হয়:",
+            options: ["12 weeks", "16-18 weeks", "20-22 weeks", "28 weeks"],
+            options_bn: ["১২ সপ্তাহ", "১৬-১৮ সপ্তাহ", "২০-২২ সপ্তাহ", "২৮ সপ্তাহ"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 530,
+            question: "PPIUCD stands for:",
+            question_bn: "পিপিআইইউসিডি মানে:",
+            options: ["Postpartum Intrauterine Contraceptive Device", "Pre-pregnancy Intrauterine Care Device", "Postpartum Internal Uterine Care", "Pre-pregnancy Infection Control Device"],
+            options_bn: ["প্রসবোত্তর অন্তঃজরায়ু গর্ভনিরোধক ডিভাইস", "প্রি-প্রেগন্যান্সি ইন্ট্রাইউটারিন কেয়ার ডিভাইস", "প্রসবোত্তর অভ্যন্তরীণ জরায়ু যত্ন", "প্রি-প্রেগন্যান্সি সংক্রমণ নিয়ন্ত্রণ ডিভাইস"],
+            correct: 0,
+            marks: 1
+        },
+        {
+            id: 531,
+            question: "Amniocentesis is done to detect:",
+            question_bn: "অ্যামনিওসেন্টেসিস সনাক্ত করতে করা হয়:",
+            options: ["Maternal diabetes", "Fetal abnormalities", "Blood pressure", "Heart disease"],
+            options_bn: ["মাতৃ ডায়াবেটিস", "ভ্রূণের অস্বাভাবিকতা", "রক্তচাপ", "হৃদরোগ"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 532,
+            question: "The hormone responsible for uterine contractions during labor is:",
+            question_bn: "প্রসবের সময় জরায়ু সংকোচনের জন্য দায়ী হরমোন হল:",
+            options: ["Estrogen", "Progesterone", "Oxytocin", "Testosterone"],
+            options_bn: ["ইস্ট্রোজেন", "প্রোজেস্টেরন", "অক্সিটোসিন", "টেস্টোস্টেরন"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 533,
+            question: "Colostrum is rich in:",
+            question_bn: "কোলোস্ট্রাম সমৃদ্ধ:",
+            options: ["Fat", "Antibodies", "Sugar", "Salt"],
+            options_bn: ["চর্বি", "অ্যান্টিবডি", "চিনি", "লবণ"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 534,
+            question: "Cesarean section is indicated in:",
+            question_bn: "সিজারিয়ান বিভাগ নির্দেশিত:",
+            options: ["Normal labor", "Cephalopelvic disproportion", "Normal delivery", "All cases"],
+            options_bn: ["স্বাভাবিক প্রসব", "সেফালোপেলভিক ডিসপ্রপোরশন", "স্বাভাবিক ডেলিভারি", "সমস্ত ক্ষেত্রে"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 535,
+            question: "Ectopic pregnancy most commonly occurs in:",
+            question_bn: "একটোপিক গর্ভাবস্থা সাধারণত ঘটে:",
+            options: ["Uterus", "Fallopian tube", "Ovary", "Cervix"],
+            options_bn: ["জরায়ু", "ফ্যালোপিয়ান টিউব", "ডিম্বাশয়", "সার্ভিক্স"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 536,
+            question: "The Bishop score is used to assess:",
+            question_bn: "বিশপ স্কোর মূল্যায়ন করতে ব্যবহৃত হয়:",
+            options: ["Fetal weight", "Cervical readiness for labor", "Maternal health", "Blood pressure"],
+            options_bn: ["ভ্রূণের ওজন", "প্রসবের জন্য সার্ভিকাল প্রস্তুতি", "মাতৃ স্বাস্থ্য", "রক্তচাপ"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 537,
+            question: "Puerperium refers to:",
+            question_bn: "পিউরপেরিয়াম বোঝায়:",
+            options: ["Pregnancy period", "Labor period", "Postpartum period", "Pre-pregnancy period"],
+            options_bn: ["গর্ভাবস্থার সময়কাল", "প্রসব সময়কাল", "প্রসবোত্তর সময়কাল", "প্রাক-গর্ভাবস্থার সময়কাল"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 538,
+            question: "Menopause typically occurs at age:",
+            question_bn: "মেনোপজ সাধারণত বয়সে ঘটে:",
+            options: ["30-35 years", "40-45 years", "45-55 years", "60-65 years"],
+            options_bn: ["৩০-৩৫ বছর", "৪০-৪৫ বছর", "৪৫-৫৫ বছর", "৬০-৬৫ বছর"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 539,
+            question: "Ovulation occurs on day:",
+            question_bn: "ওভুলেশন ঘটে দিনে:",
+            options: ["Day 7", "Day 14", "Day 21", "Day 28"],
+            options_bn: ["দিন ৭", "দিন ১৪", "দিন ২১", "দিন ২৮"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 540,
+            question: "The normal weight gain during pregnancy is:",
+            question_bn: "গর্ভাবস্থায় স্বাভাবিক ওজন বৃদ্ধি হল:",
+            options: ["5-7 kg", "10-12 kg", "15-20 kg", "25-30 kg"],
+            options_bn: ["৫-৭ কেজি", "১০-১২ কেজি", "১৫-২০ কেজি", "২৫-৩০ কেজি"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 541,
+            question: "Braxton Hicks contractions are:",
+            question_bn: "ব্র্যাক্সটন হিক্স সংকোচন হল:",
+            options: ["True labor pains", "False labor pains", "Postpartum pains", "No pain"],
+            options_bn: ["সত্যিকারের প্রসব ব্যথা", "মিথ্যা প্রসব ব্যথা", "প্রসবোত্তর ব্যথা", "কোন ব্যথা নেই"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 542,
+            question: "Cervical cancer is detected by:",
+            question_bn: "সার্ভিকাল ক্যান্সার সনাক্ত করা হয়:",
+            options: ["Blood test", "Pap smear", "Urine test", "X-ray"],
+            options_bn: ["রক্ত পরীক্ষা", "প্যাপ স্মিয়ার", "প্রস্রাব পরীক্ষা", "এক্স-রে"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 543,
+            question: "Morning sickness during pregnancy is caused by:",
+            question_bn: "গর্ভাবস্থায় সকালের অসুস্থতা সৃষ্ট হয়:",
+            options: ["Low blood sugar", "High hCG levels", "Infection", "Dehydration"],
+            options_bn: ["নিম্ন রক্তের শর্করা", "উচ্চ এইচসিজি স্তর", "সংক্রমণ", "ডিহাইড্রেশন"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 544,
+            question: "The third stage of labor involves:",
+            question_bn: "প্রসবের তৃতীয় পর্যায় জড়িত:",
+            options: ["Cervical dilation", "Baby delivery", "Placental delivery", "Recovery"],
+            options_bn: ["সার্ভিকাল প্রসারণ", "শিশুর প্রসব", "প্ল্যাসেন্টাল প্রসব", "পুনরুদ্ধার"],
+            correct: 2,
+            marks: 1
+        },
+        {
+            id: 545,
+            question: "Rh incompatibility can cause:",
+            question_bn: "আরএইচ অসামঞ্জস্য সৃষ্টি করতে পারে:",
+            options: ["Maternal diabetes", "Hemolytic disease of newborn", "Hypertension", "Infection"],
+            options_bn: ["মাতৃ ডায়াবেটিস", "নবজাতকের হেমোলিটিক রোগ", "উচ্চ রক্তচাপ", "সংক্রমণ"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 546,
+            question: "Kangaroo Mother Care involves:",
+            question_bn: "ক্যাঙ্গারু মাদার কেয়ার জড়িত:",
+            options: ["Incubator only", "Skin-to-skin contact", "Formula feeding", "Separation"],
+            options_bn: ["শুধুমাত্র ইনকিউবেটর", "ত্বক থেকে ত্বক যোগাযোগ", "ফর্মুলা ফিডিং", "বিচ্ছেদ"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 547,
+            question: "Leopold's maneuvers are used to determine:",
+            question_bn: "লিওপোল্ডের ম্যানুভার নির্ধারণ করতে ব্যবহৃত হয়:",
+            options: ["Maternal weight", "Fetal position", "Blood pressure", "Heart rate"],
+            options_bn: ["মাতৃ ওজন", "ভ্রূণের অবস্থান", "রক্তচাপ", "হৃদস্পন্দন"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 548,
+            question: "Miscarriage most commonly occurs in:",
+            question_bn: "গর্ভপাত সবচেয়ে সাধারণত ঘটে:",
+            options: ["First trimester", "Second trimester", "Third trimester", "During labor"],
+            options_bn: ["প্রথম ত্রৈমাসিক", "দ্বিতীয় ত্রৈমাসিক", "তৃতীয় ত্রৈমাসিক", "প্রসবের সময়"],
+            correct: 0,
+            marks: 1
+        },
+        {
+            id: 549,
+            question: "Fundal height at 20 weeks should be at:",
+            question_bn: "২০ সপ্তাহে ফান্ডাল উচ্চতা হওয়া উচিত:",
+            options: ["Symphysis pubis", "Umbilicus", "Xiphoid process", "Below umbilicus"],
+            options_bn: ["সিম্ফিসিস পিউবিস", "নাভি", "জিফয়েড প্রক্রিয়া", "নাভির নিচে"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 550,
+            question: "The most common cause of maternal mortality is:",
+            question_bn: "মাতৃমৃত্যুর সবচেয়ে সাধারণ কারণ হল:",
+            options: ["Infection", "Hemorrhage", "Diabetes", "Cancer"],
+            options_bn: ["সংক্রমণ", "রক্তক্ষরণ", "ডায়াবেটিস", "ক্যান্সার"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 551,
+            question: "VDRL test is done to detect:",
+            question_bn: "ভিডিআরএল পরীক্ষা সনাক্ত করতে করা হয়:",
+            options: ["HIV", "Syphilis", "Tuberculosis", "Malaria"],
+            options_bn: ["এইচআইভি", "সিফিলিস", "যক্ষ্মা", "ম্যালেরিয়া"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 552,
+            question: "Neonatal jaundice appears after:",
+            question_bn: "নবজাতক জন্ডিস প্রদর্শিত হয়:",
+            options: ["Immediately after birth", "24 hours of birth", "1 week", "1 month"],
+            options_bn: ["জন্মের সাথে সাথে", "জন্মের ২৪ ঘন্টা পরে", "১ সপ্তাহ", "১ মাস"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 553,
+            question: "Perineal care after delivery prevents:",
+            question_bn: "প্রসবের পরে পেরিনিয়াল যত্ন প্রতিরোধ করে:",
+            options: ["Headache", "Infection", "Diabetes", "Hypertension"],
+            options_bn: ["মাথাব্যথা", "সংক্রমণ", "ডায়াবেটিস", "উচ্চ রক্তচাপ"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 554,
+            question: "The safe period for sexual intercourse during pregnancy is:",
+            question_bn: "গর্ভাবস্থায় যৌন মিলনের নিরাপদ সময়কাল হল:",
+            options: ["First trimester", "Second trimester", "Third trimester", "Never safe"],
+            options_bn: ["প্রথম ত্রৈমাসিক", "দ্বিতীয় ত্রৈমাসিক", "তৃতীয় ত্রৈমাসিক", "কখনও নিরাপদ নয়"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 555,
+            question: "Artificial rupture of membranes is called:",
+            question_bn: "ঝিল্লির কৃত্রিম ফাটল বলা হয়:",
+            options: ["Episiotomy", "Amniotomy", "Cesarean", "Forceps delivery"],
+            options_bn: ["এপিসিওটমি", "অ্যামনিওটমি", "সিজারিয়ান", "ফোর্সেপস ডেলিভারি"],
+            correct: 1,
+            marks: 1
         }
     ],
 
@@ -4917,6 +6132,366 @@ const examQuestions = {
             options_bn: ["লাল ক্রস", "প্রদীপ", "স্টেথোস্কোপ", "সিরিঞ্জ"],
             correct: 1,
             marks: 1
+        },
+        {
+            id: 561,
+            question: "Continuing nursing education is important for:",
+            question_bn: "অব্যাহত নার্সিং শিক্ষা গুরুত্বপূর্ণ:",
+            options: ["Degree only", "Professional development", "Salary only", "Promotion only"],
+            options_bn: ["শুধুমাত্র ডিগ্রি", "পেশাদার উন্নয়ন", "শুধুমাত্র বেতন", "শুধুমাত্র পদোন্নতি"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 562,
+            question: "Evidence-based practice means:",
+            question_bn: "প্রমাণ-ভিত্তিক অনুশীলন মানে:",
+            options: ["Personal opinion", "Using research findings in practice", "Traditional methods only", "Guesswork"],
+            options_bn: ["ব্যক্তিগত মতামত", "অনুশীলনে গবেষণা ফলাফল ব্যবহার", "শুধুমাত্র ঐতিহ্যগত পদ্ধতি", "অনুমান"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 563,
+            question: "The nursing process includes:",
+            question_bn: "নার্সিং প্রক্রিয়া অন্তর্ভুক্ত:",
+            options: ["Only assessment", "Assessment, diagnosis, planning, implementation, evaluation", "Only treatment", "Only documentation"],
+            options_bn: ["শুধুমাত্র মূল্যায়ন", "মূল্যায়ন, রোগ নির্ণয়, পরিকল্পনা, বাস্তবায়ন, মূল্যায়ন", "শুধুমাত্র চিকিৎসা", "শুধুমাত্র ডকুমেন্টেশন"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 564,
+            question: "Leadership in nursing involves:",
+            question_bn: "নার্সিংয়ে নেতৃত্ব জড়িত:",
+            options: ["Giving orders only", "Guiding and influencing team", "Working alone", "Avoiding responsibility"],
+            options_bn: ["শুধুমাত্র আদেশ দেওয়া", "দলকে গাইড এবং প্রভাবিত করা", "একা কাজ করা", "দায়িত্ব এড়ানো"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 565,
+            question: "Quality assurance in nursing means:",
+            question_bn: "নার্সিংয়ে মান নিশ্চিতকরণ মানে:",
+            options: ["No standards", "Maintaining and improving care standards", "Ignoring errors", "No monitoring"],
+            options_bn: ["কোন মান নেই", "যত্ন মান বজায় রাখা এবং উন্নত করা", "ত্রুটি উপেক্ষা করা", "কোন পর্যবেক্ষণ নেই"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 566,
+            question: "Nursing research helps to:",
+            question_bn: "নার্সিং গবেষণা সাহায্য করে:",
+            options: ["Waste time", "Improve patient care", "Complicate things", "No benefit"],
+            options_bn: ["সময় নষ্ট করা", "রোগীর যত্ন উন্নত করা", "জিনিস জটিল করা", "কোন সুবিধা নেই"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 567,
+            question: "Delegation in nursing means:",
+            question_bn: "নার্সিংয়ে প্রতিনিধিত্ব মানে:",
+            options: ["Avoiding work", "Assigning appropriate tasks to others", "Doing everything alone", "No responsibility"],
+            options_bn: ["কাজ এড়ানো", "অন্যদের উপযুক্ত কাজ বরাদ্দ করা", "সবকিছু একা করা", "কোন দায়িত্ব নেই"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 568,
+            question: "The International Nurses Day is celebrated on:",
+            question_bn: "আন্তর্জাতিক নার্স দিবস পালিত হয়:",
+            options: ["May 12", "June 12", "July 12", "August 12"],
+            options_bn: ["১২ মে", "১২ জুন", "১২ জুলাই", "১২ আগস্ট"],
+            correct: 0,
+            marks: 1
+        },
+        {
+            id: 569,
+            question: "Critical thinking in nursing is:",
+            question_bn: "নার্সিংয়ে সমালোচনামূলক চিন্তা হল:",
+            options: ["Criticizing others", "Purposeful reasoning and decision making", "Negative thinking", "No thinking"],
+            options_bn: ["অন্যদের সমালোচনা করা", "উদ্দেশ্যমূলক যুক্তি এবং সিদ্ধান্ত গ্রহণ", "নেতিবাচক চিন্তা", "কোন চিন্তা নেই"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 570,
+            question: "Accountability in nursing means:",
+            question_bn: "নার্সিংয়ে দায়বদ্ধতা মানে:",
+            options: ["Blaming others", "Being responsible for actions", "Avoiding duty", "No responsibility"],
+            options_bn: ["অন্যদের দোষারোপ করা", "কর্মের জন্য দায়ী হওয়া", "দায়িত্ব এড়ানো", "কোন দায়িত্ব নেই"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 571,
+            question: "Nursing documentation should be:",
+            question_bn: "নার্সিং ডকুমেন্টেশন হওয়া উচিত:",
+            options: ["Incomplete", "Accurate and timely", "Delayed", "Optional"],
+            options_bn: ["অসম্পূর্ণ", "নির্ভুল এবং সময়মত", "বিলম্বিত", "ঐচ্ছিক"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 572,
+            question: "Team nursing involves:",
+            question_bn: "টিম নার্সিং জড়িত:",
+            options: ["Working alone", "Collaborative care delivery", "No coordination", "Individual work"],
+            options_bn: ["একা কাজ করা", "সহযোগিতামূলক যত্ন প্রদান", "কোন সমন্বয় নেই", "ব্যক্তিগত কাজ"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 573,
+            question: "Informed consent requires:",
+            question_bn: "সচেতন সম্মতি প্রয়োজন:",
+            options: ["No explanation", "Full information and voluntary agreement", "Force", "No signature"],
+            options_bn: ["কোন ব্যাখ্যা নেই", "সম্পূর্ণ তথ্য এবং স্বেচ্ছায় চুক্তি", "বল", "কোন স্বাক্ষর নেই"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 574,
+            question: "Cultural competence in nursing means:",
+            question_bn: "নার্সিংয়ে সাংস্কৃতিক দক্ষতা মানে:",
+            options: ["Ignoring culture", "Respecting cultural differences", "One culture only", "No diversity"],
+            options_bn: ["সংস্কৃতি উপেক্ষা করা", "সাংস্কৃতিক পার্থক্য সম্মান করা", "শুধুমাত্র একটি সংস্কৃতি", "কোন বৈচিত্র্য নেই"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 575,
+            question: "Nursing advocacy means:",
+            question_bn: "নার্সিং অ্যাডভোকেসি মানে:",
+            options: ["Ignoring patients", "Supporting patient rights", "Following orders blindly", "No involvement"],
+            options_bn: ["রোগীদের উপেক্ষা করা", "রোগীর অধিকার সমর্থন করা", "অন্ধভাবে আদেশ অনুসরণ", "কোন সম্পৃক্ততা নেই"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 576,
+            question: "Professional boundaries in nursing involve:",
+            question_bn: "নার্সিংয়ে পেশাদার সীমানা জড়িত:",
+            options: ["Personal relationships", "Maintaining therapeutic relationship", "No limits", "Friendship only"],
+            options_bn: ["ব্যক্তিগত সম্পর্ক", "থেরাপিউটিক সম্পর্ক বজায় রাখা", "কোন সীমা নেই", "শুধুমাত্র বন্ধুত্ব"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 577,
+            question: "Nursing audit is:",
+            question_bn: "নার্সিং অডিট হল:",
+            options: ["Waste of time", "Systematic review of care quality", "Punishment", "Optional"],
+            options_bn: ["সময় নষ্ট", "যত্ন মানের পদ্ধতিগত পর্যালোচনা", "শাস্তি", "ঐচ্ছিক"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 578,
+            question: "Change management in nursing requires:",
+            question_bn: "নার্সিংয়ে পরিবর্তন ব্যবস্থাপনা প্রয়োজন:",
+            options: ["Resisting change", "Planning and communication", "Ignoring staff", "No preparation"],
+            options_bn: ["পরিবর্তন প্রতিরোধ", "পরিকল্পনা এবং যোগাযোগ", "কর্মীদের উপেক্ষা করা", "কোন প্রস্তুতি নেই"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 579,
+            question: "Nursing informatics involves:",
+            question_bn: "নার্সিং ইনফরমেটিক্স জড়িত:",
+            options: ["No technology", "Integration of technology in nursing", "Paper only", "Avoiding computers"],
+            options_bn: ["কোন প্রযুক্তি নেই", "নার্সিংয়ে প্রযুক্তির একীকরণ", "শুধুমাত্র কাগজ", "কম্পিউটার এড়ানো"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 580,
+            question: "Conflict resolution in nursing requires:",
+            question_bn: "নার্সিংয়ে সংঘাত সমাধান প্রয়োজন:",
+            options: ["Avoiding conflict", "Communication and problem-solving", "Ignoring issues", "Blame game"],
+            options_bn: ["সংঘাত এড়ানো", "যোগাযোগ এবং সমস্যা সমাধান", "সমস্যা উপেক্ষা করা", "দোষ খেলা"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 581,
+            question: "Time management in nursing means:",
+            question_bn: "নার্সিংয়ে সময় ব্যবস্থাপনা মানে:",
+            options: ["Wasting time", "Prioritizing and organizing tasks", "No planning", "Random work"],
+            options_bn: ["সময় নষ্ট করা", "কাজের অগ্রাধিকার এবং সংগঠিত করা", "কোন পরিকল্পনা নেই", "এলোমেলো কাজ"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 582,
+            question: "Nurse-patient ratio is important for:",
+            question_bn: "নার্স-রোগী অনুপাত গুরুত্বপূর্ণ:",
+            options: ["Cost only", "Quality of care", "No reason", "Management convenience"],
+            options_bn: ["শুধুমাত্র খরচ", "যত্নের মান", "কোন কারণ নেই", "ব্যবস্থাপনা সুবিধা"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 583,
+            question: "Scope of nursing practice is defined by:",
+            question_bn: "নার্সিং অনুশীলনের পরিধি সংজ্ঞায়িত করা হয়:",
+            options: ["Personal choice", "Nursing council and regulations", "Hospital only", "Doctors"],
+            options_bn: ["ব্যক্তিগত পছন্দ", "নার্সিং কাউন্সিল এবং প্রবিধান", "শুধুমাত্র হাসপাতাল", "ডাক্তার"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 584,
+            question: "Preceptorship in nursing means:",
+            question_bn: "নার্সিংয়ে প্রিসেপ্টরশিপ মানে:",
+            options: ["No guidance", "Experienced nurse guiding new nurse", "Working alone", "No training"],
+            options_bn: ["কোন নির্দেশিকা নেই", "অভিজ্ঞ নার্স নতুন নার্স গাইড করছে", "একা কাজ করা", "কোন প্রশিক্ষণ নেই"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 585,
+            question: "Burnout in nursing is caused by:",
+            question_bn: "নার্সিংয়ে বার্নআউট সৃষ্ট হয়:",
+            options: ["Good work-life balance", "Chronic workplace stress", "Adequate support", "Regular breaks"],
+            options_bn: ["ভাল কাজ-জীবন ভারসাম্য", "দীর্ঘস্থায়ী কর্মক্ষেত্র চাপ", "পর্যাপ্ত সমর্থন", "নিয়মিত বিরতি"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 586,
+            question: "Root cause analysis is used for:",
+            question_bn: "মূল কারণ বিশ্লেষণ ব্যবহৃত হয়:",
+            options: ["Blaming staff", "Identifying system failures", "Punishment", "No purpose"],
+            options_bn: ["কর্মীদের দোষারোপ করা", "সিস্টেম ব্যর্থতা সনাক্ত করা", "শাস্তি", "কোন উদ্দেশ্য নেই"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 587,
+            question: "Patient safety culture requires:",
+            question_bn: "রোগী নিরাপত্তা সংস্কৃতি প্রয়োজন:",
+            options: ["Hiding errors", "Open communication and reporting", "Blame culture", "No reporting"],
+            options_bn: ["ত্রুটি লুকানো", "খোলা যোগাযোগ এবং রিপোর্টিং", "দোষ সংস্কৃতি", "কোন রিপোর্টিং নেই"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 588,
+            question: "Mentorship in nursing provides:",
+            question_bn: "নার্সিংয়ে মেন্টরশিপ প্রদান করে:",
+            options: ["No benefit", "Professional guidance and support", "Criticism only", "No interaction"],
+            options_bn: ["কোন সুবিধা নেই", "পেশাদার নির্দেশিকা এবং সমর্থন", "শুধুমাত্র সমালোচনা", "কোন মিথস্ক্রিয়া নেই"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 589,
+            question: "Clinical governance in nursing ensures:",
+            question_bn: "নার্সিংয়ে ক্লিনিকাল গভর্নেন্স নিশ্চিত করে:",
+            options: ["Poor care", "Quality and safety of care", "No standards", "Minimal care"],
+            options_bn: ["খারাপ যত্ন", "যত্নের মান এবং নিরাপত্তা", "কোন মান নেই", "ন্যূনতম যত্ন"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 590,
+            question: "Reflective practice in nursing helps:",
+            question_bn: "নার্সিংয়ে প্রতিফলিত অনুশীলন সাহায্য করে:",
+            options: ["Repeat mistakes", "Learn from experiences", "Ignore feedback", "No improvement"],
+            options_bn: ["ভুল পুনরাবৃত্তি", "অভিজ্ঞতা থেকে শিখুন", "প্রতিক্রিয়া উপেক্ষা করা", "কোন উন্নতি নেই"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 591,
+            question: "Magnet hospital recognition indicates:",
+            question_bn: "ম্যাগনেট হাসপাতাল স্বীকৃতি নির্দেশ করে:",
+            options: ["Poor nursing", "Excellence in nursing care", "No standards", "Low quality"],
+            options_bn: ["খারাপ নার্সিং", "নার্সিং যত্নে উৎকর্ষতা", "কোন মান নেই", "নিম্ন মান"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 592,
+            question: "Interprofessional collaboration means:",
+            question_bn: "আন্তঃপেশাদার সহযোগিতা মানে:",
+            options: ["Working in isolation", "Healthcare team working together", "No communication", "Individual work"],
+            options_bn: ["বিচ্ছিন্নভাবে কাজ করা", "স্বাস্থ্যসেবা দল একসাথে কাজ করছে", "কোন যোগাযোগ নেই", "ব্যক্তিগত কাজ"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 593,
+            question: "Nursing theory provides:",
+            question_bn: "নার্সিং তত্ত্ব প্রদান করে:",
+            options: ["No framework", "Framework for practice", "Confusion", "No guidance"],
+            options_bn: ["কোন কাঠামো নেই", "অনুশীলনের জন্য কাঠামো", "বিভ্রান্তি", "কোন নির্দেশিকা নেই"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 594,
+            question: "Disaster management in nursing requires:",
+            question_bn: "নার্সিংয়ে দুর্যোগ ব্যবস্থাপনা প্রয়োজন:",
+            options: ["No preparation", "Preparedness and rapid response", "Panic", "Avoiding responsibility"],
+            options_bn: ["কোন প্রস্তুতি নেই", "প্রস্তুতি এবং দ্রুত প্রতিক্রিয়া", "আতঙ্ক", "দায়িত্ব এড়ানো"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 595,
+            question: "Compassion fatigue in nursing is:",
+            question_bn: "নার্সিংয়ে করুণা ক্লান্তি হল:",
+            options: ["Energy gain", "Emotional exhaustion from caring", "No effect", "Happiness"],
+            options_bn: ["শক্তি লাভ", "যত্ন থেকে আবেগজনিত ক্লান্তি", "কোন প্রভাব নেই", "সুখ"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 596,
+            question: "Standard precautions in nursing include:",
+            question_bn: "নার্সিংয়ে স্ট্যান্ডার্ড সতর্কতা অন্তর্ভুক্ত:",
+            options: ["No protection", "Hand hygiene and PPE", "Ignoring infection control", "No measures"],
+            options_bn: ["কোন সুরক্ষা নেই", "হাত স্বাস্থ্যবিধি এবং পিপিই", "সংক্রমণ নিয়ন্ত্রণ উপেক্ষা করা", "কোন ব্যবস্থা নেই"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 597,
+            question: "Clinical pathway is:",
+            question_bn: "ক্লিনিকাল পাথওয়ে হল:",
+            options: ["Random care", "Standardized care plan", "No plan", "Chaos"],
+            options_bn: ["এলোমেলো যত্ন", "মানসম্মত যত্ন পরিকল্পনা", "কোন পরিকল্পনা নেই", "বিশৃঙ্খলা"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 598,
+            question: "Nursing rounds are conducted to:",
+            question_bn: "নার্সিং রাউন্ড পরিচালিত হয়:",
+            options: ["Waste time", "Monitor patient progress", "Avoid patients", "No purpose"],
+            options_bn: ["সময় নষ্ট করা", "রোগীর অগ্রগতি পর্যবেক্ষণ", "রোগীদের এড়ানো", "কোন উদ্দেশ্য নেই"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 599,
+            question: "Patient-centered care focuses on:",
+            question_bn: "রোগী-কেন্দ্রিক যত্ন মনোনিবেশ করে:",
+            options: ["Hospital convenience", "Patient preferences and needs", "Staff convenience", "Cost only"],
+            options_bn: ["হাসপাতাল সুবিধা", "রোগীর পছন্দ এবং প্রয়োজন", "কর্মীদের সুবিধা", "শুধুমাত্র খরচ"],
+            correct: 1,
+            marks: 1
+        },
+        {
+            id: 600,
+            question: "Lifelong learning in nursing is:",
+            question_bn: "নার্সিংয়ে জীবনব্যাপী শিক্ষা হল:",
+            options: ["Not needed", "Essential for professional growth", "Optional", "Time waste"],
+            options_bn: ["প্রয়োজন নেই", "পেশাদার বৃদ্ধির জন্য অপরিহার্য", "ঐচ্ছিক", "সময় নষ্ট"],
+            correct: 1,
+            marks: 1
         }
     ]
 };
@@ -4936,3 +6511,4 @@ const sectionNames = {
     11: "Midwifery and Gynaecological Nursing",
     12: "Nursing Education, Introduction to Research, Professional Adjustment & Nursing Administration & Ward Management"
 };
+
